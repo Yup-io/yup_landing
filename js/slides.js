@@ -1185,7 +1185,7 @@ $(document).ready(function() { "use strict";
           var $selectedSlide = $('.slide.selected'),
               parentSlide = $selectedSlide.data('parent-slide-id'),
               selectedIndex = $selectedSlide.index('.slide:not(.exclude)');
-              
+
           if (selectedIndex !== -1) {
             $(element).find('li').eq(selectedIndex).addClass('selected');
           } else if (parentSlide) {
@@ -1629,7 +1629,7 @@ $(document).ready(function() { "use strict";
                 $controller.children('li:eq('+nextIndex+')').addClass('selected');
               });
             }
-              
+
           });
 
           //set status
