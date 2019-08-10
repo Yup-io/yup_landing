@@ -4,10 +4,10 @@
 
 .title {
   font-family: 'Lexend Exa', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: black;
   width: 70vw;
-  overflow-wrap: word-break;
+  overflow-wrap: break-all;
 }
 
 mark {
@@ -16,4 +16,9 @@ mark {
 
 .h1 {
   overflow-wrap: break-word;
+}
+
+
+.background {
+  background-color: black;
 }
