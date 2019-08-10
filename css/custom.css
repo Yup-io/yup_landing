@@ -7,7 +7,7 @@
   font-size: 2.5rem;
   color: black;
   width: 70vw;
-  overflow-wrap: break-word;
+  overflow-wrap: word-break;
 }
 
 mark {
