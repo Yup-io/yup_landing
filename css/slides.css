@@ -571,7 +571,7 @@ img.rounded {
 .button.uppercase {
   letter-spacing: 0.125em !important;
   text-indent: -0.1em !important;
-  font-weight: 700 !important;
+  font-weight: 100 !important;
 }
 
 /* stuff */

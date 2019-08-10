@@ -3,11 +3,11 @@
 }
 
 .title {
-  font-family: 'Lexend Exa', sans-serif;
-  font-size: 2.8rem;
+  font-family: 'Bungee Inline', sans-serif;
+  font-size: 4rem;
   color: black;
   width: 70vw;
-  overflow-wrap: break-all;
+  line-height: 1;
 }
 
 mark {
@@ -21,4 +21,57 @@ mark {
 
 .background {
   background-color: black;
+}
+
+.mobile
+  .title {
+  font-size: 2rem;
+ }
+
+ .button .main {
+   font-weigth: 100;
+ }
+
+p.first {
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+h3 {
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+/* Team */
+
+.team .badge {
+  border-radius: 100%;
+  height: 8rem;
+}
+
+.mobile .team .badge {
+  height: 3rem;
+}
+
+.mobile .team .col-2-12 {
+  width: 30%;
+}
+.mobile .columbia {
+  zoom: 50%;
+}
+.mobile .team .exp {
+  padding-left: 10%;
+}
+
+/* Form */
+.pad {
+  background-color: rgba(14,14,14,0.9);
+}
+.pad .label {
+  color: white;
+}
+.pad button {
+  margin-top: 1rem!important;
 }
