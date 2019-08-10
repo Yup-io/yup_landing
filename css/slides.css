@@ -6096,9 +6096,9 @@ h5.uppercase, h5.uppercase {
   }
 }
 /*
-*       _____          _             
-*      |  __ \( )     | |            
-*      | |  | |_  __ _| | ___   __ _ 
+*       _____          _
+*      |  __ \( )     | |
+*      | |  | |_  __ _| | ___   __ _
 *      | |  | | |/ _` | |/ _ \ / _` |
 *      | |__| | | (_| | | (_) | (_| |
 *      |_____/|_|\__,_|_|\___/ \__, |
@@ -6346,7 +6346,7 @@ html:not(.page-loaded) .dialog {
   left: 0;
 }
 
-/* 
+/*
 .dialogContainer > .dialog:nth-child(1){ -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }
 .dialogContainer > .dialog:nth-child(2){ -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
 .dialogContainer > .dialog:nth-child(3){ -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
