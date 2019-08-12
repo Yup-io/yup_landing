@@ -99,3 +99,11 @@ h3 {
 .button {
   background: #def009;
 }
+
+.webapp {
+  border-radius: 10px;
+  border-color: rgba(0, 229, 255, 0.7);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 0px 0px 5pc rgba(0, 229, 255, 0);
+}
