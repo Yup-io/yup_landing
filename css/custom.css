@@ -3,8 +3,9 @@
 }
 
 .title {
-  font-family: 'Bungee Inline', sans-serif;
+  font-family: 'Text Me One', sans-serif; /* Bungee Inline */
   font-size: 4rem;
+  font-weight: 100;
   color: black;
   width: 70vw;
   line-height: 1;
@@ -18,18 +19,36 @@ mark {
   overflow-wrap: break-word;
 }
 
-
-.background {
-  background-color: black;
+.social-image {
+  max-width: 700px!important;
+  cursor: none;
 }
+img.macbook-62 {
+  margin: -3% -100% 0% 10%!important;
+}
+.demodemo {
+  max-width: 25rem!important;
+  border-radius: 0.3rem;
+}
+
+/* Mobile */
 
 .mobile
   .title {
   font-size: 2rem;
  }
 
+ .mobile .button {
+   zoom: 80%;
+  }
+
  .button .main {
-   font-weigth: 100;
+   font-weight: 100;
+   background-color: #0dee0f;
+ }
+ .mobile .demodemo {
+   max-width: 15rem!important;
+   border-radius: 0.3rem;
  }
 
 p.first {
@@ -75,4 +94,8 @@ h3 {
 }
 .pad button {
   margin-top: 1rem!important;
+}
+
+.button {
+  background: #def009;
 }
