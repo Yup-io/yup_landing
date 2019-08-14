@@ -31,6 +31,17 @@ img.macbook-62 {
   border-radius: 0.3rem;
 }
 
+.grid-73 .cell-73 {
+  padding: 10px 15px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.desk-img {
+  display: inherit;
+}
 /* Mobile */
 
 .mobile
@@ -49,6 +60,13 @@ img.macbook-62 {
  .mobile .demodemo {
    max-width: 15rem!important;
    border-radius: 0.3rem;
+ }
+ .mobile.mobile-img {
+   display: inline;
+ }
+
+ .mobile.desk-img {
+   display: none;
  }
 
 h1 {
@@ -70,6 +88,7 @@ h3 {
 
 .mobile .team .badge {
   height: 3rem;
+  width: 3rem;
 }
 
 .mobile .team .col-2-12 {
