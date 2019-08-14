@@ -60,12 +60,13 @@ img.macbook-62 {
  .mobile .demodemo {
    max-width: 15rem!important;
    border-radius: 0.3rem;
+   margin-bottom: 30px;
  }
- .mobile.mobile-img {
+ .mobile .mobile-img {
    display: inline;
  }
 
- .mobile.desk-img {
+ .mobile .desk-img {
    display: none;
  }
 
