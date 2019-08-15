@@ -6901,7 +6901,7 @@ p.remind-43 {
   border-radius: 6px;
 }
 .grid-73 .cell-73:hover {
-  background: #fff;
+  background: #fff!important;
   color: #202020;
   opacity: 1;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
