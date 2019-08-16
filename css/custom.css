@@ -69,6 +69,9 @@ img.macbook-62 {
  .mobile .desk-img {
    display: none;
  }
+ .mobile .actionButton {
+   margin-top: 5px;
+ }
 
 h1 {
   font-family: 'Lexend Exa', sans-serif;
