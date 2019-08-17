@@ -95,6 +95,11 @@ h3 {
   width: 3rem;
 }
 
+.mobile .team .badge-list {
+  width: 20%;
+  height: 50px;
+}
+
 .mobile .team .col-2-12 {
   width: 30%;
 }
@@ -102,7 +107,7 @@ h3 {
   zoom: 50%;
 }
 .mobile .team .exp {
-  padding-left: 10%;
+  padding-left: 0%;
 }
 
 /* Extension */
