@@ -31,6 +31,10 @@ img.macbook-62 {
   border-radius: 0.3rem;
 }
 
+img.demodemo {
+  display: none;
+}
+
 .grid-73 .cell-73 {
   padding: 10px 15px;
 }
@@ -72,6 +76,15 @@ img.macbook-62 {
  .mobile .actionButton {
    margin-top: 5px;
  }
+
+ .mobile img.demodemo {
+   display: inherit;
+ }
+
+ .mobile video.demodemo {
+   display: none;
+ }
+
 
 h1 {
   font-family: 'Lexend Exa', sans-serif;
