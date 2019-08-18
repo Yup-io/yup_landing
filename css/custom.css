@@ -29,6 +29,7 @@ img.macbook-62 {
 .demodemo {
   max-width: 25rem!important;
   border-radius: 0.3rem;
+  margin: auto;
 }
 
 img.demodemo {
