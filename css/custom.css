@@ -31,6 +31,9 @@ img.macbook-62 {
   border-radius: 0.3rem;
   margin: auto;
 }
+img.demodemo {
+  display: none;
+}
 
 .grid-73 .cell-73 {
   padding: 10px 15px;
@@ -79,7 +82,7 @@ img.macbook-62 {
  }
 
  .mobile video.demodemo {
-   display: inherit;
+   display: none;
  }
 
 
