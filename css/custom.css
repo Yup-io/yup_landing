@@ -79,7 +79,7 @@ img.macbook-62 {
  }
 
  .mobile video.demodemo {
-   display: none;
+   display: inherit;
  }
 
 
