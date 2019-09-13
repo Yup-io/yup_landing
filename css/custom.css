@@ -153,3 +153,8 @@ h3 {
   border-style: solid;
   box-shadow: 0px 0px 5pc rgba(0, 229, 255, 0);
 }
+
+.mobile .menuButton
+{
+  display: none;
+}
