@@ -85,6 +85,11 @@ img.demodemo {
    display: inherit;
  }
 
+ .mobile video {
+   display: inherit;
+ }
+
+
 
 h1 {
   font-family: 'Lexend Exa', sans-serif;
