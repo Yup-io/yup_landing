@@ -82,7 +82,7 @@ img.demodemo {
  }
 
  .mobile video.demodemo {
-   display: none;
+   display: inherit;
  }
 
 
