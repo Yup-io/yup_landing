@@ -57,6 +57,10 @@ img.demodemo {
    zoom: 80%;
   }
 
+  .mobile .mobile-off {
+    display: none;
+  }
+
  .button .main {
    font-weight: 100;
    background-color: #0dee0f;
