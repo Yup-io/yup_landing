@@ -52,6 +52,9 @@ img.demodemo {
   .title {
   font-size: 2rem;
  }
+ .panel {
+   padding: 10px 20px;
+ }
 
  .mobile .button {
    zoom: 80%;
@@ -74,7 +77,7 @@ img.demodemo {
    display: none;
  }
  .mobile .actionButton {
-   margin-top: 5px;
+   margin-top: 0px;
  }
 
  .mobile img.demodemo {
@@ -162,4 +165,8 @@ h3 {
 .mobile .menuButton
 {
   display: none;
+}
+
+.panel svg arrow {
+  fill: #f8d4ef;
 }
