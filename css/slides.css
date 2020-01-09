@@ -1486,11 +1486,11 @@ html:not(.mobile) .slide.video .background[style] {
 }
 @media (max-width: 435px) {
   .showForPhone {
-    display: block !important;
+    display: inline !important;
   }
 
   .showForPhoneInline {
-    display: inline !important;
+    display: inline-block !important;
   }
 }
 /* show and hide for Mobile */
