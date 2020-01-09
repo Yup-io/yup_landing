@@ -31,6 +31,10 @@ img.macbook-62 {
   border-radius: 0.3rem;
   margin: auto;
 }
+.demodemo2 {
+  max-width: 30rem!important;
+  border-radius: 0.3rem;
+}
 img.demodemo {
   display: none;
 }
@@ -66,6 +70,11 @@ img.demodemo {
  }
  .mobile .demodemo {
    max-width: 15rem!important;
+   border-radius: 0.3rem;
+   margin-bottom: 30px;
+ }
+ .mobile .demodemo2 {
+   max-width: 16.5rem!important;
    border-radius: 0.3rem;
    margin-bottom: 30px;
  }
@@ -154,12 +163,16 @@ h3 {
   background: #def009;
 }
 
-.webapp {
+.productimg {
   border-radius: 10px;
   border-color: rgba(0, 229, 255, 0.7);
   border-width: 3px;
   border-style: solid;
   box-shadow: 0px 0px 5pc rgba(0, 229, 255, 0);
+}
+
+.listings .productimg {
+  border-color: rgba(15, 123, 38, 0.7);
 }
 
 .mobile .menuButton
