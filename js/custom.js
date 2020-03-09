@@ -25,7 +25,7 @@ function sendMobileEmail (event) {
 
   $.ajax({
     type: 'POST',
-    url: 'http://localhost:4001/auth/invite_mobile',
+    url: 'https://api.yup.io/auth/invite_mobile',
     data: { email },
     success: function() {
       const email1 = $('#email55').val('')
