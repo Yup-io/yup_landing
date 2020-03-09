@@ -14,21 +14,21 @@
 	<!-- Compressed Styles -->
 	<link href="css/slides.min.css?424341" rel="stylesheet" type="text/css">
 
-<!-- Custom Styles -->
-<link href="css/custom.css" rel="stylesheet" type="text/css">
+	<!-- Custom Styles -->
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
 
-<!-- Intercom -->
-<script>
+	<!-- Intercom -->
+	<script>
 
-  window.intercomSettings = {
-    app_id: "nenz9lls"
-  };
-</script>
+	  window.intercomSettings = {
+	    app_id: "nenz9lls"
+	  };
+	</script>
 
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/nenz9lls';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})(); </script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/nenz9lls';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})(); </script>
 
-<!-- jQuery 3.4.1 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- jQuery 3.4.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<!-- Compressed Scripts -->
 	<script src="js/slides.min.js?424341" type="text/javascript"></script>
@@ -45,9 +45,9 @@
 
 
 <!-- Custom Scripts -->
-<script src="js/custom.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
 
-<script> window.disableOnSwipe = 0; </script>
+	<script> window.disableOnSwipe = 0; </script>
 
 <!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Nunito:100,300,400,500,600,800|Nunito:300|Nunito:600|Material+Icons"/>
@@ -163,14 +163,17 @@
 <!-- Panel Top #library/panel/panel-top-07.html -->
 <nav class="panel top topBar">
   <div class="sections desktop top">
-    <div class="left"><a href="#" title="Yup"><img class="logo" src="assets/svg/yup-logo-rounded.svg"></a></div>
+    <div class="left"><a href="#" style="display: inline-block" title="Yup"><img class="logo" src="assets/svg/yup-logo-rounded.svg"></a></div>
     <div class="center">
       <ul class="menu uppercase hideForPhablet">
         <li><a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" target="_blank">Start</a></li>
         <li><a href="https://app.yup.io" target="_blank">App</a></li>
         <li><a href="mailto:community@yup.io" target="_blank">Contact</a></li>
       </ul>
-    </div>
+			<form onsubmit='sendMobileEmail()' method='post'>
+				<input class="hideForFirstSlide hideForDesktop button round small uppercase white gradient" id="email56" type="email" name="email" placeholder="Email to Start" required/>
+			</form>
+		</div>
     <div class="right">
 			<span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
@@ -226,8 +229,13 @@
 							<mark style="background-color: #00E4FF; padding-right: 1%;">RATE THE WEB.</mark><br>
 							<mark style="background-color: #00FFA6; padding-right: 2%;">EARN &</mark><mark style="background-color: #00FFA6; padding-right: 1%;">INFLUENCE.</mark></div>
 						</h1>
-	            <a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase white gradient ae-2 crop main hideForPhone">download extension</a>
-							<a href="https://join.yup.io" class="button round small uppercase white gradient ae-2 crop main showForPhoneInline" style="display:none;">get started</a>
+            <a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase white gradient ae-2 crop main hideForPhone">download extension</a>
+						<form class="hideForDesktop" onsubmit='sendMobileEmail()' method='post'>
+							<input class="button round small uppercase white gradient ae-2 crop main showForPhoneInline" id="email55" type="email" name="email" placeholder="Email to Start" required/>
+							<br>
+							<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
+						</form>
+							<!-- <a href="https://join.yup.io" class="button round small uppercase white gradient ae-2 crop main showForPhoneInline" style="display:none;">get started</a> -->
 							<!--<a href="https://app.yup.io" class="button round small uppercase stroke white gradient ae-2 crop main"><div>beta</div></a>-->
           </div>
         </div>
