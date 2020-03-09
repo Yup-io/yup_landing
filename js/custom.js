@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
     const form = document.getElementById('emailForm');
     form.addEventListener('submit', sendMobileEmail);
     const form2 = document.getElementById('emailForm2');
@@ -16,7 +15,6 @@ function sendMobileEmail (event) {
   const email1 = $('#email55').val()
   const email2 = $('#email56').val()
 
-  console.log(email1, email2)
   if (email1 && email1.length > 0){
     email = email1
   } else {
