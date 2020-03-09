@@ -27,7 +27,7 @@ function sendMobileEmail (event) {
     data: { email },
     success: function() {
       const email1 = $('#email55').val('')
-      const email2 = $('#email56').empty('')
+      const email2 = $('#email56').val('')
       window.location = "landing.html"
     },
     error: function (xml, status, error) {
