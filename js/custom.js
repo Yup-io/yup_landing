@@ -19,10 +19,8 @@ function sendMobileEmail (event) {
   console.log(email1, email2)
   if (email1 && email1.length > 0){
     email = email1
-    console.log('WE IN HERERE')
   } else {
     email = email2
-    console.log('WE ELSE WHERE')
   }
 
   $.ajax({
