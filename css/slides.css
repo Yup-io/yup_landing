@@ -6477,6 +6477,9 @@ form input[type="email"].input-13 {
   .cell-27 {
     padding-bottom: 40px;
   }
+  .mobile-signup {
+    text-align: left;
+  }
 }
 .text-27 {
   margin-left: 95px;

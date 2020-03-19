@@ -79,7 +79,7 @@
 			}
 		</style>
 </head>
-<body class="slides film smooth smoothScroll noPreload animated">
+<body class="slides scroll animated noPreload">
 
 <!-- SVG Library -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -154,7 +154,7 @@
 </svg>
 
 <!-- Navigation -->
-<nav class="side medium">
+<nav class="side medium hideForPhone">
   <div class="navigation">
     <ul></ul>
   </div>
@@ -167,11 +167,11 @@
     <div class="center">
       <ul class="menu uppercase hideForTablet">
         <li><a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" target="_blank">Start</a></li>
-        <li><a href="https://app.yup.io" target="_blank">App</a></li>
+        <li><a href="https://app.yup.io/lists" target="_blank">Lists</a></li>
         <li><a href="mailto:community@yup.io" target="_blank">Contact</a></li>
       </ul>
 			<form  id="emailForm" method='post'>
-				<input class="hideForFirstSlide hideForDesktop round small uppercase white gradient" id="email56" type="email" name="email" placeholder="Email to Start" required  style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;font-size:12px;outline: none;border: 0;"/>
+				<input class="hideForFirstSlide hideForLastSlide hideForDesktop round small uppercase white gradient" id="email56" type="email" name="email" placeholder="Email to Start" required  style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;font-size:12px;outline: none;border: 0;"/>
 				<!--input class="hideForFirstSlide hideForDesktop round white uppercase small gradient ae-2 crop main" id="email55" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding-left:0.75rem;font-family:Nunito;height:2rem;font-weight:100;font-size:12px;"/-->
 			</form>
 		</div>
@@ -230,14 +230,52 @@
 							<mark style="background-color: #00E4FF; padding-right: 1%;">RATE THE WEB.</mark><br>
 							<mark style="background-color: #00FFA6; padding-right: 2%;">EARN &</mark><mark style="background-color: #00FFA6; padding-right: 1%;">INFLUENCE.</mark></div>
 						</h1>
-            <a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase white gradient ae-2 crop main hideForTablet">download extension</a>
+            <a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase white gradient ae-2 crop main hideForTablet" style="box-shadow: 0px 0px 9px #00FFA689;">add to chrome<b style="opacity:0.3;margin-left:10px;">it's free</b>
+						</a>
 						<form class="hideForDesktop" id="emailForm2" method='post'>
-							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline" id="email55" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;font-size:12px;outline: none;border: 0;"/>
+							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email55" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;outline: none;border: 0;"/>
 							<br>
 							<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
 						</form>
 							<!-- <a href="https://join.yup.io" class="button round small uppercase white gradient ae-2 crop main showForPhoneInline" style="display:none;">get started</a> -->
 							<!--<a href="https://app.yup.io" class="button round small uppercase stroke white gradient ae-2 crop main"><div>beta</div></a>-->
+          </div>
+        </div>
+				<div class="fix-12-12 left hideForTablet">
+          <div class="fix-6-12 toLeft opacity-7">
+	          <p class="small margin-top-2 margin-bottom-2 ae-3">Thousands of users rating today. &nbsp; ★★★★★ on Chrome Store.</p>
+						<ul class="flex flex-68 tintLogos equal equalMobile">
+	            <li class="col-1-4 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+	              <div class="table equalElement ae-4">
+	                <div class="cell" style="text-align:start;"><a href="#">Featured on:</a>
+	                </div>
+	              </div>
+	            </li>
+	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+	              <div class="table wide equalElement ae-5">
+	                <div class="cell"><a href="#"><img width="80" src="assets/img/forbes.png" alt="Google"/></a>
+	                </div>
+	              </div>
+	            </li>
+	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+	              <div class="table wide equalElement ae-6">
+	                <div class="cell"><a href="#"><img width="80" src="assets/img/coinbase.png" alt="Apple"/></a>
+	                </div>
+	              </div>
+	            </li>
+	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+	              <div class="table wide equalElement ae-7">
+	                <div class="cell"><a href="#"><img width="290" src="assets/img/cointelegraph.png" alt="Canon"/></a>
+	                </div>
+	              </div>
+	            </li>
+	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+	              <div class="table wide equalElement ae-8">
+	                <div class="cell"><a href="#"><img width="62" src="assets/img/yahoo.png" alt="Nike"/></a>
+	                </div>
+	              </div>
+	            </li>
+	          </ul>
           </div>
         </div>
 
@@ -266,14 +304,14 @@
 					    </video>
             </li>
             <li class="col-6-12 left">
-              <h1 class="ae-3" style="color: #141414;">A Social Layer for the Internet</h1>
-              <p class="ae-4 margin-bottom-1" style="color: #141414;"><span>Welcome to a world where you can earn money and clout by voting on content all over the web. </span></p>
+              <h1 class="ae-3 fromBottom" style="color: #141414;">A Social Layer for the Internet</h1>
+              <p class="ae-4 margin-bottom-1 fromBottom" style="color: #141414;"><span>Welcome to a world where you can earn money and clout by voting on content all over the web. </span></p>
 						<!--	<p style="color: #141414; font-size: 14!important;" class="tiny opacity-8"><span>*Stuff like cat photos, hipster cafes, viral videos, doge memes, politically incorrect tweets, gifs, and random links.</span></p> -->
               <ul class="flex grid-61 later margin-bottom-1">
-                <li class="col-6-12 ae-5" style="color: #141414;">
+                <li class="col-6-12 ae-5 fromBottom" style="color: #141414;">
 									<p class="tiny opacity-7">Rate anything on any site. If others agree, you earn.</p>
                 </li>
-                <li class="col-6-12 ae-6" style="color: #141414;">
+                <li class="col-6-12 ae-6 fromBottom" style="color: #141414;">
 									<p class="tiny opacity-7"><span style="text-decoration: underline!important; text-decoration-color: #00E4FF!important;" >Color</span> <span style="text-decoration: underline!important; text-decoration-color: #FFAE00!important;" >codes</span> help you identify what you'll like.</p>
                 </li>
               </ul>
@@ -443,7 +481,7 @@
             </li>
           </ul> -->
 					<ul class="flex margin-top-4">
-            <li class="col-4-12 margin-bottom-3 left ae-1">
+            <li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-1">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-1.jpg" alt="Icon"/>
                   <div class="padding-left-10">
@@ -455,7 +493,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-2">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-2">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-4.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -467,7 +505,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-3">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-3">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-2.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -479,7 +517,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-4">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-4">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-5.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -492,7 +530,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-5">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-5">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-7.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -504,7 +542,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-6">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-6">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-3.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -518,7 +556,7 @@
                   </div>
                 </div>
             </li>
-						<li class="col-4-12 margin-bottom-3 left ae-7">
+						<li class="col-4-12 col-tablet-1-2 col-phone-1-1 margin-bottom-3 left ae-7">
               <div class="relative ae-3">
                   <img width="64" class="round avatar-31 fromCenter" src="assets/img/team/0-6.jpg" alt="Icon"/>
                   <div class="padding-left-10 ">
@@ -541,38 +579,43 @@
   <div class="background" style="background-image:url(assets/img/background/columbiaview.jpg)"></div>
 </section>
 
-<!-- Slide 5 (#55) hidden for now
-<section data-title="Contact" class="slide fade-9 kenBurns">
+<!-- Slide #12 -->
+<section class="slide blackSlide fade-6 kenBurns">
   <div class="content">
     <div class="container">
       <div class="wrap">
-
-        <h1 class="ae-1">Contact</h1>
-        <div class="form-55">
-          <div class="pad shadow left selected ae-3">
-            <form action="ajax-email.php" id="contact-form" method="post" class="slides-form wide" data-ajax-form="true">
-              <ul class="grid noSpaces">
-                <li class="col-6-12 form-55-input-1">
-                  <div class="label ae-5"><label class="left opacity-5" for="name55">Your name</label></div>
-                  <input class="ae-6" id="name55" type="name" name="name" placeholder="Name" required/>
-                </li>
-                <li class="col-6-12 form-55-input-2">
-                  <div class="label ae-5"><label class="left opacity-5" for="email55">Email address</label></div>
-                  <input class="ae-6" id="email55" type="email" name="email" placeholder="Email" required/>
-                </li>
-              </ul>
-              <div class="label ae-8"><label class="opacity-5" for="message55">Text</label></div>
-              <textarea class="left wide ae-9" id="message55" type="text" name="message" placeholder="Text" required></textarea>
-              <button type="submit" class="button round wide small uppercase stroke white gradient ae-2 crop main" data-success-text="Done!" data-success-class="message-sent" name="button">Connect</button>
-            </form>
+        <div class="fix-7-12 hideForTablet">
+          <h1 class="margin-bottom-2 ae-1">The Web is Yours for the Taking</h1>
+          <p class="larger light ae-2"><span class="opacity-8 hideForTablet">Add the Yup Extension to your chrome browser to begin Yupping right away.</span></p>
+          <div class="margin-top-3 toLeft">
+						<a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase gradient ae-2 main hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:#00FFA6;color:#000000;">add to chrome<b style="opacity:1;margin-left:10px;">it's free</b>
+						</a>
+						<form class="hideForDesktop" id="emailForm2" method='post'>
+							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email55" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;outline: none;border: 0;"/>
+							<br>
+							<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
+						</form>
+            <p class="small margin-top-3 ae-3"><span class="opacity-8"><a>Start now and get <b>free rewards</b> upon signup</a></span></p>
           </div>
         </div>
-
+				<div class="fix-7-12 left hideForDesktop">
+          <h1 class="margin-bottom-2 ae-1">The Web is Yours for the Taking</h1>
+          <p class="larger light ae-2"><span class="opacity-8 hideForTablet">Add the Yup Extension to your chrome browser to begin Yupping right away.</span></p>
+          <div class="margin-top-3 toLeft">
+						<a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round uppercase gradient ae-2 crop main hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:#00FFA6;color:#000000;">add to chrome<b style="opacity:1;margin-left:10px;">it's free</b>
+						</a>
+						<form class="hideForDesktop" id="emailForm2" method='post'>
+							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email55" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:2.3rem;font-weight:100;outline: none;border: 0;"/>
+							<br>
+						</form>
+            <p class="small margin-top-3 ae-3"><span class="opacity-8"><a>Start now and get <b>free rewards</b> upon signup</a></span></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/whitewall.jpg)"></div>
-</section>-->
+  <div class="background" style="background:#1d1d1d;"></div>
+</section>
 
 <!-- Panel Bottom #09 -->
 <nav class="panel bottom firstSlideOnly margin-bottom-3">
