@@ -170,3 +170,9 @@ h3 {
 .panel svg arrow {
   fill: #f8d4ef;
 }
+
+
+
+.tabs.thinner li {
+  letter-spacing: 0px!important;
+}
