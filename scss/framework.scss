@@ -993,15 +993,15 @@ svg {
 
 /* Background Fade */
 .fade .content { background: rgba(0,0,0,0.6); } /*default*/
-.fade-1 .content { background: rgba(0,0,0,0.1); }
-.fade-2 .content { background: rgba(0,0,0,0.2); }
-.fade-3 .content { background: rgba(0,0,0,0.3); }
-.fade-4 .content { background: rgba(0,0,0,0.4); }
-.fade-5 .content { background: rgba(0,0,0,0.5); }
-.fade-6 .content { background: rgba(0,0,0,0.6); }
-.fade-7 .content { background: rgba(0,0,0,0.7); }
-.fade-8 .content { background: rgba(0,0,0,0.8); }
-.fade-9 .content { background: rgba(0,0,0,0.9); }
+.fade-1 .content { background: rgba(0,0,0,0.55); }
+.fade-2 .content { background: rgba(0,0,0,0.6); }
+.fade-3 .content { background: rgba(0,0,0,0.65); }
+.fade-4 .content { background: rgba(0,0,0,0.7); }
+.fade-5 .content { background: rgba(0,0,0,0.75); }
+.fade-6 .content { background: rgba(0,0,0,0.8); }
+.fade-7 .content { background: rgba(0,0,0,0.85); }
+.fade-8 .content { background: rgba(0,0,0,0.9); }
+.fade-9 .content { background: rgba(0,0,0,0.95); }
 
 .whiteSlide[class*="fade"] .content { background: rgba(255,255,255,0.85); }
 
