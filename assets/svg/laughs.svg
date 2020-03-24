@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="558" height="138" viewBox="0 0 558 138">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="58.54" height="58.54" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#39e8ff"/>
+      <stop offset="0.399" stop-color="#49f3af"/>
+      <stop offset="0.69" stop-color="#5afe5d"/>
+      <stop offset="1" stop-color="#adfa32"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect width="46.54" height="46.54" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-laughs">
+      <rect width="558" height="138"/>
+    </clipPath>
+  </defs>
+  <g id="laughs" clip-path="url(#clip-laughs)">
+    <g id="Group_124" data-name="Group 124" transform="translate(-497 -114.586)">
+      <g id="laugh" transform="translate(663.001 154.53) rotate(20)" clip-path="url(#clip-path)">
+        <g id="Group_60" data-name="Group 60">
+          <path id="Path_168" data-name="Path 168" d="M29.27,0A29.27,29.27,0,1,0,58.54,29.27,29.295,29.295,0,0,0,29.27,0Zm0,56A26.725,26.725,0,1,1,56,29.27,26.762,26.762,0,0,1,29.27,56Z" fill="url(#linear-gradient)"/>
+          <path id="Path_169" data-name="Path 169" d="M100.906,176H65.273A1.276,1.276,0,0,0,64,177.273a19.089,19.089,0,1,0,38.178,0A1.276,1.276,0,0,0,100.906,176ZM83.089,193.817a16.565,16.565,0,0,1-16.5-15.271H99.586A16.565,16.565,0,0,1,83.089,193.817Z" transform="translate(-53.819 -148.002)" fill="url(#linear-gradient)"/>
+          <path id="Path_170" data-name="Path 170" d="M209.242,90.115h7.636a1.273,1.273,0,1,0,0-2.545h-5.265l3.77-5.663a1.273,1.273,0,0,0-2.116-1.416l-5.09,7.636a1.28,1.28,0,0,0-.064,1.3A1.258,1.258,0,0,0,209.242,90.115Z" transform="translate(-174.881 -67.208)" fill="url(#linear-gradient)"/>
+          <path id="Path_171" data-name="Path 171" d="M97.273,90.2h7.636a1.267,1.267,0,0,0,1.066-1.973l-5.09-7.636a1.273,1.273,0,0,0-2.116,1.416l3.77,5.663H97.273A1.276,1.276,0,0,0,96,88.943,1.263,1.263,0,0,0,97.273,90.2Z" transform="translate(-80.729 -67.292)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="laugh-2" data-name="laugh" transform="translate(733.9 137.928) rotate(20)" clip-path="url(#clip-path-2)">
+        <g id="Group_60-2" data-name="Group 60">
+          <path id="Path_168-2" data-name="Path 168" d="M23.27,0A23.27,23.27,0,1,0,46.54,23.27,23.29,23.29,0,0,0,23.27,0Zm0,44.517A21.247,21.247,0,1,1,44.517,23.27,21.277,21.277,0,0,1,23.27,44.517Z" fill="url(#linear-gradient)"/>
+          <path id="Path_169-2" data-name="Path 169" d="M93.341,176H65.012A1.015,1.015,0,0,0,64,177.012a15.176,15.176,0,1,0,30.352,0A1.015,1.015,0,0,0,93.341,176ZM79.176,190.164a13.169,13.169,0,0,1-13.115-12.141h26.23A13.169,13.169,0,0,1,79.176,190.164Z" transform="translate(-55.906 -153.742)" fill="url(#linear-gradient)"/>
+          <path id="Path_170-2" data-name="Path 170" d="M208.98,88.026h6.07a1.012,1.012,0,1,0,0-2.023h-4.186l3-4.5a1.012,1.012,0,0,0-1.682-1.126l-4.047,6.07a1.018,1.018,0,0,0-.051,1.037A1,1,0,0,0,208.98,88.026Z" transform="translate(-181.663 -69.814)" fill="url(#linear-gradient)"/>
+          <path id="Path_171-2" data-name="Path 171" d="M97.012,88.113h6.07a1.008,1.008,0,0,0,.847-1.568l-4.047-6.07A1.012,1.012,0,0,0,98.2,81.6l3,4.5H97.012A1.015,1.015,0,0,0,96,87.114,1,1,0,0,0,97.012,88.113Z" transform="translate(-83.859 -69.902)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <path id="Path_196" data-name="Path 196" d="M32.164,9.618H6.42q-.81,0-.81-.971V-41.467q0-.971.81-.971H8.767q.891,0,.891.971V5.084q0,.729.81.729h21.7q.972,0,.971.891V8.727Q33.136,9.618,32.164,9.618ZM52.97,5.975H62.2A7.548,7.548,0,0,0,67.907,3.91a8.254,8.254,0,0,0,1.983-5.95V-30.78a8.254,8.254,0,0,0-1.983-5.95A7.548,7.548,0,0,0,62.2-38.795H52.97a7.332,7.332,0,0,0-5.667,2.1,8.389,8.389,0,0,0-1.943,5.91V-2.04A8.389,8.389,0,0,0,47.3,3.87,7.332,7.332,0,0,0,52.97,5.975ZM62.6,9.618H52.647a11.129,11.129,0,0,1-8.3-3.076q-3.036-3.076-3.036-8.42V-30.942q0-5.343,3.036-8.42a11.129,11.129,0,0,1,8.3-3.076H62.6a11.129,11.129,0,0,1,8.3,3.076q3.036,3.076,3.036,8.42V-1.878q0,5.343-3.036,8.42A11.129,11.129,0,0,1,62.6,9.618Zm50.842,0H87.7q-.81,0-.81-.971V-41.467q0-.971.81-.971h2.348q.891,0,.891.971V5.084q0,.729.81.729h21.7q.972,0,.971.891V8.727Q114.418,9.618,113.446,9.618Z" transform="translate(793.896 199.968)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -31,6 +31,10 @@ ol, ul, li {
   list-style: none;
 }
 
+div.hoverer {
+  opacity: 0.2!important;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -1098,39 +1102,39 @@ img.rounded {
 
 /*default*/
 .fade-1 .content {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .fade-2 .content {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.fade-3 .content {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.fade-4 .content {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.fade-5 .content {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.fade-6 .content {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.fade-7 .content {
+.fade-3 .content {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.fade-4 .content {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.fade-8 .content {
+.fade-5 .content {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.fade-6 .content {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.fade-9 .content {
+.fade-7 .content {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.fade-8 .content {
   background: rgba(0, 0, 0, 0.9);
+}
+
+.fade-9 .content {
+  background: rgba(0, 0, 0, 0.95);
 }
 
 .whiteSlide[class*="fade"] .content {
@@ -1696,7 +1700,7 @@ html.mobile .showForMobileInline {
 .panel .sections .menu {
   white-space: nowrap;
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 0px;
   font-size: 0;
 }
 .panel .sections .menu svg {
@@ -8211,6 +8215,9 @@ span.next-arrow svg {
 
   .tablet-align-center {
     text-align: center !important;
+  }
+  .title {
+    text-size: 2.8rem;
   }
 }
 @media (max-width: 767px) {
