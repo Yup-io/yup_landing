@@ -1,5 +1,19 @@
 .logo {
   height: 2.2rem;
+  width: 2.2rem;
+}
+
+.logos {
+  height: 2vw;
+  min-height:35px;
+}
+
+.hover-opacity {
+  opacity: 0.4;
+}
+
+.hover-opacity:hover {
+  opacity: 1;
 }
 
 .title {
@@ -177,7 +191,107 @@ h3 {
   letter-spacing: 0px!important;
 }
 
+h3.thinner {
+  font-weight: 100!important;
+}
+
 
 .textmeone {
   font-family: 'Text Me One', sans-serif!important;
+}
+
+/* font weights */
+
+h3.weight-1, .lightest {font-weight: 100 !important;}
+h3.weight-2, .lighter  {font-weight: 200 !important;}
+h3.weight-3, .light    {font-weight: 300 !important;}
+h3.weight-4, .normal   {font-weight: 400 !important;}
+h3.weight-5, .medium   {font-weight: 500 !important;}
+h3.weight-6, .semibold {font-weight: 600 !important;}
+h3.weight-7, .bold     {font-weight: 700 !important;}
+h3.weight-8, .bolder   {font-weight: 800 !important;}
+h3.weight-9, .boldest  {font-weight: 900 !important;}
+
+h2.weight-1, .lightest {font-weight: 100 !important;}
+h2.weight-2, .lighter  {font-weight: 200 !important;}
+h2.weight-3, .light    {font-weight: 300 !important;}
+h2.weight-4, .normal   {font-weight: 400 !important;}
+h2.weight-5, .medium   {font-weight: 500 !important;}
+h2.weight-6, .semibold {font-weight: 600 !important;}
+h2.weight-7, .bold     {font-weight: 700 !important;}
+h2.weight-8, .bolder   {font-weight: 800 !important;}
+h2.weight-9, .boldest  {font-weight: 900 !important;}
+
+h1.weight-1, .lightest {font-weight: 100 !important;}
+h1.weight-2, .lighter  {font-weight: 200 !important;}
+h1.weight-3, .light    {font-weight: 300 !important;}
+h1.weight-4, .normal   {font-weight: 400 !important;}
+h1.weight-5, .medium   {font-weight: 500 !important;}
+h1.weight-6, .semibold {font-weight: 600 !important;}
+h1.weight-7, .bold     {font-weight: 700 !important;}
+h1.weight-8, .bolder   {font-weight: 800 !important;}
+h1.weight-9, .boldest  {font-weight: 900 !important;}
+
+p.weight-1, .lightest {font-weight: 100 !important;}
+p.weight-2, .lighter  {font-weight: 200 !important;}
+p.weight-3, .light    {font-weight: 300 !important;}
+p.weight-4, .normal   {font-weight: 400 !important;}
+p.weight-5, .medium   {font-weight: 500 !important;}
+p.weight-6, .semibold {font-weight: 600 !important;}
+p.weight-7, .bold     {font-weight: 700 !important;}
+p.weight-8, .bolder   {font-weight: 800 !important;}
+p.weight-9, .boldest  {font-weight: 900 !important;}
+
+
+.uppertransform {
+  text-transform: uppercase;
+}
+
+
+/* PILL TAB */
+
+
+.pill.controller {
+  font-size: 0;
+  border: 0px solid;
+  display: inline-block;
+  border-radius: 6px;
+}
+.pill.controller li {
+  padding: 10px 20px;
+  display: inline-block;
+  border: 0px solid #fff;
+  font-size: initial;
+}
+
+.pill.controller.vert li {
+  display: block;
+}
+
+.pill.controller li:first-child {
+  border-radius: 4px 4px 4px 4px;
+}
+.pill.controller li:last-child {
+  border-radius: 4px 4px 4px 4px;
+}
+
+.pill.controller li.selected {
+  background: rgba(248,248,248,0.1);
+  color: #303030;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(248,248,248,0.1);
+}
+
+.pill.controller.vert li.selected {
+  background: #fff;
+  color: #303030;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.hoverer {
+  opacity: 0.2!important;
+}
+
+.box {
+  box-shadow: 0px 0px 20px #ffffff20;
 }

@@ -31,6 +31,10 @@ ol, ul, li {
   list-style: none;
 }
 
+div.hoverer {
+  opacity: 0.2!important;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -1696,7 +1700,7 @@ html.mobile .showForMobileInline {
 .panel .sections .menu {
   white-space: nowrap;
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 0px;
   font-size: 0;
 }
 .panel .sections .menu svg {
@@ -8211,6 +8215,9 @@ span.next-arrow svg {
 
   .tablet-align-center {
     text-align: center !important;
+  }
+  .title {
+    text-size: 2.8rem;
   }
 }
 @media (max-width: 767px) {
