@@ -295,3 +295,63 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 .box {
   box-shadow: 0px 0px 20px #ffffff20;
 }
+
+
+.frame
+{
+    border: 0;
+    height: 600px;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.frame header {
+  display:none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  display: inherit;
+  transition: .5s ease;
+  background-color: #000000c0;
+  border-radius: 4px;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 0;
+  display: none;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
