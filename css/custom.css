@@ -300,7 +300,6 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 .frame
 {
     border: 0;
-    height: 600px;
     -ms-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -312,6 +311,11 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
     -o-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
+
+    margin-top: -3rem;
+    transform:scale(0.80);
+    min-width:125%!important;
+    min-height:45rem;
 }
 
 .frame header {
@@ -336,7 +340,9 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 .overlay-container {
   position: relative;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+  height:78%;
 }
 
 .overlay-container:hover .overlay {
@@ -354,4 +360,20 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.jss2 {
+    margin-top: -34px;
+}
+
+header.jss6 {
+  display: none!important;
+}
+
+@media (max-width: 767px) {
+  li.selected {
+    background: transparent!important;
+    color: #fff!important;
+    box-shadow: none!important;
+  }
 }
