@@ -1833,6 +1833,11 @@ html.mobile .showForMobileInline {
   opacity: 0;
 }
 
+header.jss6 {
+  display: none!important;
+}
+
+
 /* Progress Bar */
 .progress-bar {
   position: fixed;
