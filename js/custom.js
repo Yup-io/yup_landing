@@ -1,39 +1,33 @@
 $( document ).ready(function() {
-  const form = document.getElementById('emailForm');
-  if (form) {
-    form.addEventListener('submit', sendMobileEmail);
-  }
-
-  const form2 = document.getElementById('emailForm2');
-
-  if (form2){
-    form2.addEventListener('submit', sendMobileEmail);
-  }
+  const formIds = ['emailForm1', 'emailForm2', 'emailForm3']
+  formIds.map((id) => {
+    const form = document.getElementById(id);
+    form.addEventListener('submit', sendMobileEmail)
+  })
 });
 
 
 
 function sendMobileEmail (event) {
   event.preventDefault()
-  let email
 
-  const email1 = $('#email55').val()
-  const email2 = $('#email56').val()
-  console.log(email1, email2)
+  const email1 = $('#email1').val()
+  const email2 = $('#email2').val()
+  const email3 = $('#email3').val()
 
-  if (email1 && email1.length > 0){
-    email = email1
-  } else {
-    email = email2
-  }
+  const email = email1.length ? email1 :
+    email2.length ? email2 : email3
+
+
 
   $.ajax({
     type: 'POST',
     url: 'https://api.yup.io/auth/invite_mobile',
     data: { email },
     success: function() {
-      const email1 = $('#email55').val('')
-      const email2 = $('#email56').val('')
+      const email1 = $('#email1').val('')
+      const email2 = $('#email2').val('')
+      const email3 = $('#email3').val('')
       window.location = "landing.html"
     },
     error: function (xml, status, error) {
