@@ -23,6 +23,9 @@
 	<!-- Custom Styles -->
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 
+ <!-- -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Intercom -->
 	<script>
 
@@ -32,6 +35,15 @@
 	</script>
 
 	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/nenz9lls';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})(); </script>
+
+	<!-- Input Button -->
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("email3").value;
+		  document.getElementById("enter").style.display = "inline-table";
+		}
+	</script>
 
 	<!-- jQuery 3.4.1 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -187,7 +199,8 @@
 					</a>
 				</li>
 				<li class="" style="margin:0px;">
-					<span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+					<span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span>
+				</div>
 				</li>
 			</ul>
   </div>
@@ -236,11 +249,14 @@
 						</h1>
             <a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase white gradient ae-2 crop main hideForTablet" style="box-shadow: 0px 0px 9px #00FFA689;font-weight:600!important;">add to chrome<b style="opacity:0.3;margin-left:10px;">it's free</b>
 						</a>
-						<form class="hideForDesktop firstSlideOnly" id="emailForm3" method='post'>
-							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email3" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
-							<br>
-							<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
-						</form>
+						<div>
+							<form class="hideForDesktop firstSlideOnly" id="emailForm3" method='post'>
+								<input class="round white small gradient ae-2 crop main showForPhoneInline smaller" id="email3" type="email" name="email" placeholder="Email to Start" oninput="myFunction()" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
+								<i class="fas fa-chevron-right icon" id="enter" style="display:none;margin:0px;"></i>
+								<br>
+								<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
+							</form>
+						</div>
           </div>
         </div>
 				<div class="fix-12-12 left hideForTablet">
@@ -660,7 +676,7 @@
 						<a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round small uppercase gradient ae-2 main hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:#1aeeb7;color:#000000;">add to chrome<b style="opacity:1;margin-left:10px;">it's free</b>
 						</a>
 						<form class="hideForDesktop" id="emailForm1" method='post'>
-							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email1" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
+							<input class="round white small gradient ae-2 crop main showForPhoneInline smaller" id="email1" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
 							<br>
 							<label class="ae-2 crop main showForPhoneInline" style="font-size: 10px;"><b>&nbsp; Join Yup Today.</b></label>
 						</form>
@@ -674,7 +690,7 @@
 						<a href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" class="button round uppercase gradient ae-2 crop main hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:#1aeeb7;color:#000000;">add to chrome<b style="opacity:1;margin-left:10px;">it's free</b>
 						</a>
 						<form class="hideForDesktop" id="emailForm2" method='post'>
-							<input class="round white uppercase small gradient ae-2 crop main showForPhoneInline smaller" id="email2" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
+							<input class="round white small gradient ae-2 crop main showForPhoneInline smaller" id="email2" type="email" name="email" placeholder="Email to Start" required style="text-align: start; padding:0.3rem 0.75rem;font-family:Nunito;height:1.5rem;font-weight:100;outline: none;border: 0;"/>
 							<br>
 						</form>
             <p class="small margin-top-3 ae-3"><span class="opacity-8"><a>Start now and get <b>free rewards</b> upon signup</a></span></p>
