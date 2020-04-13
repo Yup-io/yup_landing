@@ -317,7 +317,7 @@ img.rounded {
   font-weight: 300;
 }
 .button.round {
-  border-radius: 99px;
+  border-radius: 10px !important;
   padding-left: 28px;
   padding-right: 28px;
 }

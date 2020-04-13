@@ -1,6 +1,5 @@
 .logo {
   height: 2.2rem;
-  width: 2.2rem;
 }
 
 .logos {
@@ -17,16 +16,17 @@
 }
 
 .title {
-  font-family: 'Text Me One', sans-serif; /* Bungee Inline */
+  font-family: 'Bungee', sans-serif; /* Bungee Inline */
   font-size: 4rem;
   font-weight: 100;
   color: black;
   width: 70vw;
   line-height: 1;
+  background-color:transparent;
 }
 
 mark {
-  background-color: white;
+  background-color: transparent;
 }
 
 .h1 {
@@ -376,4 +376,42 @@ header.jss6 {
     color: #fff!important;
     box-shadow: none!important;
   }
+}
+
+.Rubik {
+  font-family: Rubik!important;
+  font-weight: 400;
+}
+
+.Rubik-200 {
+  font-family: Rubik!important;
+  font-weight: 200;
+}
+
+.Rubik-300 {
+  font-family: Rubik!important;
+  font-weight: 300;
+}
+
+.Rubik-400 {
+  font-family: Rubik!important;
+  font-weight: 400;
+}
+
+.Rubik-600 {
+  font-family: Rubik!important;
+  font-weight: 600;
+}
+
+.Rubik-100 {
+  font-family: Rubik!important;
+  font-weight: 100;
+}
+
+.Bungee {
+  font-family: Bungee!important;
+}
+
+.rounded-square {
+  border-radius: 0.35rem;
 }
