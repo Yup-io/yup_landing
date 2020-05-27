@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  $( '#btn-submit-email').click(sendMobileEmail)
+
   const formIds = ['emailForm1', 'emailForm2', 'emailForm3']
   formIds.map((id) => {
     const form = document.getElementById(id);
@@ -9,7 +11,7 @@ $( document ).ready(function() {
 
 
 function sendMobileEmail (event) {
-  event.preventDefault()
+  // event.preventDefault()
 
   console.log('WE HAVE BEEN SUBMITTED')
 
@@ -25,6 +27,8 @@ function sendMobileEmail (event) {
     url: 'https://api.yup.io/auth/invite_mobile',
     data: { email },
     success: function() {
+
+      console.log("WE ARE IN EHRE")
       const email1 = $('#email1').val('')
       const email2 = $('#email2').val('')
       const email3 = $('#email3').val('')
