@@ -1,18 +1,27 @@
 $( document ).ready(function() {
+  $('#bottom-submit-email-form-desktop').submit(sendDesktopEmail)
   $('#bottom-submit-email-form-mobile').submit(sendMobileEmail)
-  $('#bottom-submit-email-form-desktop').submit(sendMobileEmail)
+
+  $('#bottom-submit-email-btn-desktop').click(sendDesktopEmail)
+  $('#bottom-submit-email-btn-mobile').click(sendMobileEmail)
 
   $('#top-submit-email-btn-desktop').click(sendDesktopEmail)
   $('#top-submit-email-btn-mobile').click(sendMobileEmail)
 
   $('#top-submit-email-form-desktop').submit(sendDesktopEmail)
   $('#top-submit-email-form-mobile').submit(sendMobileEmail)
+
+
+  console.log(  $('#top-submit-email-btn-mobile'))
+  console.log(  $('#top-submit-email-form-mobile'))
+
 });
 
 
 
 function sendDesktopEmail (event) {
   event.preventDefault()
+
 
   const email1 = $('#email1').val()
   const email2 = $('#email2').val()
@@ -26,7 +35,7 @@ function sendDesktopEmail (event) {
     email = email2
   } else if (email3.length){
     email = email3
-  } else {
+  } else if (email4.length) {
     email = email4
   }
 
@@ -50,11 +59,11 @@ function sendDesktopEmail (event) {
 function sendMobileEmail (event) {
   event.preventDefault()
 
+  console.log("WE ARE IN HERE")
   const email1 = $('#email1').val()
   const email2 = $('#email2').val()
   const email3 = $('#email3').val()
   const email4 = $('#email4').val()
-
 
   let email
   if(email1.length){
@@ -63,7 +72,7 @@ function sendMobileEmail (event) {
     email = email2
   } else if (email3.length){
     email = email3
-  } else {
+  } else if (email4.length) {
     email = email4
   }
 
