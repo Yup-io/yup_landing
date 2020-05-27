@@ -11,6 +11,8 @@ $( document ).ready(function() {
 function sendMobileEmail (event) {
   event.preventDefault()
 
+  console.log('WE HAVE BEEN SUBMITTED')
+
   const email1 = $('#email1').val()
   const email2 = $('#email2').val()
   const email3 = $('#email3').val()
