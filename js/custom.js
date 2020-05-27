@@ -1,18 +1,17 @@
 $( document ).ready(function() {
   $( '#btn-submit-email').click(sendMobileEmail)
-
-  const formIds = ['emiailForm1', 'emailForm2', 'emailForm3']
-  formIds.map((id) => {
-    const form = document.getElementById(id);
-    form.addEventListener('submit', sendMobileEmail)
-  })
+  // const formIds = ['emiailForm1', 'emailForm2', 'emailForm3']
+  $('#emailForm1').submit(sendMobileEmail)
+  $('#emailForm2').submit(sendMobileEmail)
+  $('#emailForm3').submit(sendMobileEmail)
 });
-
 
 
 function sendMobileEmail (event) {
   event.preventDefault()
-  
+
+  console.log('WE HAVE BEEN SUBMITTED')
+
   const email1 = $('#email1').val()
   const email2 = $('#email2').val()
   const email3 = $('#email3').val()
@@ -26,7 +25,7 @@ function sendMobileEmail (event) {
     data: { email },
     success: function() {
 
-      console.log("WE ARE IN EHRE")
+      console.log("WE ARE IN HERE")
       const email1 = $('#email1').val('')
       const email2 = $('#email2').val('')
       const email3 = $('#email3').val('')
