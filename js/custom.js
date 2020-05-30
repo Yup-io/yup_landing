@@ -49,7 +49,7 @@ function sendDesktopEmail (event) {
       $('#email3').val('')
       $('#email4').val('')
 
-      mixpanel.track('Email Submitted', { email })
+      mixpanel.track('Email Submitted', { '$email': email, email, 'id': email })
       window.location = "signup.html"
     },
     error: function (xml, status, error) {
@@ -87,8 +87,8 @@ function sendMobileEmail (event) {
       $('#email2').val('')
       $('#email3').val('')
       $('#email4').val('')
-      
-      mixpanel.track('Email Submitted', { email })
+
+      mixpanel.track('Email Submitted', { '$email': email, email, 'id': email })
       window.location = "landing.html"
     },
     error: function (xml, status, error) {
