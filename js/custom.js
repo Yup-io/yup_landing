@@ -100,24 +100,26 @@ function sendMobileEmail (event) {
 function startOAuth() {
   $.ajax({
     type: 'POST',
-    url: 'http://localhost:4001/v1/auth/oauth-challenge',
+    url: 'https://api.yup.io/v1/auth/oauth-challenge',
     data: { domain: 'yup.io' },
     success: (data) => {
       const { token, _id: id } = data
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:4001/v1/auth/twitter',
+        url: 'https://api.yup.io/v1/auth/twitter',
         data: { verificationToken: token, verificationId: id, oauthReferrer: 'website' },
         success: (data) => {
           window.open(data.redirectPath, '_blank')
         },
         error: (err) => {
           console.error('twitter verification error: ', err)
+          alert("Oops something went wrong! Please try again later.")
         }
       })
     },
     error: (err) => {
       console.error('user authentication error: ', err)
+      alert("Oops something went wrong! Please try again later.")
     }
   })
 }
