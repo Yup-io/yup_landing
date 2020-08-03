@@ -122,7 +122,14 @@ img.demodemo {
  }
 
  .mobile .button {
-   zoom: 80%;
+   font-size: 13px;
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+
+  .mobile .button svg {
+    width: 16px;
+    margin-right: 5px;
   }
 
  .button .main {
