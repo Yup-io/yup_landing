@@ -18,10 +18,9 @@
 
 .title {
   font-family: 'Bungee', sans-serif; /* Bungee Inline */
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: 100;
   color: black;
-  width: 70vw;
   line-height: 1;
   background-color:transparent;
 }
