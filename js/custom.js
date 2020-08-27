@@ -97,7 +97,7 @@ function sendMobileEmail (event) {
   })
 }
 
-function startOAuth() {
+function fetchOAuthToken () {
   $.ajax({
     type: 'POST',
     url: 'https://api.yup.io/v1/auth/oauth-challenge',
@@ -109,7 +109,8 @@ function startOAuth() {
         url: 'https://api.yup.io/v1/auth/twitter',
         data: { verificationToken: token, verificationId: id, oauthReferrer: 'website' },
         success: (data) => {
-          window.open(data.redirectPath, '_blank')
+          window.redirectPath = data.redirectPath
+
         },
         error: (err) => {
           console.error('twitter verification error: ', err)
@@ -122,4 +123,12 @@ function startOAuth() {
       alert("Oops something went wrong! Please try again later.")
     }
   })
+}
+
+fetchOAuthToken()
+
+function startOAuth() {
+  if (window.redirectPath){
+    window.open(window.redirectPath, '_blank')
+  }
 }
