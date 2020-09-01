@@ -109,7 +109,7 @@ function fetchOAuthToken () {
         url: 'https://api.yup.io/v1/auth/twitter',
         data: { verificationToken: token, verificationId: id, oauthReferrer: 'website' },
         success: (data) => {
-          window.redirectPath = data.redirectPath
+          window.open(data.redirectPath)
 
         },
         error: (err) => {
@@ -125,10 +125,6 @@ function fetchOAuthToken () {
   })
 }
 
-fetchOAuthToken()
-
 function startOAuth() {
-  if (window.redirectPath){
-    window.open(window.redirectPath, '_blank')
-  }
+  fetchOAuthToken()
 }
