@@ -97,34 +97,30 @@ function sendMobileEmail (event) {
   })
 }
 
-function fetchOAuthToken () {
-  $.ajax({
-    type: 'POST',
-    url: 'https://api.yup.io/v1/auth/oauth-challenge',
-    data: { domain: 'yup.io' },
-    success: (data) => {
-      const { token, _id: id } = data
-      $.ajax({
-        type: 'POST',
-        url: 'https://api.yup.io/v1/auth/twitter',
-        data: { verificationToken: token, verificationId: id, oauthReferrer: 'website' },
-        success: (data) => {
-          window.open(data.redirectPath)
 
-        },
-        error: (err) => {
-          console.error('twitter verification error: ', err)
-          alert("Oops something went wrong! Please try again later.")
-        }
-      })
-    },
-    error: (err) => {
-      console.error('user authentication error: ', err)
-      alert("Oops something went wrong! Please try again later.")
+async function startOAuth() {
+  try {
+    if (window.twitterOAuthRedirect){
+      fetchOAuthToken()
+      window.open(window.twitterOAuthRedirect)
     }
-  })
+  } catch (err) {
+    console.error('twitter verification error: ', err)
+    alert("Oops something went wrong! Please try again later.")
+  }
 }
 
-function startOAuth() {
-  fetchOAuthToken()
+async function fetchOAuthToken() {
+  const oauthTokenData = (await axios.post(`https://api.yup.io/v1/auth/oauth-challenge`, {
+    domain: 'yup.io'
+  })).data
+  const { token, _id: id } = oauthTokenData
+  const oauthRedirectInfo = (await axios.post('https://api.yup.io/v1/auth/twitter',
+  {
+    verificationToken: token, verificationId: id, oauthReferrer: 'website'
+})).data
+
+  window.twitterOAuthRedirect = oauthRedirectInfo.redirectPath
 }
+
+fetchOAuthToken()
