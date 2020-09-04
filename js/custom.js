@@ -54,6 +54,8 @@ function sendDesktopEmail (event) {
     },
     error: function (xml, status, error) {
       alert("Oops something went wrong! Please try again later.")
+      rollbar.error(`Failed to send mobile invite err=${error}`)
+      console.error(`Failed to send mobile invite err=${error}`)
     }
   })
 }
@@ -61,7 +63,6 @@ function sendDesktopEmail (event) {
 function sendMobileEmail (event) {
   event.preventDefault()
 
-  console.log("WE ARE IN HERE")
   const email1 = $('#email1').val()
   const email2 = $('#email2').val()
   const email3 = $('#email3').val()
@@ -93,6 +94,8 @@ function sendMobileEmail (event) {
     },
     error: function (xml, status, error) {
       alert("Oops something went wrong! Please try again later.")
+      rollbar.error(`Failed to send mobile invite err=${error}`)
+      console.error(`Failed to send mobile invite err=${error}`)
     }
   })
 }
@@ -107,20 +110,27 @@ async function startOAuth() {
   } catch (err) {
     console.error('twitter verification error: ', err)
     alert("Oops something went wrong! Please try again later.")
+    rollbar.error(`Failed to verify twitter OAuth token err=${err}`)
   }
 }
 
 async function fetchOAuthToken() {
-  const oauthTokenData = (await axios.post(`https://api.yup.io/v1/auth/oauth-challenge`, {
-    domain: 'yup.io'
+  try {
+    const oauthTokenData = (await axios.post(`https://api.yup.io/v1/auth/oauth-challenge`, {
+      domain: 'yup.io'
+    })).data
+    const { token, _id: id } = oauthTokenData
+    const oauthRedirectInfo = (await axios.post('https://api.yup.io/v1/auth/twitter',
+    {
+      verificationToken: token, verificationId: id, oauthReferrer: 'website'
   })).data
-  const { token, _id: id } = oauthTokenData
-  const oauthRedirectInfo = (await axios.post('https://api.yup.io/v1/auth/twitter',
-  {
-    verificationToken: token, verificationId: id, oauthReferrer: 'website'
-})).data
 
-  window.twitterOAuthRedirect = oauthRedirectInfo.redirectPath
+    window.twitterOAuthRedirect = oauthRedirectInfo.redirectPath
+  } catch (err){
+    console.error(`Failed to fetch twitter OAuth token err=${err}`)
+    rollbar.error(`Failed to fetch twitter OAuth token err=${err}`)
+  }
+
 }
 
 fetchOAuthToken()
