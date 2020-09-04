@@ -54,7 +54,7 @@ function sendDesktopEmail (event) {
     },
     error: function (xml, status, error) {
       alert("Oops something went wrong! Please try again later.")
-      rollbar.error(`Failed to send mobile invite err=${error}`)
+      Rollbar.error(`Failed to send mobile invite err=${error}`)
       console.error(`Failed to send mobile invite err=${error}`)
     }
   })
@@ -94,7 +94,7 @@ function sendMobileEmail (event) {
     },
     error: function (xml, status, error) {
       alert("Oops something went wrong! Please try again later.")
-      rollbar.error(`Failed to send mobile invite err=${error}`)
+      Rollbar.error(`Failed to send mobile invite err=${error}`)
       console.error(`Failed to send mobile invite err=${error}`)
     }
   })
@@ -110,7 +110,7 @@ async function startOAuth() {
   } catch (err) {
     console.error('twitter verification error: ', err)
     alert("Oops something went wrong! Please try again later.")
-    rollbar.error(`Failed to verify twitter OAuth token err=${err}`)
+    Rollbar.error(`Failed to verify twitter OAuth token err=${err}`)
   }
 }
 
@@ -128,7 +128,7 @@ async function fetchOAuthToken() {
     window.twitterOAuthRedirect = oauthRedirectInfo.redirectPath
   } catch (err){
     console.error(`Failed to fetch twitter OAuth token err=${err}`)
-    rollbar.error(`Failed to fetch twitter OAuth token err=${err}`)
+    Rollbar.error(`Failed to fetch twitter OAuth token err=${err}`)
   }
 
 }
