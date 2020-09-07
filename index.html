@@ -24,6 +24,15 @@
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+	<!-- Segment Tracking -->
+	<script>
+		!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+		analytics.load("3mbLaF8iWG4T0beCDzz7UfEl7oBSqEoU");
+		analytics.page();
+		}}();
+		function trackVideoPlay() {analytics.track('Explainer Video Play', { origin: 'landing-page' })}
+	  </script>
+
 	<!-- Intercom -->
 	<script>
 
@@ -324,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 				</li>
 				<li class="flex col-5-12 ae-6 verticalCenter">
-          <div class="fix-12-12 videoThumbnail rounded shadow popupTrigger ae-4 fromCenter margin-top-tablet-4 done right" data-popup-id="16">
+          <div onclick="trackVideoPlay()" class="fix-12-12 videoThumbnail rounded shadow popupTrigger ae-4 fromCenter margin-top-tablet-4 done right" data-popup-id="16">
             <img class="wide opacity-8" src="assets/img/videothumbnail.png" alt="Video Thumbnail">
           </div>
         </li>
