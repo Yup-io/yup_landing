@@ -134,3 +134,39 @@ async function fetchOAuthToken() {
 }
 
 fetchOAuthToken()
+
+$(document).ready(async function() { 
+  let totalOpinions = Number(await $.get('https://api.yup.io/metrics/total-votes'))
+  let totalRewards =  await $.get('https://api.yup.io/metrics/total-curator-rewards')
+  let metricsArr  = [ totalOpinions, totalRewards.totalCuratorRewardsUSD ]
+
+  initMetrics()
+  setInterval(updateMetrics, 5000)
+
+  
+  function initMetrics () {
+    $('.count').each(function (index) {
+      var $this = $(this);
+      jQuery({ Counter: 1000 }).animate({ Counter: metricsArr[index]}, {
+        duration: 2000,
+        easing: 'swing',
+        step: function () {
+          $this.text(Math.ceil(this.Counter));
+        }
+      });
+    });
+  }
+  function updateMetrics () {
+    $('.count.update').each(function (index) {
+      var $this = $(this);
+      jQuery({ Counter: metricsArr[index] }).animate({ Counter: metricsArr[index]}, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+          $this.text(Math.ceil(this.Counter));
+        }
+      });
+    });
+    metricsArr = metricsArr.map((item) => item + Math.floor(Math.random() * 2 ) + 1)
+  }
+})
