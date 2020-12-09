@@ -17,12 +17,14 @@
 }
 
 .title {
-  font-family: 'Bungee', sans-serif; /* Bungee Inline */
+  font-family: 'Bungee Inline', sans-serif; /* Bungee Inline */
   font-size: 50px;
   font-weight: 100;
-  color: black;
   line-height: 1;
-  background-color:transparent;
+  background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  -webkit-animation: title-gradient 1s linear infinite;
 }
 
 
