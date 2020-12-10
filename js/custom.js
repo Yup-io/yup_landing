@@ -135,7 +135,7 @@ async function fetchOAuthToken() {
 
 fetchOAuthToken()
 
-$(document).ready(async function() { 
+$(document).ready(async function() {
   let totalOpinions = Number(await $.get('https://api.yup.io/metrics/total-votes'))
   let totalRewards =  await $.get('https://api.yup.io/metrics/total-curator-rewards')
   let metricsArr  = [ totalOpinions, totalRewards.totalCuratorRewardsUSD ]
@@ -143,7 +143,7 @@ $(document).ready(async function() {
   initMetrics()
   setInterval(updateMetrics, 5000)
 
-  
+
   function initMetrics () {
     $('.count').each(function (index) {
       var $this = $(this);
@@ -160,7 +160,7 @@ $(document).ready(async function() {
     $('.count.update').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: metricsArr[index] }).animate({ Counter: metricsArr[index]}, {
-        duration: 1000,
+        duration: 500,
         easing: 'swing',
         step: function () {
           $this.text(formatMetric(Math.ceil(this.Counter)))
