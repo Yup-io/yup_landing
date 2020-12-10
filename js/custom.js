@@ -147,11 +147,11 @@ $(document).ready(async function() {
   function initMetrics () {
     $('.count').each(function (index) {
       var $this = $(this);
-      jQuery({ Counter: 1000 }).animate({ Counter: metricsArr[index]}, {
+      jQuery({ Counter: 10000 }).animate({ Counter: metricsArr[index]}, {
         duration: 2000,
         easing: 'swing',
         step: function () {
-          $this.text(Math.ceil(this.Counter));
+          $this.text(formatMetric(Math.ceil(this.Counter)))
         }
       });
     });
@@ -163,10 +163,17 @@ $(document).ready(async function() {
         duration: 1000,
         easing: 'swing',
         step: function () {
-          $this.text(Math.ceil(this.Counter));
+          $this.text(formatMetric(Math.ceil(this.Counter)))
         }
       });
     });
     metricsArr = metricsArr.map((item) => item + Math.floor(Math.random() * 2 ) + 1)
+  }
+
+  function formatMetric (metric)  {
+    let num = metric.toString()
+    const length = num.length
+    const formattedMetric = num.slice(0, length/2) + ',' + num.slice(length/2, length)
+    return formattedMetric
   }
 })
