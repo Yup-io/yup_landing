@@ -145,6 +145,7 @@ $(document).ready(async function() {
 
 
   function initMetrics () {
+    console.log('init metrics called');
     $('.count').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: 10000 }).animate({ Counter: metricsArr[index]}, {
@@ -157,6 +158,8 @@ $(document).ready(async function() {
     });
   }
   function updateMetrics () {
+    console.log('update metrics called');
+
     $('.count.update').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: metricsArr[index] }).animate({ Counter: metricsArr[index]}, {
