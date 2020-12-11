@@ -18,12 +18,27 @@
 
 #vote-snackbar {
   position: fixed;
-  top: 95vh;
+  top: 92vh;
   left: 3vw;
+  visibility: hidden;
   height: 60px;
   width: 250px;
   z-index: 9999;
-  background-color: red;
+  background-color: #808080;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
+}
+
+#vote-snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 .title {
@@ -503,4 +518,24 @@ header.jss6 {
 
 .spacing-mid {
   letter-spacing: 0.05rem;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 100vh; opacity: 0;}
+  to {top: 92vh; opacity: 0.7;}
+}
+
+@keyframes fadein {
+  from {top: 100vh; opacity: 0;}
+  to {top: 92vh; opacity:0.7;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 92vh; opacity: 0.7;}
+  to {bottom: 100vh; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 92vh; opacity: 0.7;}
+  to {bottom: 100vh; opacity: 0;}
 }

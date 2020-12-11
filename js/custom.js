@@ -180,7 +180,7 @@ $(document).ready(async function() {
   }
   
   // ===== VOTE SNACKBAR ==== //
-  const snackbar = $('#vote-snackbar')
+  let prevVoteCaption
   const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
   const dislikeRatingConv = { 1: 2, 2: 1 }
   const categoryRatingToMsg = {
@@ -206,17 +206,23 @@ $(document).ready(async function() {
     const latestVote = await $.get('https://eos.hyperion.eosrio.io/v2/history/get_actions', voteParams)
     return latestVote.actions[0].act.data
   }
+  setSnackbar()
 
   async function setSnackbar () {
+    console.log('setSnackbar is called');
     const { caption, voter, category, like, rating } = await getLatestVoteData()
+    if (prevVoteCaption === caption) {return}
+    prevVoteCaption = caption
+    const { username } = await $.get(`https://api.yup.io/accounts/${voter}`)
     const convertedRating = like ? likeRatingConv[rating] : dislikeRatingConv[rating]
     const ratingKey = `${category}${convertedRating}`
-    const snackText = `${voter} ${categoryRatingToMsg[ratingKey]} `
+    const snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
     const snackCaption = `${caption.slice(0,30)}...`
     const elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption}  </div>`
     $('body').prepend(elem)
-    snackbar.text(snackText)
-  }
+    $('#vote-snackbar').addClass('show')
+    setTimeout(function(){ $('#vote-snackbar').removeClass('show') }, 3000);
 
-  setSnackbar()
+  }
+  setInterval(setSnackbar, 5000)
 })
