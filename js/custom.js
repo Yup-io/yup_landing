@@ -136,6 +136,7 @@ async function fetchOAuthToken() {
 fetchOAuthToken()
 
 $(document).ready(async function() {
+  // ===== METRICS ==== //
   let totalOpinions = Number(await $.get('https://api.yup.io/metrics/total-votes'))
   let totalRewards =  await $.get('https://api.yup.io/metrics/total-curator-rewards')
   let metricsArr  = [ totalOpinions, totalRewards.totalCuratorRewardsUSD ]
@@ -158,8 +159,6 @@ $(document).ready(async function() {
     });
   }
   function updateMetrics () {
-    console.log('update metrics called');
-
     $('.count.update').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: metricsArr[index] }).animate({ Counter: metricsArr[index]}, {
@@ -179,4 +178,45 @@ $(document).ready(async function() {
     const formattedMetric = num.slice(0, length/2) + ',' + num.slice(length/2, length)
     return formattedMetric
   }
+  
+  // ===== VOTE SNACKBAR ==== //
+  const snackbar = $('#vote-snackbar')
+  const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
+  const dislikeRatingConv = { 1: 2, 2: 1 }
+  const categoryRatingToMsg = {
+    'popularity1': 'hated this',
+    'popularity2': 'disliked this',
+    'popularity3': '❤️ liked this',
+    'popularity4': '❤️ really liked this',
+    'popularity5': '❤️ loved this',
+    'intelligence1': 'rated this dumb',
+    'intelligence2': 'rated this not smart',
+    'intelligence3': '🧠 rated this smart',
+    'intelligence4': '🧠 rated this very smart',
+    'intelligence5': '🧠 rated this genius',
+    'funny1': 'rated this not funny at all',
+    'funny2': 'rated this not funny',
+    'funny3': '😂 rated this funny ',
+    'funny4': '😂 rated this very funny',
+    'funny5': '😂 rated this hilarious'
+  }
+
+  async function getLatestVoteData () {
+    const voteParams = { account: 'yupyupyupyup', filter: '*:postvotev2', skip: '0', limit: '1', sort: 'desc' }
+    const latestVote = await $.get('https://eos.hyperion.eosrio.io/v2/history/get_actions', voteParams)
+    return latestVote.actions[0].act.data
+  }
+
+  async function setSnackbar () {
+    const { caption, voter, category, like, rating } = await getLatestVoteData()
+    const convertedRating = like ? likeRatingConv[rating] : dislikeRatingConv[rating]
+    const ratingKey = `${category}${convertedRating}`
+    const snackText = `${voter} ${categoryRatingToMsg[ratingKey]} `
+    const snackCaption = `${caption.slice(0,30)}...`
+    const elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption}  </div>`
+    $('body').prepend(elem)
+    snackbar.text(snackText)
+  }
+
+  setSnackbar()
 })

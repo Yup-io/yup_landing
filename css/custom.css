@@ -16,6 +16,16 @@
   opacity: 1;
 }
 
+#vote-snackbar {
+  position: fixed;
+  top: 95vh;
+  left: 3vw;
+  height: 60px;
+  width: 250px;
+  z-index: 9999;
+  background-color: red;
+}
+
 .title {
   font-family: 'Bungee Inline', sans-serif; /* Bungee Inline */
   font-size: 50px;
