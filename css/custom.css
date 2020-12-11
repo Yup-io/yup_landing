@@ -114,16 +114,28 @@
 
 .heart-sprite {
   background-color: transparent;
-  transform: rotateX(0deg) translate(-30vw,10vh);
+  transform: translate(-10vw,-2vh);
   animation: heart-sprite 1s linear;
-  width: 12vw;
+  width: 6vw;
 }
 @keyframes heart-sprite {
-to {
-  transform: rotateX(10deg) rotateZ(0deg) rotateY(0deg) translate(0px,400vh);
-  width: 50px;
+  to {
+    transform: translate(10vw,100vh);
+  }
 }
+
+.star-sprite {
+    background-color: transparent;
+    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(20vw,-10vh);
+    animation: star-sprite 1s linear;
+    width: calc(var(--width) * 0.7);
+  }
+@keyframes star-sprite {
+  to {
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-500vw,500vh) translateZ(50px);
+  }
 }
+
 
 .laugh-sprite {
     background-color: transparent;
@@ -137,15 +149,15 @@ to {
   }
 }
 
-.star-sprite {
+.heart-sprite-1 {
     background-color: transparent;
-    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-25vw,0px) translateZ(0px);
-    animation: star-sprite 1s linear;
+    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-45vw,-15vw) translateZ(0px);
+    animation: heart-sprite-1 1s linear;
     width: calc(var(--width) * 0.7);
   }
-@keyframes star-sprite {
+@keyframes heart-sprite-1 {
   to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(70px,40vh) translateZ(50px);
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(100vw,200vh) translateZ(50px);
   }
 }
 
@@ -153,24 +165,25 @@ to {
     background-color: transparent;
     transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(0px,5vw) translateZ(10px);
     animation: star-sprite-1 1s linear;
-    width: calc(var(--width) * 0.7);
+    width: 10vw;
   }
 @keyframes star-sprite-1 {
   to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(calc(var(--width) * .2),calc(var(--height) * 2)) translateZ(50px);
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-10vw,300vh);
   }
 }
 
-.star-sprite-2 {
-    background-color: transparent;
-    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(20vw,-2vh);
-    animation: star-sprite-2 1s linear;
-    width: calc(var(--width) * 0.7);
-  }
-@keyframes star-sprite-2 {
-  to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-500vw,500vh) translateZ(50px);
-  }
+.star-sprite-3 {
+  background-color: transparent;
+  transform: rotateX(0deg) translate(-30vw,10vh);
+  animation: star-sprite-3 1s linear;
+  width: 8vw;
+}
+@keyframes star-sprite-3 {
+to {
+  transform: rotateX(10deg) rotateZ(0deg) rotateY(0deg) translate(200vw,150vh);
+  width: 50px;
+}
 }
 
 .like-sprite {
@@ -181,7 +194,7 @@ to {
 }
 @keyframes like-sprite {
 to {
-  transform: rotateX(-180deg) rotateZ(0deg) rotateY(180deg) translate(10vw,100vh);
+  transform: rotateY(180deg) rotateZ(0deg) rotateY(180deg) translate(100vw,100vh);
 }
 }
 .like-sprite-1 {
