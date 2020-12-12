@@ -127,7 +127,7 @@
 
 .star-sprite {
     background-color: transparent;
-    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(20vw,-10vh);
+    transform: rotateX(5deg) rotateZ(-15deg) translateZ(calc(var(--width) * .2)) translate(20vw,-10vh);
     animation: star-sprite 1s linear;
     width: 3vw;
     min-width: 15px;
