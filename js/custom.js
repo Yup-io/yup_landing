@@ -177,7 +177,7 @@ $(document).ready(async function() {
     const formattedMetric = num.slice(0, length/2) + ',' + num.slice(length/2, length)
     return formattedMetric
   }
-  
+
   // ===== VOTE SNACKBAR ==== //
   initSnackbarStream()
   const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
@@ -185,19 +185,19 @@ $(document).ready(async function() {
   const categoryRatingToMsg = {
     'popularity1': 'hated this',
     'popularity2': 'disliked this',
-    'popularity3': '❤️ liked this',
-    'popularity4': '❤️ really liked this',
-    'popularity5': '❤️ loved this',
+    'popularity3': 'liked this ❤️',
+    'popularity4': 'really liked this ❤️',
+    'popularity5': 'loved this ❤️',
     'intelligence1': 'rated this dumb',
     'intelligence2': 'rated this not smart',
-    'intelligence3': '🧠 rated this smart',
-    'intelligence4': '🧠 rated this very smart',
-    'intelligence5': '🧠 rated this genius',
+    'intelligence3': 'rated this smart 🧠',
+    'intelligence4': 'rated this very smart 🧠',
+    'intelligence5': 'rated this genius 🧠',
     'funny1': 'rated this not funny at all',
     'funny2': 'rated this not funny',
-    'funny3': '😂 rated this funny ',
-    'funny4': '😂 rated this very funny',
-    'funny5': '😂 rated this hilarious'
+    'funny3': 'rated this funny 😂',
+    'funny4': 'rated this very funny 😂',
+    'funny5': 'rated this hilarious 😂'
   }
 
   async function getLatestVoteData () {
@@ -218,7 +218,7 @@ $(document).ready(async function() {
         let ratingKey = `${category}${convertedRating}`
         let snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
         let snackCaption = `${caption.slice(0,30)}...`
-        let elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption.replace(/(^\w+:|^)\/\//, '')} </div>`
+        let elem = `<div class="hideForPhablet" id="vote-snackbar"> ${snackText} <br> ${snackCaption.replace(/(^\w+:|^)\/\//, '')} </div>`
         $('body').prepend(elem)
         $('#vote-snackbar').addClass('show')
         await sleep(3000)
