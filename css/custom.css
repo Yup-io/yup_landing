@@ -116,7 +116,7 @@
   background-color: transparent;
   transform: translate(-15vw,2vh);
   animation: heart-sprite 1s linear;
-  width: 6vw;
+  width: 4vw;
   min-width: 15px;
 }
 @keyframes heart-sprite {
@@ -156,7 +156,7 @@
     background-color: transparent;
     transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-3vw,0vw) translateZ(10px);
     animation: heart-sprite-1 1s linear;
-    width: calc(var(--width) * 0.7);
+    width: 7vw;
     min-width: 15px;
   }
 @keyframes heart-sprite-1 {
@@ -169,7 +169,7 @@
     background-color: transparent;
     transform: rotateY(0deg) translate(-5vw,8vw) translateZ(10px);
     animation: star-sprite-1 1s linear;
-    width: 10vw;
+    width: 9vw;
     min-width: 15px;
   }
 @keyframes star-sprite-1 {
@@ -182,7 +182,7 @@
   background-color: transparent;
   transform: rotateY(0deg) translate(-30vw,10vh) rotateZ(-45deg);
   animation: star-sprite-3 1s linear;
-  width: 8vw;
+  width: 7vw;
   min-width: 15px;
 }
 @keyframes star-sprite-3 {
@@ -196,7 +196,7 @@ to {
   background-color: transparent;
   transform: rotateX(5deg) rotateY(0deg) translate(15vw,5vh) translateZ(0px);
   animation: like-sprite 1s linear;
-  width: 5vw;
+  width: 4vw;
 }
 @keyframes like-sprite {
 to {
@@ -207,7 +207,7 @@ to {
   background-color: transparent;
   transform: translate(-25vw,-5vh);
   animation: like-sprite-1 1s linear;
-  width: 8vw;
+  width: 7vw;
   min-width: 15px;
 }
 @keyframes like-sprite-1 {
@@ -219,19 +219,19 @@ to {
   background-color: transparent;
   transform: translate(25vw,-25vh) rotateY(5deg) rotateX(5deg) rotateZ(-15deg);
   animation: like-sprite-2 1s linear;
-  width: 10vw;
+  width: 9vw;
   min-width: 15px;
 }
 @keyframes like-sprite-2 {
 to {
-  transform: rotateX(0deg) rotateZ(15deg) rotateY(0deg) translate(-150vw,280vh) translateZ(15px);
+  transform: rotateX(0deg) rotateZ(15deg) rotateY(0deg) translate(-130vw,280vh) translateZ(15px);
 }
 }
 .back-sprite {
   background-color: transparent;
   transform: translateZ(calc(var(--width) * -.2));
   animation: back-sprite 1s linear;
-  width: 10vw;
+  width: 9vw;
 }
 @keyframes back-sprite {
 to {
