@@ -180,9 +180,9 @@
 
 .heart-sprite-1 {
     background-color: transparent;
-    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-3vw,0vw) translateZ(10px);
+    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-3vw,3vh) translateZ(10px) scaleY(-1);
     animation: heart-sprite-1 1s linear;
-    width: 7vw;
+    width: 5vw;
     min-width: 15px;
   }
 @keyframes heart-sprite-1 {
