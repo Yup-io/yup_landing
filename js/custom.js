@@ -146,7 +146,6 @@ $(document).ready(async function() {
 
 
   function initMetrics () {
-    console.log('init metrics called');
     $('.count').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: 10000 }).animate({ Counter: metricsArr[index]}, {
@@ -202,27 +201,33 @@ $(document).ready(async function() {
   }
 
   async function getLatestVoteData () {
-    const voteParams = { account: 'yupyupyupyup', filter: '*:postvotev2', skip: '0', limit: '1', sort: 'desc' }
+    const voteParams = { account: 'yupyupyupyup', filter: '*:postvotev2', skip: '0', limit: 50, sort: 'desc' }
     const latestVote = await $.get('https://eos.hyperion.eosrio.io/v2/history/get_actions', voteParams)
-    return latestVote.actions[0].act.data
+    return latestVote.actions
   }
   setSnackbar()
 
-  async function setSnackbar () {
-    console.log('setSnackbar is called');
-    const { caption, voter, category, like, rating } = await getLatestVoteData()
-    if (prevVoteCaption === caption) {return}
-    prevVoteCaption = caption
-    const { username } = await $.get(`https://api.yup.io/accounts/${voter}`)
-    const convertedRating = like ? likeRatingConv[rating] : dislikeRatingConv[rating]
-    const ratingKey = `${category}${convertedRating}`
-    const snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
-    const snackCaption = `${caption.slice(0,30)}...`
-    const elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption}  </div>`
-    $('body').prepend(elem)
-    $('#vote-snackbar').addClass('show')
-    setTimeout(function(){ $('#vote-snackbar').removeClass('show') }, 3000);
+  const sleep = ms => new Promise(res => setTimeout(res, ms))
 
+  async function setSnackbar () {
+    const voteDataRows = await getLatestVoteData()
+    for (let row of voteDataRows) {
+      try {
+        let { caption, voter, category, like, rating } = row.act.data
+        let { username } = await $.get(`https://api.yup.io/accounts/${voter}`)
+        let convertedRating = like ? likeRatingConv[rating] : dislikeRatingConv[rating]
+        let ratingKey = `${category}${convertedRating}`
+        let snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
+        let snackCaption = `${caption.slice(0,30)}...`
+        let elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption} </div>`
+        $('body').prepend(elem)
+        $('#vote-snackbar').addClass('show')
+        await sleep(3000)
+        $('#vote-snackbar').removeClass('show')
+        await sleep(Math.random() * 20000)
+      } catch (err) {
+        console.log('ERROR IN SETTING SNACKBARS:', err);
+      }
+    }
   }
-  setInterval(setSnackbar, 5000)
 })
