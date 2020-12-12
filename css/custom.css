@@ -16,6 +16,32 @@
   opacity: 1;
 }
 
+#vote-snackbar {
+  position: fixed;
+  top: 92vh;
+  left: 3vw;
+  visibility: hidden;
+  height: 55px;
+  width: 180px;
+  opacity: 1;
+  z-index: 9999;
+  background: #090909ef;
+  box-shadow: 0px 0px 10px #a0a0a010;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+#vote-snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
 .title {
   font-family: 'Bungee Inline', sans-serif; /* Bungee Inline */
   font-size: 50px;
@@ -680,4 +706,24 @@ header.jss6 {
 
 .spacing-mid {
   letter-spacing: 0.05rem;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 100vh; opacity: 0;}
+  to {top: 92vh; opacity: 0.7;}
+}
+
+@keyframes fadein {
+  from {top: 100vh; opacity: 0;}
+  to {top: 92vh; opacity:0.7;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 92vh; opacity: 0.7;}
+  to {bottom: 100vh; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 92vh; opacity: 0.7;}
+  to {bottom: 100vh; opacity: 0;}
 }
