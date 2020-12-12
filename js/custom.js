@@ -179,7 +179,7 @@ $(document).ready(async function() {
   }
   
   // ===== VOTE SNACKBAR ==== //
-  let prevVoteCaption
+  initSnackbarStream()
   const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
   const dislikeRatingConv = { 1: 2, 2: 1 }
   const categoryRatingToMsg = {
@@ -205,11 +205,10 @@ $(document).ready(async function() {
     const latestVote = await $.get('https://eos.hyperion.eosrio.io/v2/history/get_actions', voteParams)
     return latestVote.actions
   }
-  setSnackbar()
 
   const sleep = ms => new Promise(res => setTimeout(res, ms))
 
-  async function setSnackbar () {
+  async function initSnackbarStream () {
     const voteDataRows = await getLatestVoteData()
     for (let row of voteDataRows) {
       try {
@@ -219,12 +218,12 @@ $(document).ready(async function() {
         let ratingKey = `${category}${convertedRating}`
         let snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
         let snackCaption = `${caption.slice(0,30)}...`
-        let elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption} </div>`
+        let elem = `<div id="vote-snackbar"> ${snackText} <br> ${snackCaption.replace(/(^\w+:|^)\/\//, '')} </div>`
         $('body').prepend(elem)
         $('#vote-snackbar').addClass('show')
         await sleep(3000)
         $('#vote-snackbar').removeClass('show')
-        await sleep(Math.random() * 20000)
+        await sleep(Math.random() * 3000 + 2000)
       } catch (err) {
         console.log('ERROR IN SETTING SNACKBARS:', err);
       }
