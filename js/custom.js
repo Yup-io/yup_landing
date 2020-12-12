@@ -183,21 +183,21 @@ $(document).ready(async function() {
   const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
   const dislikeRatingConv = { 1: 2, 2: 1 }
   const categoryRatingToMsg = {
-    'popularity1': 'hated this',
-    'popularity2': 'disliked this',
-    'popularity3': 'liked this ❤️',
-    'popularity4': 'really liked this ❤️',
-    'popularity5': 'loved this ❤️',
+    'popularity1': 'hated',
+    'popularity2': 'disliked',
+    'popularity3': 'liked &nbsp;♥️',
+    'popularity4': 'really liked &nbsp;♥️',
+    'popularity5': 'loved &nbsp;♥️',
     'intelligence1': 'rated this dumb',
     'intelligence2': 'rated this not smart',
-    'intelligence3': 'rated this smart 🧠',
-    'intelligence4': 'rated this very smart 🧠',
-    'intelligence5': 'rated this genius 🧠',
+    'intelligence3': 'rated this smart &nbsp;🧠',
+    'intelligence4': 'rated this very smart &nbsp;🧠',
+    'intelligence5': 'rated this genius &nbsp;🧠',
     'funny1': 'rated this not funny at all',
     'funny2': 'rated this not funny',
-    'funny3': 'rated this funny 😂',
-    'funny4': 'rated this very funny 😂',
-    'funny5': 'rated this hilarious 😂'
+    'funny3': 'rated this funny &nbsp;😂',
+    'funny4': 'rated this very funny &nbsp;😂',
+    'funny5': 'rated this hilarious &nbsp;😂'
   }
 
   async function getLatestVoteData () {
@@ -218,7 +218,7 @@ $(document).ready(async function() {
         let ratingKey = `${category}${convertedRating}`
         let snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
         let snackCaption = `${caption.slice(0,30)}...`
-        let elem = `<div class="hideForPhablet" id="vote-snackbar"> ${snackText} <br> ${snackCaption.replace(/(^\w+:|^)\/\//, '')} </div>`
+        let elem = `<div class="hideForPhablet" id="vote-snackbar">${snackText}<br>${snackCaption.replace(/(^\w+:|^)\/\//, '')}</div>`
         $('body').prepend(elem)
         $('#vote-snackbar').addClass('show')
         await sleep(3000)

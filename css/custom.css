@@ -21,15 +21,16 @@
   top: 92vh;
   left: 3vw;
   visibility: hidden;
-  height: 55px;
+  height: 50px;
   width: 180px;
   opacity: 1;
   z-index: 9999;
-  background: #090909ef;
+  background: #090909fa;
   box-shadow: 0px 0px 10px #a0a0a010;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: auto 30px;
   color: #FFFFFF;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +41,10 @@
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.snack-text {
+  font-weight: 600;
 }
 
 .title {
@@ -154,13 +159,13 @@
 .star-sprite {
     background-color: transparent;
     transform: rotateX(5deg) rotateZ(-15deg) translateZ(calc(var(--width) * .2)) translate(20vw,-10vh);
-    animation: star-sprite 1s linear;
+    animation: star-sprite 0.1s linear;
     width: 3vw;
     min-width: 16px;
   }
 @keyframes star-sprite {
   to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-500vw,500vh) translateZ(50px);
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-10vw,20vh) translateZ(50px);
   }
 }
 
@@ -729,4 +734,8 @@ header.jss6 {
 @keyframes fadeout {
   from {bottom: 92vh; opacity: 0.7;}
   to {bottom: 100vh; opacity: 0;}
+}
+
+.rainbow-card {
+  background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
 }
