@@ -24,6 +24,10 @@
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+	<!-- Lottie -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
 	<!-- Segment Tracking -->
 	<script>
 		!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
@@ -186,17 +190,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <symbol id="medium" viewBox="0 0 130.8 104"><path d="M15.5 21.2c.2-1.6-.5-3.2-1.7-4.3l-12.1-14.7v-2.2h38l29.3 64.4 25.8-64.4h36.2v2.2l-10.5 10c-.9.7-1.3 1.8-1.2 2.9v73.7c0 1.1.3 2.2 1.2 2.9l10.2 10v2.2h-51.3v-2.2l10.6-10.2c1-1 1-1.3 1-2.9v-59.6l-29.4 74.7h-4l-34.2-74.7v50.3c0 2.2.4 4.2 1.9 5.7l13.7 16.8v2.2h-39v-2.2l13.8-16.7c1.5-1.5 1.8-3.3 1.8-5.7l-.1-58.2z"/></symbol>
 
-  <symbol id="pinterest" viewBox="0 0 24 24"><path d="M5.9 13.9c1.2-2-.4-2.5-.6-4-1-6.1 7.1-10.2 11.4-6 2.9 2.9 1 12-3.7 11-4.6-.9 2.2-8.1-1.4-9.5-3-1.1-4.6 3.6-3.2 5.9-.8 4-2.5 7.7-1.8 12.7 2.3-1.7 3.1-4.8 3.7-8.1 1.2.7 1.8 1.4 3.3 1.5 5.5.4 8.6-5.4 7.8-10.7-.7-4.7-5.5-7.1-10.6-6.6-4.1.4-8.1 3.7-8.3 8.3-.1 2.8.7 4.9 3.4 5.5z"/></symbol>
-
-  <symbol id="stumbleupon" viewBox="0 0 24 24"><path d="M13.3 9.6l1.6.8 2.5-.8v-1.4c0-3-2.4-5.4-5.4-5.4s-5.4 2.4-5.4 5.4v7.5c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2h-4v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-7.5c0-.7.6-1.3 1.3-1.3s1.3.6 1.3 1.3l-.1 1.4zm6.6 2.9v3.2c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2l-2.5.8-1.6-.8v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-3.2h-4.1z"/></symbol>
-
   <symbol id="twitter" viewBox="0 1 24 23"><path d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z"/></symbol>
 
   <symbol id="tumblr" viewBox="0 0 23 23"><path d="M12.573 4.94v-4.94h-3.188c-.072.183-.11.4-.11.622-.034.107-.072.184-.072.293-.328 1.829-1.28 3.11-2.892 3.807-.476.218-.914.253-1.39.218v3.987h2.342c.039 5.603.039 8.493.039 8.64v.332c.294 2.449 1.573 3.914 3.843 4.463.914.257 1.901.366 2.892.366 1.279-.036 2.525-.256 3.771-.659v-4.685c-.731.22-1.395.402-1.977.583-1.135.333-2.087.113-2.857-.619-.073-.11-.183-.257-.221-.403-.106-.586-.178-1.206-.178-1.795v-6.222h5.083v-3.988h-5.085z"/></symbol>
 
   <symbol id="xing" viewBox="0 0 24 24"><path d="M3.647 4.74c-.208 0-.384.073-.472.216-.091.148-.077.338.02.531l2.34 4.051v.02l-3.678 6.49c-.096.191-.091.383 0 .531.088.142.244.236.452.236h3.461c.518 0 .767-.349.944-.669l3.737-6.608-2.38-4.15c-.172-.307-.433-.649-.964-.649h-3.46zm14.542-4.74c-.517 0-.741.326-.927.659l-7.702 13.658 4.918 9.023c.172.307.437.659.967.659h3.457c.208 0 .371-.079.459-.221.092-.148.09-.343-.007-.535l-4.88-8.915v-.023l7.664-13.551c.096-.191.098-.386.007-.534-.088-.142-.252-.221-.46-.221h-3.496z"/></symbol>
-
-  <symbol id="whatsapp" viewBox="0 0 512 512"><path d="M256.064 0h-.128c-141.152 0-255.936 114.816-255.936 256 0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.832 42.304 141.152 0 255.936-114.848 255.936-256s-114.784-256-255.936-256zm148.96 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"/></symbol>
 
   <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
 
@@ -229,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="right">
 			<ul class="verticalCenter menu" style="padding:0 0px;">
 				<li class="" style="">
-					<a onclick="startOAuth()" class="button rounded-square uppercase main hideForTablet hideForFirstSlide hideForLastSlide" id="nav" style="box-shadow: 0px 0px 9px #606060;background:#1da1f2;color:#ffffff;padding:6px 20px;margin:0px 0px -19px 0px;font-size:12px!important;font-family:Rubik;font-weight:600!important;border-radius: 100px;">sign up • twitter
+					<a onclick="startOAuth()" class="button rounded-square uppercase main hideForTablet hideForFirstSlide hideForLastSlide" id="nav" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;padding:6px 20px;margin:0px 0px -19px 0px;font-size:12px!important;font-family:Rubik;font-weight:600!important;border:solid #00d1ea;">sign up • twitter
 					</a>
 				</li>
 				<li class="" style="margin:0px;">
@@ -273,86 +271,119 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 <!-- Slide 1 (#72) -->
-<section data-title="Home" class="slide fade-6">
+<section data-title="Home" class="slide fade-7">
   <div class="content">
     <div class="container" style="box-shadow: inset 0px 0px rgba(0, 255, 166, 0.4) !important;
 		   -webkit-box-shadow: inset 0 0 5vh #00eab7;">
       <div class="wrap">
 				<ul class="flex verticalCenter">
-				<li class="col-7-12">
-        <div class="fix-12-12 left">
-          <div class="fix-12-12 toLeft">
-            <!--<div class="ae-5 fromRight"><p class="opacity-6 margin-bottom-1">Sync faster</p></div> -->
-            <h1 class="huge ae-1 uppertransform margin-bottom-3">
-							<div class="title" style="">
-								<mark style="padding-right: 2%;">Your Opinion <br> Matters.&nbsp;</mark><br>
-								<mark style="padding-right: 1%;">Curate the Web.</mark><br>
-								<mark style="padding-right: 1%;">EARN &</mark><mark style="padding-right: 2%;">INFLUENCE.</mark>
+					<li class="ae-7 fromTop">
+							<div class="cube-wrap">
+							  <div class="cube">
+							    <div class="side-cube laugh-sprite">
+										<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ga1smp5x.json" background="transparent"  speed="1.01"  loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube like-sprite-1">
+										<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_zbr1yuqv.json" background="transparent"  speed="1"  loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube heart-sprite">
+										<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_2dhquvxj.json" background="transparent"  speed="0.5" loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube heart-sprite-1">
+										<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_btfmmbov.json" background="transparent"  speed="0.8" loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube like-sprite">
+										<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ug0qzepg.json" background="transparent"  speed="0.71" loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube star-sprite-1">
+										<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_eelqjhme.json" background="transparent"  speed="1.2" loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube star-sprite">
+										<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_eelqjhme.json" background="transparent"  speed="1.1" loop autoplay></lottie-player>
+									</div>
+									<div class="side-cube star-sprite-3">
+										<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_9lxati4x.json" background="transparent"  speed="1"  loop autoplay></lottie-player>
+									</div>
+							    <div class="side-cube like-sprite-2">
+										<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_2dhquvxj.json" background="transparent"  speed="0.6" loop autoplay></lottie-player>
+									</div>
+							  </div>
 							</div>
-						</h1>
-						<p class="big hideForTablet margin-top-2 margin-bottom-2 ae-2">Earn money and clout for your likes and ratings</p>
-						<div style="display:grid;justify-content: start;grid-gap: 10px;">
-							<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-3 main margin-bottom-2 hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;margin-left:0;grid-column:1;height:3.4rem;font-weight:500 !important;letter-spacing:1px !important;border:solid 4px #00d1ea;padding:0px 10px 0px 18px;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Sign up • Twitter<b style="opacity:1;margin-left:10px;"></b>
-							</button>
-							<form class="firstSlideOnly ae-4 hideForTablet main-form" id="top-submit-email-form-desktop" method='post' style="background: transparent;border-radius: 4px;width:max-content; border: 4px solid #aaa;box-shadow: 0px 0px 9px #606060;height:3.4rem;grid-column:2;">
-								<input class="gradient crop main uppercase showForPhoneInline js-tilt spacing-med main-input" id="email1" type="email" name="email" placeholder="Sign up • Email" required style="text-align: start; padding: 0 0 0 0.8rem; font-family:Rubik;height:100%;font-weight:500;font-size: medium;outline: none;border: 0; vertical-align: middle!important; background: transparent;color:white;">
-								</input>
-								<div id="top-submit-email-btn-desktop" class="button small uppercase main" style="background:transparent;color:#aaa;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
+					</li>
+					<li class="col-12-12">
+		        <div class="fix-12-12 center">
+		          <div class="fix-12-12 center">
+		            <!--<div class="ae-5 fromRight"><p class="opacity-6 margin-bottom-1">Sync faster</p></div> -->
+		            <h1 class="huge ae-1 uppertransform margin-bottom-3">
+									<div class="title" style="">
+										<mark style="padding-right: 2%;">Your Opinion Matters.&nbsp;</mark><br>
+										<mark style="padding-right: 1%;">Curate the Web.</mark><br>
+										<mark style="padding-right: 1%;">EARN &</mark><mark style="padding-right: 2%;">INFLUENCE.</mark>
+									</div>
+								</h1>
+								<p class="big hideForTablet margin-top-2 margin-bottom-2 ae-2">Money and clout for your likes and ratings</p>
+								<div style="display:grid;justify-content: center;grid-gap: 10px;">
+									<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-3 main margin-bottom-2 hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;margin-left:0;grid-column:1;height:3.4rem;font-weight:500 !important;letter-spacing:1px !important;border:solid 4px #00d1ea;padding:0px 10px 0px 18px;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Sign up • Twitter<b style="opacity:1;margin-left:10px;"></b>
+									</button>
+									<form class="firstSlideOnly ae-4 hideForTablet main-form" id="top-submit-email-form-desktop" method='post' style="background: transparent;border-radius: 4px;width:max-content; border: 4px solid #aaa;box-shadow: 0px 0px 9px #606060;height:3.4rem;grid-column:2;">
+										<input class="gradient crop main uppercase showForPhoneInline js-tilt spacing-med main-input" id="email1" type="email" name="email" placeholder="Sign up • Email" required style="text-align: start; padding: 0 0 0 0.8rem; font-family:Rubik;height:100%;font-weight:500;font-size: medium;outline: none;border: 0; vertical-align: middle!important; background: transparent;color:white;">
+										</input>
+										<div id="top-submit-email-btn-desktop" class="button small uppercase main" style="background:transparent;color:#aaa;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
+										</div>
+									</form>
+									<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-3 main showForPhoneInline hideForDesktop" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;margin-left:0;grid-column:1;grid-row:1;height:55px;font-weight:500 !important;border:solid 4px #00d1ea;padding: 0px 8px;width: 9rem;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Twitter
+									</button>
+									<form class="firstSlideOnly ae-4 hideForDesktop main-form" id="top-submit-email-form-mobile" method='post' style="background: transparent;border-radius: 4px;width:max-content; border: 4px solid #aaa;box-shadow: 0px 0px 9px #606060;grid-column:2;display:table;height:55px;">
+										<input class="white uppercase gradient crop main showForPhoneInline js-tilt" id="email2" type="email" name="email" placeholder="Email" required style="text-align: start; padding: 0 0 0 0.5rem; font-family:Rubik;height:100%;font-weight:500;font-size: small;outline: none;border: 0; vertical-align: middle!important;background: transparent!important;">
+										</input>
+										<div id="top-submit-email-btn-mobile" class="button small uppercase main" style="background:transparent;color:#aaa;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
+										</div>
+									</form>
 								</div>
-							</form>
-							<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-3 main showForPhoneInline hideForDesktop" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;margin-left:0;grid-column:1;grid-row:1;height:55px;font-weight:500 !important;border:solid 4px #00d1ea;padding: 0px 8px;width: 9rem;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Twitter
-							</button>
-							<form class="firstSlideOnly ae-4 hideForDesktop main-form" id="top-submit-email-form-mobile" method='post' style="background: transparent;border-radius: 4px;width:max-content; border: 4px solid #aaa;box-shadow: 0px 0px 9px #606060;grid-column:2;display:table;height:55px;">
-								<input class="white uppercase gradient crop main showForPhoneInline js-tilt" id="email2" type="email" name="email" placeholder="Email" required style="text-align: start; padding: 0 0 0 0.5rem; font-family:Rubik;height:100%;font-weight:500;font-size: small;outline: none;border: 0; vertical-align: middle!important;background: transparent!important;">
-								</input>
-								<div id="top-submit-email-btn-mobile" class="button small uppercase main" style="background:transparent;color:#aaa;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
-								</div>
-							</form>
-						</div>
-						<label class="ae-5 crop main showForPhoneInline hideForDesktop" style="font-size: 10px;grid-column:1;"><b>&nbsp; Earn money and clout for your likes and ratings</b></label>
-          </div>
-        </div>
-				<div class="fix-12-12 left hideForTablet">
-          <div class="fix-12-12 toLeft opacity-7">
-						<ul class="flex flex-68 tintLogos equal equalMobile margin-top-2">
-	            <li class="col-1-4 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-	              <div class="table equalElement ae-5">
-	                <div class="cell" style="text-align:start;"><a href="#">Featured on:</a>
-	                </div>
-	              </div>
-	            </li>
-	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-	              <div class="table wide equalElement ae-6">
-	                <div class="cell"><a href="https://techcrunch.com/2020/09/01/student-led-accelerator-envision-reaches-demo-week-for-class-one-looks-to-class-two/"><img width="56" src="assets/img/techcrunch.png" alt="techcrunch"/></a>
-	                </div>
-	              </div>
-	            </li>
-	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-	              <div class="table wide equalElement ae-7">
-	                <div class="cell"><a href="https://www.forbes.com/sites/ginaclarke/2019/01/09/after-ethereum-classic-suffers-51-hack-experts-consider-will-bitcoin-be-next/#7839545aa56b"><img width="88" src="assets/img/forbes.png" alt="Google"/></a>
-	                </div>
-	              </div>
-	            </li>
-	            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-	              <div class="table wide equalElement ae-8">
-	                <div class="cell"><a href="https://blog.coinbase.com/coinbase-reports-black-americans-crypto-97e54cc89f84?gi=276d783d8996"><img width="90" src="assets/img/coinbase.png" alt="Apple"/></a>
-	                </div>
-	              </div>
-	            </li>
-	          </ul>
-          </div>
-        </div>
-				</li>
-				<li class="flex col-5-12 ae-6 verticalCenter hideForTablet">
-          <div onclick="trackVideoPlay()" class="fix-12-12 videoThumbnail rounded shadow popupTrigger ae-4 fromCenter margin-top-tablet-4 done right" data-popup-id="16">
-            <img class="wide opacity-8" src="assets/img/videothumbnail.png" alt="Video Thumbnail">
-          </div>
-        </li>
+								<label class="ae-5 crop main showForPhoneInline hideForDesktop" style="font-size: 10px;grid-column:1;"><b>&nbsp; Earn money and clout for your likes and ratings</b></label>
+		          </div>
+		        </div>
+						<div class="fix-6-12 center hideForTablet">
+		          <div class="fix-6-12 toLeft opacity-7">
+								<!-- FEATURE ul class="flex flex-68 tintLogos equal equalMobile margin-top-2">
+			            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+			              <div class="table equalElement ae-5">
+			                <div class="cell" style="text-align:start;"><a href="#">Featured on:</a>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+			              <div class="table wide equalElement ae-6">
+			                <div class="cell"><a href="https://techcrunch.com/2020/09/01/student-led-accelerator-envision-reaches-demo-week-for-class-one-looks-to-class-two/"><img width="56" src="assets/img/techcrunch.png" alt="techcrunch"/></a>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+			              <div class="table wide equalElement ae-7">
+			                <div class="cell"><a href="https://www.forbes.com/sites/ginaclarke/2019/01/09/after-ethereum-classic-suffers-51-hack-experts-consider-will-bitcoin-be-next/#7839545aa56b"><img width="88" src="assets/img/forbes.png" alt="Google"/></a>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+			              <div class="table wide equalElement ae-8">
+			                <div class="cell"><a href="https://blog.coinbase.com/coinbase-reports-black-americans-crypto-97e54cc89f84?gi=276d783d8996"><img width="90" src="assets/img/coinbase.png" alt="Apple"/></a>
+			                </div>
+			              </div>
+			            </li>
+			          </ul-->
+		          </div>
+		        </div>
+					</li>
+					<!--li class="flex col-5-12 ae-6 verticalCenter hideForTablet">
+	          <div onclick="trackVideoPlay()" class="fix-12-12 videoThumbnail rounded shadow popupTrigger ae-4 fromCenter margin-top-tablet-4 done right" data-popup-id="16">
+	            <img class="wide opacity-8" src="assets/img/videothumbnail.png" alt="Video Thumbnail">
+	          </div>
+	        </li-->
 				</ul>
       </div>
     </div>
   </div>
-	<div class="background" style="background-image:url(assets/wallpaper.png)!important;">
+	<div class="background" style="background-image:url(assets/img/background/graphictest.png)!important;">
 		<!--video autoplay loop muted playsinline>
       <source src="https://yup-website.s3.us-east-2.amazonaws.com/lines4.mp4" type="video/mp4">
     </video>-->
@@ -361,17 +392,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Popup Video -->
 <div class="popup autoplay" data-popup-id="16">
 <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-<div class="content">
-	<div class="container">
-		<div class="wrap">
-			<div class="fix-10-12">
-				<div class="embedVideo popupContent shadow rounded">
-					<iframe data-src="https://www.youtube.com/embed/UUi8_A5V7Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+				<div class="fix-10-12">
+					<div class="embedVideo popupContent shadow rounded">
+						<iframe data-src="https://www.youtube.com/embed/UUi8_A5V7Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 <!-- Slide 3 #61 -->
@@ -402,29 +433,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section data-title="What"  class="slide fade-7 kenBurns autoHeight animated">
   <div class="content">
     <div class="container">
-      <div class="wrap">
+      <div class="wrap" style="padding-top: 20vh;">
         <div class="fix-14-12">
 					<ul class="flex">
 						<li class="col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left ae-5 fromCenter">
-							<ul class="slider animated equalElement hideForPhablet autoplay" data-slider-interval="8000" data-slider-id="60">
-								<li class="selected fromCenter equalElement js-tilt">
-								  <img src="https://yup-landing.s3.us-east-2.amazonaws.com/add-chrome.gif" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" />
+							<ul class="slider equalElement hideForPhablet autoplay min-height-graphics" data-slider-interval="8000" data-slider-id="60">
+								<li class="selected fromCenter equalElement">
+									<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_q6eivnpo.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
+								</li>
+								<li class="fromCenter equalElement" style="overflow:hidden;">
+									<lottie-player style="margin-top:-110px;zoom:0.7;" src="https://assets8.lottiefiles.com/packages/lf20_6jn7nkzm.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34" loop autoplay></lottie-player>
 								</li>
 								<li class="fromCenter equalElement">
-								  <img class="rounded demodemo2 fromTop fix-8-12" src="https://yup-landing.s3.us-east-2.amazonaws.com/twitter.gif" />
+									<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_vgbnuncc.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34"  loop style="zoom:0.7;" autoplay></lottie-player>
 								</li>
-								<li class="fromCenter equalElement">
-									<div class="toCenter">
-									  <video class="rounded demodemo2 fromTop fix-8-12" autoplay loop muted playsinline>
-								      <source src="https://yup-website.s3.us-east-2.amazonaws.com/venmo.mov" type="video/mp4">
-								    </video>
-									</div>
-								</li>
-								<li class="fromCenter equalElement">
-									<div class="toCenter">
-										<img class="wide cover equalElement margin-bottom-3" src="assets/img/social.png" data-action="none" alt="Macbook Image"/>
-									</div>
-								</li>
+								<!--li class="fromCenter equalElement js-tilt" style="overflow:hidden;">
+									<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_71m9i9by.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34" loop autoplay></lottie-player>
+								</li> -->
 							</ul>
 						</li>
 						<li class="col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left" style="">
@@ -432,37 +457,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<ul class="pill vert tabs controller bold ae-4 fromCenter weight-8 thinner" style="max-width:85vw;letter-spacing:0px!important;" data-slider-id="60">
 								<li class="selected bg-mobile">
 									<h3 class="small uppercase weight-5 Rubik">
-									1. Add in Seconds</h3>
+									1. Likes turn into Social Capital</h3>
 									<p class="margin-bottom-0 small">
-									Takes just two clicks and is 100% free. Sign in with Twitter for instant rewards without the extension.</p>
-									<video class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" autoplay loop muted playsinline>
-							      <source src="https://yup-website.s3.us-east-2.amazonaws.com/chrome.mov" type="video/mp4">
-							    </video>
+										Likes, ratings, and other reactions are tracked as actios on Yup.
+									</p>
+									<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_q6eivnpo.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
 								</li>
 								<li>
 									<h3 class="small uppercase weight-5 Rubik">
 									2. Rate Anything</h3>
 									<p class="small margin-bottom-0">
-									Rate any piece of content on the internet through Yup or your social accounts. Your regular likes and ratings count too.</p>
-									<video class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" autoplay loop muted playsinline>
-							      <source src="https://yup-website.s3.us-east-2.amazonaws.com/twitter.mov" type="video/mp4">
-							    </video>
+									Rate any piece of content on the internet through the Yup Extension.</p>
+									<div style="overflow:hidden;">
+										<lottie-player style="margin-top:-16%!important;zoom:0.7;" src="https://assets8.lottiefiles.com/packages/lf20_6jn7nkzm.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
+									</div>
 								</li>
 								<li>
 									<h3 class="small weight-5 uppercase Rubik">
-									3. Earn Tokens</h3>
+									3. Earn Tokens and Influence</h3>
 									<p class="margin-bottom-0 small">
-									If someone rates the same content as you, you earn YUP tokens. Your Influence Score also increases!</p>
-									<video class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" autoplay loop muted playsinline>
-							      <source src="https://yup-website.s3.us-east-2.amazonaws.com/venmo.mov" type="video/mp4">
-							    </video>
-								</li>
-								<li>
-									<h3 class="small uppercase weight-5 Rubik">
-									4. Surf with Clarity</h3>
-									<p class="margin-bottom-0 small">
-										Any site, user, or content on the internet has an Influence Score to provide you with clarity on what's important.
-									</p>
+									If someone rates the same content as you, you earn YUP tokens and you Influence Score increases!</p>
+									<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_vgbnuncc.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
 								</li>
 							</ul>
 						</li>
@@ -489,7 +504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</p>
 								<h3 class="ae-2 opacity-8 uppercase weight-5 Rubik rainbow-gradient">Your favorite sites, plus more</h3>
 								<p class="ae-3 opacity-6 medium padding-bottom-8 Rubik" style="font-weight: 100!important;">
-									You can use the extension on any site with useful overlays on certain ones. Additionally, you can use traditional reactions (i.e. Twitter likes, Reddit upvotes, Gmaps ratings) and they’ll be treated as Yup votes too! Pro tip: not all likes are created equal.
+									You can use the extension on any site with useful overlays on certain ones. You can use traditional reactions as Yup actions too! Pro tip: not all likes are created equal.
 								</p>
             </li>
             <li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-1">
@@ -603,24 +618,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								Feeds are a culmination of the internet's best content curated into a mood or topic. Find tweets, YouTube videos, Soundcloud songs, Subreddits and more - all in one place.
 							</p>
             </li>
-						<li class="col-8-12 xzi ae-1 right hideforTablet hideForPhone">
+						<li class="col-8-12 xzi ae-1 right hideforTablet hideForPhablet hideForPhone">
 							<a href="https://app.yup.io/?feed=latenightcool" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/cool.svg" alt="Image Thumbnail">
-							</a>
-							<a href="https://app.yup.io/?feed=uspresidentialelection" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/therace_banner.svg" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/popularcover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=dailyhits" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/dailyhits.svg" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/dailyhitscover.png" alt="Image Thumbnail">
 							</a>
+							<a href="https://app.yup.io/?feed=lol" target="_blank">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/lolcover.png" alt="Image Thumbnail">
+							</a>
+							<br>
 							<a href="https://app.yup.io/?feed=non-corona" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/safe-space.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/safecover.png" alt="Image Thumbnail">
+							</a>
+							<a href="https://app.yup.io/?feed=crypto" target="_blank">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/cryptocover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=brainfood" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/brain.svg" alt="Image Thumbnail">
-							</a>
-							<a href="https://app.yup.io/?feed=brainfood" target="_blank">
-								<img class="rounded fromTop fix-3-12 hover-opacity" src="assets/svg/laughs.svg" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/smartcover.png" alt="Image Thumbnail">
 							</a>
             </li>
           </ul>
