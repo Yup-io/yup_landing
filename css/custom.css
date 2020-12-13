@@ -564,6 +564,8 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 
 .pill.controller.vert li {
   display: block;
+  margin-top: 5px;
+  padding: 25px;
 }
 
 .pill.controller li:first-child {
@@ -574,15 +576,15 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 }
 
 .pill.controller li.selected {
-  background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
+  background: #dadada;
   color: #000;
   border-radius: 6px;
   box-shadow: 0px 0px 3px rgba(248,248,248,0.1);
 }
 
 .pill.controller.vert li.selected {
-  background: #fff;
-  color: #303030;
+  background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
+  color: #101010;
   border-radius: 4px 4px 4px 4px;
 }
 
