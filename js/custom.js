@@ -136,7 +136,6 @@ async function fetchOAuthToken() {
 fetchOAuthToken()
 
 $(document).ready(async function() {
-  // ===== METRICS ==== //
   let totalOpinions = Number(await $.get('https://api.yup.io/metrics/total-votes'))
   let totalRewards =  await $.get('https://api.yup.io/metrics/total-curator-rewards')
   let metricsArr  = [ totalOpinions, totalRewards.totalCuratorRewardsUSD ]
@@ -146,6 +145,7 @@ $(document).ready(async function() {
 
 
   function initMetrics () {
+    console.log('init metrics called');
     $('.count').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: 10000 }).animate({ Counter: metricsArr[index]}, {
@@ -158,6 +158,8 @@ $(document).ready(async function() {
     });
   }
   function updateMetrics () {
+    console.log('update metrics called');
+
     $('.count.update').each(function (index) {
       var $this = $(this);
       jQuery({ Counter: metricsArr[index] }).animate({ Counter: metricsArr[index]}, {
@@ -177,61 +179,4 @@ $(document).ready(async function() {
     const formattedMetric = num.slice(0, length/2) + ',' + num.slice(length/2, length)
     return formattedMetric
   }
-
-  // ===== VOTE SNACKBAR ==== //
-  initSnackbarStream()
-  const likeRatingConv = { 1: 3, 2: 4, 3: 5 }
-  const dislikeRatingConv = { 1: 2, 2: 1 }
-  const categoryRatingToMsg = {
-    'popularity1': 'hated',
-    'popularity2': 'disliked',
-    'popularity3': 'liked &nbsp;♥️',
-    'popularity4': 'really liked &nbsp;♥️',
-    'popularity5': 'loved &nbsp;♥️',
-    'intelligence1': 'rated this dumb',
-    'intelligence2': 'rated this not smart',
-    'intelligence3': 'rated this smart &nbsp;🧠',
-    'intelligence4': 'rated this very smart &nbsp;🧠',
-    'intelligence5': 'rated this genius &nbsp;🧠',
-    'funny1': 'rated this not funny at all',
-    'funny2': 'rated this not funny',
-    'funny3': 'rated this funny &nbsp;😂',
-    'funny4': 'rated this very funny &nbsp;😂',
-    'funny5': 'rated this hilarious &nbsp;😂'
-  }
-
-  async function getLatestVoteData () {
-    const voteParams = { account: 'yupyupyupyup', filter: '*:postvotev2', skip: '0', limit: 50, sort: 'desc' }
-    const latestVote = await $.get('https://eos.hyperion.eosrio.io/v2/history/get_actions', voteParams)
-    return latestVote.actions
-  }
-
-  const sleep = ms => new Promise(res => setTimeout(res, ms))
-
-  async function initSnackbarStream () {
-    const voteDataRows = await getLatestVoteData()
-    for (let row of voteDataRows) {
-      try {
-        let { caption, voter, category, like, rating } = row.act.data
-        let { username } = await $.get(`https://api.yup.io/accounts/${voter}`)
-        let convertedRating = like ? likeRatingConv[rating] : dislikeRatingConv[rating]
-        let ratingKey = `${category}${convertedRating}`
-        let snackText = `${username} ${categoryRatingToMsg[ratingKey]} `
-        let snackCaption = `${caption.slice(0,30)}...`
-        let elem = `<div class="hideForPhablet" id="vote-snackbar">${snackText}<br>${snackCaption.replace(/(^\w+:|^)\/\//, '')}</div>`
-        $('body').prepend(elem)
-        $('#vote-snackbar').addClass('show')
-        await sleep(3000)
-        $('#vote-snackbar').removeClass('show')
-        await sleep(Math.random() * 3000 + 2000)
-      } catch (err) {
-        console.log('ERROR IN SETTING SNACKBARS:', err);
-      }
-    }
-  }
 })
-
-
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
