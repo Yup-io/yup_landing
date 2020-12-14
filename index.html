@@ -64,8 +64,9 @@ mixpanel.init("fd8b4c2ef3374fa5d7963ab962b90920")</script>
 <!-- end Mixpanel -->
 
 
+
 	<!-- jQuery 3.4.1 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Compressed Scripts -->
 	<script src="js/slides.min.js?424341" type="text/javascript"></script>
@@ -202,6 +203,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </svg>
 
+
+<!--JS Tilt -->
+	<script src="https://cdn.rawgit.com/gijsroge/tilt.js/38991dd7/dest/tilt.jquery.js"></script>
+	<script>
+	  $(function(){
+	    $('.js-tilt').tilt({
+	      scale: 1.025,
+				maxTilt: 1.5
+	    });
+	  });
+	</script>
+
 <!-- Navigation
 <nav class="side medium">
   <div class="navigation">
@@ -213,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="panel top topBar">
   <div class="sections desktop top">
     <div class="left"><a href="/" style="display:flex" title="Yup"><img class="logo" src="assets/img/logo.png"></a></div>
-    <div class="center">
+    <div class="center firstSlide">
       <ul class="menu uppercase hideForTablet firstSlideOnly weight-2 Rubik-400">
         <li class="firstSlideOnly"><a style="font-weight:400!important;" href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi" target="_blank">Start</a></li>
         <li class="firstSlideOnly"><a style="font-weight:400!important; color: #00eab7 !important;" href="https://medium.com/@yup./introducing-yup-9408fa37335d" target="_blank">YUP Token</a></li>
@@ -242,31 +255,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="sidebar" data-sidebar-id="1">
   <div class="content">
     <ul class="mainMenu margin-top-3 Rubik">
-			<li><a class="showForDesktop hideForPhablet" href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi">Extension</a></li>
-			<li><a href="https://yupprotocol.org">Protocol</a></li>
-			<li><a href="https://yup.info">Explorer</a></li>
-      <li><a href="https://app.yup.io/lists?site=twitter&subject=accounts&category=overall">Top Lists</a></li>
-      <li><a href="./about.html">Team</a></li>
-      <li><a href="https://help.yup.io">Help</a></li>
-      <li><a href="https://blog.yup.io">Blog</a></li>
+			<li class="js-tilt"><a class="showForDesktop hideForPhablet" href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi">Extension</a></li>
+			<li class="js-tilt" ><a href="https://yupprotocol.org">Protocol</a></li>
+			<li class="js-tilt" ><a href="https://yup.info">Explorer</a></li>
+      <li class="js-tilt" ><a href="https://app.yup.io/lists?site=twitter&subject=accounts&category=overall">Top Lists</a></li>
+      <li class="js-tilt" ><a href="./about.html">Team</a></li>
+      <li class="js-tilt" ><a href="https://help.yup.io">Help</a></li>
+      <li class="js-tilt" ><a href="https://blog.yup.io">Blog</a></li>
     </ul>
     <ul class="subMenu small opacity-8 margin-top-3 Rubik">
-			<li><a href="https://discord.com/invite/HnaTAXK">Discord</a></li>
-			<li><a href="https://docs.yup.io">Docs & Resources</a></li>
-			<li><a href="mailto:community@yup.io">Contact Us</a></li>
-      <li><a href="https://docs.google.com/document/u/3/d/1LFrn0eeTfiy8lWAs8TPzWeydkRI-TRCDP0_NHCBOR0s/edit?usp=sharing">Privacy Policy</a></li>
+			<li class="js-tilt" ><a href="https://discord.com/invite/HnaTAXK">Discord</a></li>
+			<li class="js-tilt" ><a href="https://docs.yup.io">Docs & Resources</a></li>
+			<li class="js-tilt" ><a href="mailto:community@yup.io">Contact Us</a></li>
+      <li class="js-tilt" ><a href="https://docs.google.com/document/u/3/d/1LFrn0eeTfiy8lWAs8TPzWeydkRI-TRCDP0_NHCBOR0s/edit?usp=sharing">Privacy Policy</a></li>
     </ul>
 		<ul class="social opacity-8">
 
-				<li><a href="https://app.uniswap.org/#/swap?inputCurrency=0x69bbc3f8787d573f1bbdd0a5f40c7ba0aee9bcc9" target="_blank"><img  style="fill: #fff !important;height: 22px;width: 22px"  class="uniswap" id="#uniswap" src="assets/svg/uniswap.svg"></img></a></li>
+				<li class="js-tilt" ><a href="https://app.uniswap.org/#/swap?inputCurrency=0x69bbc3f8787d573f1bbdd0a5f40c7ba0aee9bcc9" target="_blank"><img  style="fill: #fff !important;height: 22px;width: 22px"  class="uniswap" id="#uniswap" src="assets/svg/uniswap.svg"></img></a></li>
 
-        <li><a href="http://twitter.com/yup_io" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+        <li class="js-tilt" ><a href="http://twitter.com/yup_io" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
 
-        <li><a href="http://instagram.com/yup.io_" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+        <li class="js-tilt" ><a href="http://instagram.com/yup.io_" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
 
-				<li><a href="https://www.linkedin.com/company/yupio/" target="_blank"><svg style="fill: #fff;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></a></li>
+				<li class="js-tilt" ><a href="https://www.linkedin.com/company/yupio/" target="_blank"><svg style="fill: #fff;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></a></li>
 
-				<li><a href="https://discord.gg/rbCHSUq" target="_blank"><svg style="fill: #fff;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#discord"></use></svg></a></li>
+				<li class="js-tilt" ><a href="https://discord.gg/rbCHSUq" target="_blank"><svg style="fill: #fff;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#discord"></use></svg></a></li>
   </div>
 </nav>
 
@@ -326,7 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-3 main margin-bottom-2 hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;margin-left:0;grid-column:1;height:3.4rem;font-weight:500 !important;letter-spacing:1px !important;border:solid 4px #00d1ea;padding:0px 10px 0px 18px;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Sign up • Twitter<b style="opacity:1;margin-left:10px;"></b>
 									</button>
 									<form class="firstSlideOnly ae-4 hideForTablet main-form" id="top-submit-email-form-desktop" method='post' style="background: transparent;border-radius: 4px;width:max-content; border: 4px solid #aaa;box-shadow: 0px 0px 9px #606060;height:3.4rem;grid-column:2;">
-										<input class="gradient crop main uppercase showForPhoneInline js-tilt spacing-med main-input" id="email1" type="email" name="email" placeholder="Sign up • Email" required style="text-align: start; padding: 0 0 0 0.8rem; font-family:Rubik;height:100%;font-weight:500;font-size: medium;outline: none;border: 0; vertical-align: middle!important; background: transparent;color:white;">
+										<input class="gradient crop main uppercase showForPhoneInline spacing-med main-input" id="email1" type="email" name="email" placeholder="Sign up • Email" required style="text-align: start; padding: 0 0 0 0.8rem; font-family:Rubik;height:100%;font-weight:500;font-size: medium;outline: none;border: 0; vertical-align: middle!important; background: transparent;color:white;">
 										</input>
 										<div id="top-submit-email-btn-desktop" class="button small uppercase main" style="background:transparent;color:#aaa;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
 										</div>
@@ -409,13 +422,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li class="col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left ae-5 fromCenter">
 							<ul class="slider equalElement hideForPhablet autoplay min-height-graphics" data-slider-interval="8000" data-slider-id="60">
 								<li class="selected fromCenter equalElement">
-									<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_q6eivnpo.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
+									<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_q6eivnpo.json" class="rounded demodemo2 fromTop ae-1 fix-8-12" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
 								</li>
 								<li class="fromCenter equalElement" style="overflow:hidden;">
-									<lottie-player style="margin-top:-110px;zoom:0.7;" src="https://assets8.lottiefiles.com/packages/lf20_6jn7nkzm.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34" loop autoplay></lottie-player>
+									<lottie-player style="margin-top:-110px;zoom:0.7;" src="https://assets8.lottiefiles.com/packages/lf20_6jn7nkzm.json" class="rounded demodemo2 fromTop ae-1 fix-8-12" background="transparent"  speed="1.34" loop autoplay></lottie-player>
 								</li>
 								<li class="fromCenter equalElement">
-									<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_vgbnuncc.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34"  loop style="zoom:0.7;" autoplay></lottie-player>
+									<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_vgbnuncc.json" class="rounded demodemo2 fromTop ae-1 fix-8-12" background="transparent"  speed="1.34"  loop style="zoom:0.7;" autoplay></lottie-player>
 								</li>
 								<!--li class="fromCenter equalElement js-tilt" style="overflow:hidden;">
 									<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_71m9i9by.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 js-tilt" background="transparent"  speed="1.34" loop autoplay></lottie-player>
@@ -433,7 +446,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</p>
 									<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_q6eivnpo.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
 								</li>
-								<li>
+								<li class="">
 									<h3 class="small uppercase weight-5 Rubik">
 									2. Rate Anything</h3>
 									<p class="small margin-bottom-0">
@@ -442,7 +455,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<lottie-player style="margin-top:-16%!important;zoom:0.7;" src="https://assets8.lottiefiles.com/packages/lf20_6jn7nkzm.json" class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-2" background="transparent"  speed="1.34"  loop autoplay></lottie-player>
 									</div>
 								</li>
-								<li>
+								<li class="">
 									<h3 class="small weight-5 uppercase Rubik">
 									3. Earn Tokens and Influence</h3>
 									<p class="margin-bottom-0 small">
@@ -506,52 +519,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-1">
 								<div class="fix-10-12 center ext-buttons">
 									<ul class="pill controller margin-bottom-4" data-slider-id="1">
-										<li class="selected"><img class="logos" src="assets/svg/twitter.svg"></li>
-										<li class=""><img class="logos" src="assets/svg/youtube.svg"></li>
-										<li class=""><img class="logos" src="assets/svg/location.svg"></li>
-										<li class=""><img class="logos" src="assets/svg/reddit.svg"></li>
-										<li class=""><img class="logos" src="assets/svg/google.svg"></li>
-										<li class=""><img class="logos" src="assets/svg/link.svg"></li>
+										<li class="selected js-tilt"><img class="logos" src="assets/svg/twitter.svg"></li>
+										<li class="js-tilt"><img class="logos" src="assets/svg/youtube.svg" style="transform: translateZ(20px);"></li>
+										<li class="js-tilt"><img class="logos" src="assets/svg/location.svg" style="transform: translateZ(20px);"></li>
+										<li class="js-tilt"><img class="logos" src="assets/svg/reddit.svg" style="transform: translateZ(20px);"></li>
+										<li class="js-tilt"><img class="logos" src="assets/svg/google.svg" style="transform: translateZ(20px);"></li>
+										<li class="js-tilt"><img class="logos" src="assets/svg/link.svg" style="transform: translateZ(20px);"></li>
 									</ul>
 								</div>
 				        <ul class="slider center autoplay" data-slider-interval="5000" data-slider-id="1">
 				          <li class="selected">
 				            <div class="fix-6-12">
-											<video class="rounded demodemo2 fromTop fix-6-12" autoplay loop muted playsinline>
+											<video class="rounded demodemo2 fromTop fix-6-12 js-tilt"  data-tilt-max="-5" autoplay loop muted playsinline>
 												<source src="https://yup-website.s3.us-east-2.amazonaws.com/twitter.mov" type="video/mp4">
 											</video>
 				            </div>
 				          </li>
 				          <li class="">
 				            <div class="fix-6-12">
-											<img class="rounded fromTop fix-6-12" src="assets/img/youtube.png" alt="Image Thumbnail">
+											<img class="rounded fromTop fix-6-12 js-tilt"  data-tilt-max="-5" src="assets/img/youtube.png" alt="Image Thumbnail">
 				            </div>
 				          </li>
 				          <li class="">
 				            <div class="fix-6-12">
-											<img class="rounded fromTop fix-6-12" src="assets/img/gmaps.png" alt="Image Thumbnail">
+											<img class="rounded fromTop fix-6-12 js-tilt"  data-tilt-max="-5" src="assets/img/gmaps.png" alt="Image Thumbnail">
 				            </div>
 				          </li>
 				          <li class="">
 				            <div class="fix-6-12">
-											<img class="rounded fromTop fix-6-12" src="assets/img/reddit.png" alt="Image Thumbnail">
+											<img class="rounded fromTop fix-6-12 js-tilt"  data-tilt-max="-5" src="assets/img/reddit.png" alt="Image Thumbnail">
 				            </div>
 				          </li>
 				          <li class="">
 				            <div class="fix-6-12">
-											<img class="rounded fromTop fix-6-12" src="assets/img/google.png" alt="Image Thumbnail">
+											<img class="rounded fromTop fix-6-12 js-tilt"  data-tilt-max="-5" src="assets/img/google.png" alt="Image Thumbnail">
 				            </div>
 				          </li>
 				          <li class="">
 				            <div class="fix-6-12">
-											<img class="rounded fromTop fix-6-12" src="assets/img/article.png" alt="Image Thumbnail">
+											<img class="rounded fromTop fix-6-12 js-tilt"  data-tilt-max="-5" src="assets/img/article.png" alt="Image Thumbnail">
 				            </div>
 				          </li>
 				        </ul>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </div>
@@ -580,7 +592,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div>
 								</div>
 							</div>-->
-								<video class="rounded fromTop fix-6-12" autoplay loop muted playsinline>
+								<video class="rounded fromTop fix-6-12 js-tilt" data-tilt-max="-3" autoplay loop muted playsinline>
 									<source src="https://yup-website.s3.us-east-2.amazonaws.com/yuplists.mov" type="video/mp4">
 								</video>
             </li>
@@ -616,23 +628,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
 						<li class="col-8-12 xzi ae-1 right hideforTablet hideForPhablet hideForPhone">
 							<a href="https://app.yup.io/?feed=latenightcool" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/popularcover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt"  data-tilt-max="-3" src="assets/img/popularcover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=dailyhits" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/dailyhitscover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt" data-tilt-max="-3" src="assets/img/dailyhitscover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=lol" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/lolcover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt" data-tilt-max="-3" src="assets/img/lolcover.png" alt="Image Thumbnail">
 							</a>
 							<br>
 							<a href="https://app.yup.io/?feed=non-corona" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/safecover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt" data-tilt-max="-3" src="assets/img/safecover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=crypto" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/cryptocover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt" data-tilt-max="-3" src="assets/img/cryptocover.png" alt="Image Thumbnail">
 							</a>
 							<a href="https://app.yup.io/?feed=brainfood" target="_blank">
-								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2" src="assets/img/smartcover.png" alt="Image Thumbnail">
+								<img class="rounded fromTop fix-2-12 col-3-12 hover-opacity margin-2 js-tilt" data-tilt-max="-3" src="assets/img/smartcover.png" alt="Image Thumbnail">
 							</a>
             </li>
           </ul>
@@ -653,10 +665,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="medium light ae-2 margin-bottom-4 Rubik-100"><span class="opacity-5 hideForTablet">Join with Twitter or apply with email to begin Yupping right away.</span></p>
 					<button onclick="startOAuth()" class="button rounded-square large uppercase gradient ae-2 main margin-bottom-2 hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:transparent;color:#00d1ea;font-family:Rubik;grid-column:1;height:55px;font-weight:500 !important; width: 300px;border:solid 4px #00d1ea;padding:0px 10px 0px 18px;"><svg style="fill:#00d1ea;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg> Sign up • Twitter
 					</button>
-					<form class="ae-2" id="bottom-submit-email-form-desktop" method='post' style="background: transparent;border-radius: 4px;width:300px; border: 4px solid #00eab7;box-shadow: 0px 0px 9px #606060;height:55px;margin:auto;">
-						<input class="uppercase gradient crop main js-tilt main-input" id="email3" type="email" name="email" placeholder="Sign Up • Email" required style="text-align: start; padding: 0 0 0 0.5rem; font-family:Rubik;height:90%;font-weight:500;font-size: large;outline: none;border: 0; vertical-align: middle!important;width:230px;background:transparent!important;color:white;">
+					<form class="ae-2" id="bottom-submit-email-form-desktop" method='post' style="background: transparent;border-radius: 4px;width:300px; border: 4px solid #3a3a3a;box-shadow: 0px 0px 9px #606060;height:55px;margin:auto;">
+						<input class="uppercase gradient crop main main-input" id="email3" type="email" name="email" placeholder="Sign Up • Email" required style="text-align: start; padding: 0 0 0 0.5rem; font-family:Rubik;height:90%;font-weight:400;font-size: large;outline: none;border: 0; vertical-align: middle!important;width:230px;background:transparent!important;color:white;">
 						</input>
-						<div id="bottom-submit-email-btn-desktop" class="button small uppercase main" style="background:transparent;color:#00eab7;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
+						<div id="bottom-submit-email-btn-desktop" class="button small uppercase main" style="background:transparent;color:#606060;font-family:Rubik;border-radius:0px;margin:0;box-shadow: none;vertical-align:middle;"><i class="material-icons" style="margin:0;">arrow_forward</i>
 						</div>
 						<br>
 					</form>
@@ -713,6 +725,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	mixpanel.track("Site Visit");
 </script>
 
+<script src="tilt.jquery.js"></script>
 
 </body>
 </html>

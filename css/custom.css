@@ -21,26 +21,27 @@
   top: 92vh;
   left: 3vw;
   visibility: hidden;
-  height: 50px;
-  width: 190px;
+  height: 60px;
   opacity: 1;
   z-index: 9999;
-  background: #090909fa;
-  box-shadow: 0px 0px 10px #a0a0a010;
+  background: #1a1a1a;
+  box-shadow: -1px -1px 4px #3a3a3a10;
   border-radius: 8px;
-  padding: auto 30px;
+  padding: 20px 20px;
   color: #FFFFFF;
   font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   font-weight: 400;
+  line-height: 2;
 }
 
 #vote-snackbar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 0.6s, fadeout 0.5s 2.5s;
+  animation: fadein 0.6s, fadeout 0.5s 2.5s;
 }
 
 .snack-text {
@@ -451,17 +452,6 @@ h3 {
   width: 2rem;
 }
 
-/* Form */
-.pad {
-  background-color: rgba(14,14,14,0.9);
-}
-.pad .label {
-  color: white;
-}
-.pad button {
-  margin-top: 1rem!important;
-}
-
 .button {
   background: #def009;
 }
@@ -580,6 +570,7 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
   color: #000;
   border-radius: 6px;
   box-shadow: 0px 0px 3px rgba(248,248,248,0.1);
+  transform-style: preserve-3d;
 }
 
 .pill.controller.vert li.selected {
