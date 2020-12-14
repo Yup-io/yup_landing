@@ -19,7 +19,7 @@
 #vote-snackbar {
   position: fixed;
   top: 90vh;
-  left: 3vw;
+  left: 2vw;
   visibility: hidden;
   height: 60px;
   opacity: 1;
