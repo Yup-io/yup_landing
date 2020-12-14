@@ -18,7 +18,7 @@
 
 #vote-snackbar {
   position: fixed;
-  top: 92vh;
+  top: 90vh;
   left: 3vw;
   visibility: hidden;
   height: 60px;
@@ -717,21 +717,21 @@ header.jss6 {
 
 @-webkit-keyframes fadein {
   from {top: 100vh; opacity: 0;}
-  to {top: 92vh; opacity: 0.7;}
+  to {top: 90vh; opacity: 0.7;}
 }
 
 @keyframes fadein {
   from {top: 100vh; opacity: 0;}
-  to {top: 92vh; opacity:0.7;}
+  to {top: 90vh; opacity:0.7;}
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 92vh; opacity: 0.7;}
+  from {bottom: 90vh; opacity: 0.7;}
   to {bottom: 100vh; opacity: 0;}
 }
 
 @keyframes fadeout {
-  from {bottom: 92vh; opacity: 0.7;}
+  from {bottom: 90vh; opacity: 0.7;}
   to {bottom: 100vh; opacity: 0;}
 }
 
