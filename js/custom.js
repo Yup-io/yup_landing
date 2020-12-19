@@ -232,12 +232,11 @@ $(document).ready(async function() {
 })
 
 
-window.addEventListener('scroll', () => {
+const scrollHandler = () => {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
-
-function repeatOften() {
-  // Do whatever
-  requestAnimationFrame(repeatOften);
 }
-requestAnimationFrame(repeatOften);
+
+window.addEventListener('scroll', () => {
+  requestAnimationFrame(scrollHandler)
+} , false);
+
