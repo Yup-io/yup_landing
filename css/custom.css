@@ -739,6 +739,16 @@ header.jss6 {
   background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
 }
 
+.feed-card {
+  overflow:hidden;
+}
+
+.feed-title {
+  position:fixed;
+  bottom:5%;
+  left:10%;
+}
+
 .min-height-graphics {
   min-height: 550px;
 }
