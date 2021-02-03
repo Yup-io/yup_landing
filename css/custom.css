@@ -764,3 +764,7 @@ header.jss6 {
     min-height: 300px;
   }
 }
+
+.inline {
+  display: inline;
+}
