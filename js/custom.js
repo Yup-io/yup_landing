@@ -11,10 +11,6 @@ $( document ).ready(function() {
   $('#top-submit-email-form-desktop').submit(sendDesktopEmail)
   $('#top-submit-email-form-mobile').submit(sendMobileEmail)
 
-
-  console.log(  $('#top-submit-email-btn-mobile'))
-  console.log(  $('#top-submit-email-form-mobile'))
-
 });
 
 
@@ -174,7 +170,7 @@ $(document).ready(async function() {
   function formatMetric (metric)  {
     let num = metric.toString()
     const length = num.length
-    const formattedMetric = num.slice(0, length/2) + ',' + num.slice(length/2, length)
+    const formattedMetric = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     return formattedMetric
   }
 
