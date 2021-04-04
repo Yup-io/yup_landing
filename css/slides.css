@@ -112,7 +112,7 @@ img.rounded {
 .slides {
   color: #fff;
   fill: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Gilroy", sans-serif;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
@@ -4586,7 +4586,6 @@ h2,
 .h2 {
   font-size: 35px;
   line-height: 1.17;
-  margin-bottom: 15px;
   font-weight: 400;
 }
 h2.uppercase,
@@ -4609,7 +4608,6 @@ h2.huge,
 h3,
 .h3 {
   font-size: 20px;
-  margin-bottom: 12px;
   font-weight: 400;
 }
 h3.large,
@@ -4638,7 +4636,6 @@ h3 + .h1,
 h4,
 .h4 {
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 h5,
@@ -4648,7 +4645,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 p,

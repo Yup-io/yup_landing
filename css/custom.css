@@ -49,9 +49,9 @@
 }
 
 .title {
-  font-family: 'Bungee Inline', sans-serif; /* Bungee Inline */
-  font-size: 50px;
-  font-weight: 100;
+  font-family: 'Gilroy', sans-serif; /* Bungee Inline */
+  font-size: 4rem;
+  font-weight: 600;
   line-height: 1;
   background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
   -webkit-background-clip: text;
@@ -669,34 +669,110 @@ header.jss6 {
   }
 }
 
-.Rubik {
-  font-family: Rubik!important;
+.Gilroy {
+  font-family: Gilroy!important;
   font-weight: 400!important;
 }
 
-.Rubik-200 {
-  font-family: Rubik!important;
+.Gilroy-100 {
+  font-family: Gilroy!important;
+  font-weight: 100!important;
+}
+
+.Gilroy-200 {
+  font-family: Gilroy!important;
   font-weight: 200!important;
 }
 
-.Rubik-300 {
-  font-family: Rubik!important;
+.Gilroy-300 {
+  font-family: Gilroy!important;
   font-weight: 300!important;
 }
 
-.Rubik-400 {
-  font-family: Rubik!important;
+.Gilroy-400 {
+  font-family: Gilroy!important;
   font-weight: 400!important;
 }
 
-.Rubik-600 {
-  font-family: Rubik!important;
+.Gilroy-500 {
+  font-family: Gilroy!important;
+  font-weight: 500!important;
+}
+
+.Gilroy-600 {
+  font-family: Gilroy!important;
   font-weight: 600!important;
 }
 
-.Rubik-100 {
-  font-family: Rubik!important;
-  font-weight: 100!important;
+.Gilroy-700 {
+  font-family: Gilroy!important;
+  font-weight: 700!important;
+}
+
+.Gilroy-800 {
+  font-family: Gilroy!important;
+  font-weight: 800!important;
+}
+
+.GilroyThin {
+	font-family: "Gilroy-Thin";
+}
+.GilroyUltraLightItalic {
+	font-family: "Gilroy-UltraLightItalic";
+}
+.GilroyThinItalic {
+	font-family: "Gilroy-ThinItalic";
+}
+.GilroySemiBoldItalic {
+	font-family: "Gilroy-SemiBoldItalic";
+}
+.GilroySemiBold {
+	font-family: "Gilroy-SemiBold";
+}
+.GilroyUltraLight {
+	font-family: "Gilroy-UltraLight";
+}
+.GilroyRegular {
+	font-family: "Gilroy-Regular";
+}
+.GilroyRegularItalic {
+	font-family: "Gilroy-RegularItalic";
+}
+.GilroyMediumItalic {
+	font-family: "Gilroy-MediumItalic";
+}
+.GilroyMedium {
+	font-family: "Gilroy-Medium";
+}
+.GilroyLightItalic {
+	font-family: "Gilroy-LightItalic";
+}
+.GilroyLight {
+	font-family: "Gilroy-Light";
+}
+.GilroyHeavyItalic {
+	font-family: "Gilroy-HeavyItalic";
+}
+.GilroyHeavy {
+	font-family: "Gilroy-Heavy";
+}
+.GilroyExtraBoldItalic {
+	font-family: "Gilroy-ExtraBoldItalic";
+}
+.GilroyExtraBold {
+	font-family: "Gilroy-ExtraBold";
+}
+.GilroyBoldItalic {
+	font-family: "Gilroy-BoldItalic";
+}
+.GilroyBold {
+	font-family: "Gilroy-Bold";
+}
+.GilroyBlackItalic {
+	font-family: "Gilroy-BlackItalic";
+}
+.GilroyBlack {
+	font-family: "Gilroy-Black";
 }
 
 .Bungee {
