@@ -50,8 +50,8 @@
 
 .title {
   font-family: 'Gilroy', sans-serif; /* Bungee Inline */
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 5rem;
+  font-weight: 700;
   line-height: 1;
   background: -webkit-linear-gradient(45deg, #00eab7, #7fba1b, #f0c800, #f08c28, #be1e2d);
   -webkit-background-clip: text;
@@ -152,7 +152,7 @@
 
 .heart-sprite {
   background-color: transparent;
-  transform: translate(-15vw,2vh);
+  transform: translate(-15vw,-10vh);
   animation: heart-sprite 1s linear;
   width: 4vw;
   min-width: 18px;
@@ -165,7 +165,7 @@
 
 .star-sprite {
     background-color: transparent;
-    transform: rotateX(5deg) rotateZ(-15deg) translateZ(calc(var(--width) * .2)) translate(20vw,-10vh);
+    transform: rotateX(5deg) rotateZ(-15deg) translateZ(calc(var(--width) * .2)) translate(20vw,-40vh);
     animation: star-sprite 0.1s linear;
     width: 3vw;
     min-width: 16px;
@@ -179,27 +179,27 @@
 
 .laugh-sprite {
     background-color: transparent;
-    transform: translate(-45vw,-10vh) rotateZ(15deg) translateZ(0px);
+    transform: translate(-45vw,-50vh) rotateZ(15deg) translateZ(0px);
     animation: laugh-sprite 1s linear;
     width: 2vw;
     min-width: 13px;
   }
 @keyframes laugh-sprite {
   to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate(200vw,200vh) translateZ(100vw);
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate(200vw,400vh) translateZ(100vw);
   }
 }
 
 .heart-sprite-1 {
     background-color: transparent;
-    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-3vw,3vh) translateZ(10px) scaleY(-1);
+    transform: rotateY(0deg) translateZ(calc(var(--width) * .2)) translate(-3vw,-25vh) translateZ(10px) scaleY(-1);
     animation: heart-sprite-1 1s linear;
     width: 5vw;
     min-width: 17px;
   }
 @keyframes heart-sprite-1 {
   to {
-    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-40vw,100vh) translateZ(50px);
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate(-40vw,150vh) translateZ(50px);
   }
 }
 
@@ -232,13 +232,13 @@ to {
 
 .like-sprite {
   background-color: transparent;
-  transform: rotateX(5deg) rotateY(0deg) translate(15vw,5vh) translateZ(0px);
+  transform: rotateX(5deg) rotateY(0deg) translate(15vw,-15vh) translateZ(0px);
   animation: like-sprite 1s linear;
   width: 4vw;
 }
 @keyframes like-sprite {
 to {
-  transform: rotateY(90deg) rotateZ(0deg) rotateY(180deg) translate(120vw,85vh);
+  transform: rotateY(40deg) rotateZ(0deg) rotateY(120deg) translate(120vw,245vh);
 }
 }
 .like-sprite-1 {
@@ -356,7 +356,7 @@ img.demodemo {
 
 .mobile
   .title {
-  font-size: 2rem;
+  font-size: 4rem;
  }
  .panel {
    padding: 10px 20px;
@@ -408,11 +408,11 @@ img.demodemo {
 
 
 h1 {
-  font-family: 'Lexend Exa', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 h3 {
-  font-family: 'Lexend Exa', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 /* Team */
