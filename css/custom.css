@@ -53,14 +53,14 @@
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;
-  background: -webkit-linear-gradient(45deg, #00e08e, #a2cf7e, #f0c909, #a2cf7e, #eb3650);
+  background: -webkit-linear-gradient(45deg, #00e08e, #f0c909, #eb3650);
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
   -webkit-animation: title-gradient 1s linear infinite;
 }
 
 .rainbow-gradient {
-  background: -webkit-linear-gradient(45deg, #00e08e, #a2cf7e, #f0c909, #a2cf7e, #eb3650);
+  background: -webkit-linear-gradient(45deg, #00e08e, #f0c909, #eb3650);
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
   -webkit-animation: title-gradient 1s linear infinite;
@@ -574,7 +574,7 @@ p.weight-9, .boldest  {font-weight: 900 !important;}
 }
 
 .pill.controller.vert li.selected {
-  background: -webkit-linear-gradient(45deg, #00e08e, #a2cf7e, #f0c909, #a2cf7e, #eb3650);
+  background: -webkit-linear-gradient(45deg, #00e08e, #f0c909, #eb3650);
   color: #101010;
   border-radius: 4px 4px 4px 4px;
 }
@@ -812,7 +812,7 @@ header.jss6 {
 }
 
 .rainbow-card {
-  background: -webkit-linear-gradient(45deg, #00e08e, #a2cf7e, #f0c909, #a2cf7e, #eb3650);
+  background: -webkit-linear-gradient(45deg, #00e08e, #f0c909, #eb3650);
 }
 
 .feed-card {
