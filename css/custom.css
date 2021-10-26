@@ -367,6 +367,7 @@ img.demodemo {
 .mobile
   .title {
   font-size: 13vw;
+  margin-top: -30px;
  }
  .panel {
    padding: 10px 20px;
