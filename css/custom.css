@@ -130,6 +130,7 @@
   animation-fill-mode: both;
 }
 .cube {
+  opacity:0.07;
   transform-style: preserve-3d;
   transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate(0px,10vh);
   animation: cube 1s linear;
@@ -352,11 +353,21 @@ img.demodemo {
 .desk-img {
   display: inherit;
 }
+
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+    .title {
+    font-size: 3rem;
+   }
+}
 /* Mobile */
 
 .mobile
   .title {
-  font-size: 4rem;
+  font-size: 13vw;
+  margin-top: -30px;
  }
  .panel {
    padding: 10px 20px;
