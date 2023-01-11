@@ -9,11 +9,12 @@
 
 	<!-- Meta Information-->
 	<title>Yup • Web3 Social All-In-One. </title>
-  <meta name="keywords" content="NFTs,web3,social media,blockchain,crypto">
-  <meta name="author" content="Yup">
+	<meta name="keywords" content="NFTs,web3,social media,blockchain,crypto">
+	<meta name="author" content="Yup">
 	<meta property="og:image" content="https://yup.io/assets/thumbnail.png">
 	<meta property="og:site_name" content="Yup">
-	<meta name="Description" CONTENT="Web3 Social All-in-One. Get the best of Twitter, Farcaster, Lens, Mirror, NFTs, and more in one feed. Earn money and clout for curating.">
+	<meta name="Description"
+		CONTENT="Web3 Social All-in-One. Get the best of Twitter, Farcaster, Lens, Mirror, NFTs, and more in one feed. Earn money and clout for curating.">
 	<meta name="twitter:site" content="@yup_io">
 
 	<!-- Twitter -->
@@ -60,7 +61,7 @@
 				analytics.page();
 			}
 		}();
-		function trackVideoPlay () { analytics.track('Explainer Video Play', { origin: 'landing-page' }) }
+		function trackVideoPlay() { analytics.track('Explainer Video Play', { origin: 'landing-page' }) }
 	</script>
 
 	<!-- Intercom -->
@@ -88,13 +89,13 @@
 	<script>(function (c, a) {
 			if (!a.__SV) {
 				var b = window; try { var d, m, j, k = b.location, f = k.hash; d = function (a, b) { return (m = a.match(RegExp(b + "=([^&]*)"))) ? m[1] : null }; f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b.sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k.pathname + k.search))) } catch (n) { } var l, h; window.mixpanel = a; a._i = []; a.init = function (b, d, g) {
-					function c (b, i) {
+					function c(b, i) {
 						var a = i.split("."); 2 == a.length && (b = b[a[0]], i = a[1]); b[i] = function () {
 							b.push([i].concat(Array.prototype.slice.call(arguments,
 								0)))
 						}
 					} var e = a; "undefined" !== typeof g ? e = a[g] = [] : g = "mixpanel"; e.people = e.people || []; e.toString = function (b) { var a = "mixpanel"; "mixpanel" !== g && (a += "." + g); b || (a += " (stub)"); return a }; e.people.toString = function () { return e.toString(1) + ".people (stub)" }; l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-					for (h = 0; h < l.length; h++)c(e, l[h]); var f = "set set_once union unset remove delete".split(" "); e.get_group = function () { function a (c) { b[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); e.push([d, call2]) } } for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f.length; c++)a(f[c]); return b }; a._i.push([b, d, g])
+					for (h = 0; h < l.length; h++)c(e, l[h]); var f = "set set_once union unset remove delete".split(" "); e.get_group = function () { function a(c) { b[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); e.push([d, call2]) } } for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f.length; c++)a(f[c]); return b }; a._i.push([b, d, g])
 				}; a.__SV = 1.2; b = c.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
 					MIXPANEL_CUSTOM_LIB_URL : "file:" === c.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js"; d = c.getElementsByTagName("script")[0]; d.parentNode.insertBefore(b, d)
 			}
@@ -114,7 +115,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137858250-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag () { dataLayer.push(arguments); }
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-137858250-1');
@@ -135,7 +136,7 @@
 			}
 		};
 		// Rollbar Snippet
-		!function (r) { var e = {}; function o (n) { if (e[n]) return e[n].exports; var t = e[n] = { i: n, l: !1, exports: {} }; return r[n].call(t.exports, t, t.exports, o), t.l = !0, t.exports } o.m = r, o.c = e, o.d = function (r, e, n) { o.o(r, e) || Object.defineProperty(r, e, { enumerable: !0, get: n }) }, o.r = function (r) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(r, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(r, "__esModule", { value: !0 }) }, o.t = function (r, e) { if (1 & e && (r = o(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var n = Object.create(null); if (o.r(n), Object.defineProperty(n, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var t in r) o.d(n, t, function (e) { return r[e] }.bind(null, t)); return n }, o.n = function (r) { var e = r && r.__esModule ? function () { return r.default } : function () { return r }; return o.d(e, "a", e), e }, o.o = function (r, e) { return Object.prototype.hasOwnProperty.call(r, e) }, o.p = "", o(o.s = 0) }([function (r, e, o) { "use strict"; var n = o(1), t = o(5); _rollbarConfig = _rollbarConfig || {}, _rollbarConfig.rollbarJsUrl = _rollbarConfig.rollbarJsUrl || "https://cdn.rollbar.com/rollbarjs/refs/tags/v2.19.3/rollbar.min.js", _rollbarConfig.async = void 0 === _rollbarConfig.async || _rollbarConfig.async; var a = n.setupShim(window, _rollbarConfig), l = t(_rollbarConfig); window.rollbar = n.Rollbar, a.loadFull(window, document, !_rollbarConfig.async, _rollbarConfig, l) }, function (r, e, o) { "use strict"; var n = o(2), t = o(3); function a (r) { return function () { try { return r.apply(this, arguments) } catch (r) { try { console.error("[Rollbar]: Internal error", r) } catch (r) { } } } } var l = 0; function i (r, e) { this.options = r, this._rollbarOldOnError = null; var o = l++; this.shimId = function () { return o }, "undefined" != typeof window && window._rollbarShims && (window._rollbarShims[o] = { handler: e, messages: [] }) } var s = o(4), d = function (r, e) { return new i(r, e) }, c = function (r) { return new s(d, r) }; function u (r) { return a((function () { var e = this, o = Array.prototype.slice.call(arguments, 0), n = { shim: e, method: r, args: o, ts: new Date }; window._rollbarShims[this.shimId()].messages.push(n) })) } i.prototype.loadFull = function (r, e, o, n, t) { var l = !1, i = e.createElement("script"), s = e.getElementsByTagName("script")[0], d = s.parentNode; i.crossOrigin = "", i.src = n.rollbarJsUrl, o || (i.async = !0), i.onload = i.onreadystatechange = a((function () { if (!(l || this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState)) { i.onload = i.onreadystatechange = null; try { d.removeChild(i) } catch (r) { } l = !0, function () { var e; if (void 0 === r._rollbarDidLoad) { e = new Error("rollbar.js did not load"); for (var o, n, a, l, i = 0; o = r._rollbarShims[i++];)for (o = o.messages || []; n = o.shift();)for (a = n.args || [], i = 0; i < a.length; ++i)if ("function" == typeof (l = a[i])) { l(e); break } } "function" == typeof t && t(e) }() } })), d.insertBefore(i, s) }, i.prototype.wrap = function (r, e, o) { try { var n; if (n = "function" == typeof e ? e : function () { return e || {} }, "function" != typeof r) return r; if (r._isWrap) return r; if (!r._rollbar_wrapped && (r._rollbar_wrapped = function () { o && "function" == typeof o && o.apply(this, arguments); try { return r.apply(this, arguments) } catch (o) { var e = o; throw e && ("string" == typeof e && (e = new String(e)), e._rollbarContext = n() || {}, e._rollbarContext._wrappedSource = r.toString(), window._rollbarWrappedError = e), e } }, r._rollbar_wrapped._isWrap = !0, r.hasOwnProperty)) for (var t in r) r.hasOwnProperty(t) && (r._rollbar_wrapped[t] = r[t]); return r._rollbar_wrapped } catch (e) { return r } }; for (var p = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","), f = 0; f < p.length; ++f)i.prototype[p[f]] = u(p[f]); r.exports = { setupShim: function (r, e) { if (r) { var o = e.globalAlias || "Rollbar"; if ("object" == typeof r[o]) return r[o]; r._rollbarShims = {}, r._rollbarWrappedError = null; var l = new c(e); return a((function () { e.captureUncaught && (l._rollbarOldOnError = r.onerror, n.captureUncaughtExceptions(r, l, !0), e.wrapGlobalEventHandlers && t(r, l, !0)), e.captureUnhandledRejections && n.captureUnhandledRejections(r, l, !0); var a = e.autoInstrument; return !1 !== e.enabled && (void 0 === a || !0 === a || "object" == typeof a && a.network) && r.addEventListener && (r.addEventListener("load", l.captureLoad.bind(l)), r.addEventListener("DOMContentLoaded", l.captureDomContentLoaded.bind(l))), r[o] = l, l }))() } }, Rollbar: c } }, function (r, e, o) { "use strict"; function n (r, e, o, n) { r._rollbarWrappedError && (n[4] || (n[4] = r._rollbarWrappedError), n[5] || (n[5] = r._rollbarWrappedError._rollbarContext), r._rollbarWrappedError = null); var t = e.handleUncaughtException.apply(e, n); o && o.apply(r, n), "anonymous" === t && (e.anonymousErrorsPending += 1) } r.exports = { captureUncaughtExceptions: function (r, e, o) { if (r) { var t; if ("function" == typeof e._rollbarOldOnError) t = e._rollbarOldOnError; else if (r.onerror) { for (t = r.onerror; t._rollbarOldOnError;)t = t._rollbarOldOnError; e._rollbarOldOnError = t } e.handleAnonymousErrors(); var a = function () { var o = Array.prototype.slice.call(arguments, 0); n(r, e, t, o) }; o && (a._rollbarOldOnError = t), r.onerror = a } }, captureUnhandledRejections: function (r, e, o) { if (r) { "function" == typeof r._rollbarURH && r._rollbarURH.belongsToShim && r.removeEventListener("unhandledrejection", r._rollbarURH); var n = function (r) { var o, n, t; try { o = r.reason } catch (r) { o = void 0 } try { n = r.promise } catch (r) { n = "[unhandledrejection] error getting `promise` from event" } try { t = r.detail, !o && t && (o = t.reason, n = t.promise) } catch (r) { } o || (o = "[unhandledrejection] error getting `reason` from event"), e && e.handleUnhandledRejection && e.handleUnhandledRejection(o, n) }; n.belongsToShim = o, r._rollbarURH = n, r.addEventListener("unhandledrejection", n) } } } }, function (r, e, o) { "use strict"; function n (r, e, o) { if (e.hasOwnProperty && e.hasOwnProperty("addEventListener")) { for (var n = e.addEventListener; n._rollbarOldAdd && n.belongsToShim;)n = n._rollbarOldAdd; var t = function (e, o, t) { n.call(this, e, r.wrap(o), t) }; t._rollbarOldAdd = n, t.belongsToShim = o, e.addEventListener = t; for (var a = e.removeEventListener; a._rollbarOldRemove && a.belongsToShim;)a = a._rollbarOldRemove; var l = function (r, e, o) { a.call(this, r, e && e._rollbar_wrapped || e, o) }; l._rollbarOldRemove = a, l.belongsToShim = o, e.removeEventListener = l } } r.exports = function (r, e, o) { if (r) { var t, a, l = "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(","); for (t = 0; t < l.length; ++t)r[a = l[t]] && r[a].prototype && n(e, r[a].prototype, o) } } }, function (r, e, o) { "use strict"; function n (r, e) { this.impl = r(e, this), this.options = e, function (r) { for (var e = function (r) { return function () { var e = Array.prototype.slice.call(arguments, 0); if (this.impl[r]) return this.impl[r].apply(this.impl, e) } }, o = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","), n = 0; n < o.length; n++)r[o[n]] = e(o[n]) }(n.prototype) } n.prototype._swapAndProcessMessages = function (r, e) { var o, n, t; for (this.impl = r(this.options); o = e.shift();)n = o.method, t = o.args, this[n] && "function" == typeof this[n] && ("captureDomContentLoaded" === n || "captureLoad" === n ? this[n].apply(this, [t[0], o.ts]) : this[n].apply(this, t)); return this }, r.exports = n }, function (r, e, o) { "use strict"; r.exports = function (r) { return function (e) { if (!e && !window._rollbarInitialized) { for (var o, n, t = (r = r || {}).globalAlias || "Rollbar", a = window.rollbar, l = function (r) { return new a(r) }, i = 0; o = window._rollbarShims[i++];)n || (n = o.handler), o.handler._swapAndProcessMessages(l, o.messages); window[t] = n, window._rollbarInitialized = !0 } } } }]);
+		!function (r) { var e = {}; function o(n) { if (e[n]) return e[n].exports; var t = e[n] = { i: n, l: !1, exports: {} }; return r[n].call(t.exports, t, t.exports, o), t.l = !0, t.exports } o.m = r, o.c = e, o.d = function (r, e, n) { o.o(r, e) || Object.defineProperty(r, e, { enumerable: !0, get: n }) }, o.r = function (r) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(r, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(r, "__esModule", { value: !0 }) }, o.t = function (r, e) { if (1 & e && (r = o(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var n = Object.create(null); if (o.r(n), Object.defineProperty(n, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var t in r) o.d(n, t, function (e) { return r[e] }.bind(null, t)); return n }, o.n = function (r) { var e = r && r.__esModule ? function () { return r.default } : function () { return r }; return o.d(e, "a", e), e }, o.o = function (r, e) { return Object.prototype.hasOwnProperty.call(r, e) }, o.p = "", o(o.s = 0) }([function (r, e, o) { "use strict"; var n = o(1), t = o(5); _rollbarConfig = _rollbarConfig || {}, _rollbarConfig.rollbarJsUrl = _rollbarConfig.rollbarJsUrl || "https://cdn.rollbar.com/rollbarjs/refs/tags/v2.19.3/rollbar.min.js", _rollbarConfig.async = void 0 === _rollbarConfig.async || _rollbarConfig.async; var a = n.setupShim(window, _rollbarConfig), l = t(_rollbarConfig); window.rollbar = n.Rollbar, a.loadFull(window, document, !_rollbarConfig.async, _rollbarConfig, l) }, function (r, e, o) { "use strict"; var n = o(2), t = o(3); function a(r) { return function () { try { return r.apply(this, arguments) } catch (r) { try { console.error("[Rollbar]: Internal error", r) } catch (r) { } } } } var l = 0; function i(r, e) { this.options = r, this._rollbarOldOnError = null; var o = l++; this.shimId = function () { return o }, "undefined" != typeof window && window._rollbarShims && (window._rollbarShims[o] = { handler: e, messages: [] }) } var s = o(4), d = function (r, e) { return new i(r, e) }, c = function (r) { return new s(d, r) }; function u(r) { return a((function () { var e = this, o = Array.prototype.slice.call(arguments, 0), n = { shim: e, method: r, args: o, ts: new Date }; window._rollbarShims[this.shimId()].messages.push(n) })) } i.prototype.loadFull = function (r, e, o, n, t) { var l = !1, i = e.createElement("script"), s = e.getElementsByTagName("script")[0], d = s.parentNode; i.crossOrigin = "", i.src = n.rollbarJsUrl, o || (i.async = !0), i.onload = i.onreadystatechange = a((function () { if (!(l || this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState)) { i.onload = i.onreadystatechange = null; try { d.removeChild(i) } catch (r) { } l = !0, function () { var e; if (void 0 === r._rollbarDidLoad) { e = new Error("rollbar.js did not load"); for (var o, n, a, l, i = 0; o = r._rollbarShims[i++];)for (o = o.messages || []; n = o.shift();)for (a = n.args || [], i = 0; i < a.length; ++i)if ("function" == typeof (l = a[i])) { l(e); break } } "function" == typeof t && t(e) }() } })), d.insertBefore(i, s) }, i.prototype.wrap = function (r, e, o) { try { var n; if (n = "function" == typeof e ? e : function () { return e || {} }, "function" != typeof r) return r; if (r._isWrap) return r; if (!r._rollbar_wrapped && (r._rollbar_wrapped = function () { o && "function" == typeof o && o.apply(this, arguments); try { return r.apply(this, arguments) } catch (o) { var e = o; throw e && ("string" == typeof e && (e = new String(e)), e._rollbarContext = n() || {}, e._rollbarContext._wrappedSource = r.toString(), window._rollbarWrappedError = e), e } }, r._rollbar_wrapped._isWrap = !0, r.hasOwnProperty)) for (var t in r) r.hasOwnProperty(t) && (r._rollbar_wrapped[t] = r[t]); return r._rollbar_wrapped } catch (e) { return r } }; for (var p = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","), f = 0; f < p.length; ++f)i.prototype[p[f]] = u(p[f]); r.exports = { setupShim: function (r, e) { if (r) { var o = e.globalAlias || "Rollbar"; if ("object" == typeof r[o]) return r[o]; r._rollbarShims = {}, r._rollbarWrappedError = null; var l = new c(e); return a((function () { e.captureUncaught && (l._rollbarOldOnError = r.onerror, n.captureUncaughtExceptions(r, l, !0), e.wrapGlobalEventHandlers && t(r, l, !0)), e.captureUnhandledRejections && n.captureUnhandledRejections(r, l, !0); var a = e.autoInstrument; return !1 !== e.enabled && (void 0 === a || !0 === a || "object" == typeof a && a.network) && r.addEventListener && (r.addEventListener("load", l.captureLoad.bind(l)), r.addEventListener("DOMContentLoaded", l.captureDomContentLoaded.bind(l))), r[o] = l, l }))() } }, Rollbar: c } }, function (r, e, o) { "use strict"; function n(r, e, o, n) { r._rollbarWrappedError && (n[4] || (n[4] = r._rollbarWrappedError), n[5] || (n[5] = r._rollbarWrappedError._rollbarContext), r._rollbarWrappedError = null); var t = e.handleUncaughtException.apply(e, n); o && o.apply(r, n), "anonymous" === t && (e.anonymousErrorsPending += 1) } r.exports = { captureUncaughtExceptions: function (r, e, o) { if (r) { var t; if ("function" == typeof e._rollbarOldOnError) t = e._rollbarOldOnError; else if (r.onerror) { for (t = r.onerror; t._rollbarOldOnError;)t = t._rollbarOldOnError; e._rollbarOldOnError = t } e.handleAnonymousErrors(); var a = function () { var o = Array.prototype.slice.call(arguments, 0); n(r, e, t, o) }; o && (a._rollbarOldOnError = t), r.onerror = a } }, captureUnhandledRejections: function (r, e, o) { if (r) { "function" == typeof r._rollbarURH && r._rollbarURH.belongsToShim && r.removeEventListener("unhandledrejection", r._rollbarURH); var n = function (r) { var o, n, t; try { o = r.reason } catch (r) { o = void 0 } try { n = r.promise } catch (r) { n = "[unhandledrejection] error getting `promise` from event" } try { t = r.detail, !o && t && (o = t.reason, n = t.promise) } catch (r) { } o || (o = "[unhandledrejection] error getting `reason` from event"), e && e.handleUnhandledRejection && e.handleUnhandledRejection(o, n) }; n.belongsToShim = o, r._rollbarURH = n, r.addEventListener("unhandledrejection", n) } } } }, function (r, e, o) { "use strict"; function n(r, e, o) { if (e.hasOwnProperty && e.hasOwnProperty("addEventListener")) { for (var n = e.addEventListener; n._rollbarOldAdd && n.belongsToShim;)n = n._rollbarOldAdd; var t = function (e, o, t) { n.call(this, e, r.wrap(o), t) }; t._rollbarOldAdd = n, t.belongsToShim = o, e.addEventListener = t; for (var a = e.removeEventListener; a._rollbarOldRemove && a.belongsToShim;)a = a._rollbarOldRemove; var l = function (r, e, o) { a.call(this, r, e && e._rollbar_wrapped || e, o) }; l._rollbarOldRemove = a, l.belongsToShim = o, e.removeEventListener = l } } r.exports = function (r, e, o) { if (r) { var t, a, l = "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(","); for (t = 0; t < l.length; ++t)r[a = l[t]] && r[a].prototype && n(e, r[a].prototype, o) } } }, function (r, e, o) { "use strict"; function n(r, e) { this.impl = r(e, this), this.options = e, function (r) { for (var e = function (r) { return function () { var e = Array.prototype.slice.call(arguments, 0); if (this.impl[r]) return this.impl[r].apply(this.impl, e) } }, o = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","), n = 0; n < o.length; n++)r[o[n]] = e(o[n]) }(n.prototype) } n.prototype._swapAndProcessMessages = function (r, e) { var o, n, t; for (this.impl = r(this.options); o = e.shift();)n = o.method, t = o.args, this[n] && "function" == typeof this[n] && ("captureDomContentLoaded" === n || "captureLoad" === n ? this[n].apply(this, [t[0], o.ts]) : this[n].apply(this, t)); return this }, r.exports = n }, function (r, e, o) { "use strict"; r.exports = function (r) { return function (e) { if (!e && !window._rollbarInitialized) { for (var o, n, t = (r = r || {}).globalAlias || "Rollbar", a = window.rollbar, l = function (r) { return new a(r) }, i = 0; o = window._rollbarShims[i++];)n || (n = o.handler), o.handler._swapAndProcessMessages(l, o.messages); window[t] = n, window._rollbarInitialized = !0 } } } }]);
 // End Rollbar Snippet
 	</script>
 
@@ -510,16 +511,19 @@
 									</div>
 								</div>
 							</div>
-					</li>
-					<li class="col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left ae-5 fromCenter showForDesktop hideForMobile">
-		        <div class="fix-6-12 center">
-		          <div class="col-6-12 left">
-		            <h1 class="huge ae-1 margin-bottom-3">
-									<div class="title" style="">
-										<mark style="padding-right: 1%;">Web3 Social <br>All-In-One.</mark>
-									</div>
-								</h1>
-								<p class="big hideForMobile margin-top-2 margin-bottom-2 ae-2 Gilroy-400">Content from your favorite platforms in one feed <br> Earn money and clout for curating</p>
+						</li>
+						<li
+							class="col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left ae-5 fromCenter showForDesktop hideForMobile">
+							<div class="fix-6-12 center">
+								<div class="col-6-12 left">
+									<h1 class="huge ae-1 margin-bottom-3">
+										<div class="title" style="">
+											<mark style="padding-right: 1%;">Web3 Social <br>All-In-One.</mark>
+										</div>
+									</h1>
+									<p class="big hideForMobile margin-top-2 margin-bottom-2 ae-2 Gilroy-400">Content
+										from your favorite platforms in one feed <br> Earn money and clout for curating
+									</p>
 									<a href="https://app.yup.io/?signupOpen=true">
 										<button
 											class="button rounded-square small gradient ae-3 main margin-bottom-2 showForTablet hideForMobile"
@@ -546,8 +550,9 @@
 							</div>
 							<label
 								class="ae-4 crop main showForPhoneInline hideForDesktop hideForTablet Gilroy-400 center"
-								style="font-size: 16px;margin-top:-5rem;">Curate and share content across the web<br>
-								Earn money and clout for your taste</label>
+								style="font-size: 16px;margin-top:-5rem;">Content from your favorite platforms in one
+								feed<br>
+								Earn money and clout for for curating</label>
 							<a href="https://app.yup.io/?signupOpen=true">
 								<button
 									class="button rounded-square small gradient ae-5 main margin-top-2 hideForDesktop hideForTablet showForMobile"
@@ -586,111 +591,143 @@
 	</div>
 
 
-<!-- Slide 2 - Cross-Platform -->
-<section data-title="Why" class="slide fade-7 kenBurns autoHeight">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-14-12">
-          <ul class="flex verticalCenter" style="justify-content:space-between;">
-            <li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-1">
-							<img src="assets/svg/PlatformIcons.svg" width="100%" height="100%" class="ae-2" style="position:absolute;left:0;"/>
-							<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ekvarbug.json" background="transparent"  speed="1.01"  loop autoplay style="margin-bottom:-20%"></lottie-player>
-            </li>
-            <li class="col-6-12 col-tablet-1-2 col-phone-1-1 left">
-	              <h2 class="ae-3 fromBottom Gilroy-700" style="color: #fff;">All Your Favorite Platforms</h2>
-							<p class="ae-2 opacity-8 small weight-5 Gilroy-300 rainbow-gradient">With you across the internet</p>
-							<p class="ae-3 opacity-6 small Gilroy-400">
-							Yup works everywhere. Get the best of Twitter, Farcaster, Lens, NFTs, and more in one feed. Use our overlays on integrated platforms.							</p>
-							<div class="left hideForPhablet">
-			          <div class="fix-6-12 toLeft opacity-7">
-									<ul class="flex flex-68 tintLogos equal equalMobile margin-top-2">
-				            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-1">
-				              <div class="table equalElement ae-5">
-				                <div class="cell Gilroy-500" style="text-align:start;"><a href="#">Featured on:</a>
-				                </div>
-				              </div>
-				            </li>
-				            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
-				              <div class="table wide equalElement ae-6">
-				                <div class="cell"><a href="https://techcrunch.com/2020/09/01/student-led-accelerator-envision-reaches-demo-week-for-class-one-looks-to-class-two/"><img width="56" src="assets/img/techcrunch.png" alt="techcrunch"/></a>
-				                </div>
-				              </div>
-				            </li>
-				            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
-				              <div class="table wide equalElement ae-7">
-				                <div class="cell"><a href="https://www.forbes.com/sites/ginaclarke/2019/01/09/after-ethereum-classic-suffers-51-hack-experts-consider-will-bitcoin-be-next/#7839545aa56b"><img width="88" src="assets/img/forbes.png" alt="Google"/></a>
-				                </div>
-				              </div>
-				            </li>
-				            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
-				              <div class="table wide equalElement ae-8">
-				                <div class="cell"><a href="https://blog.coinbase.com/coinbase-reports-black-americans-crypto-97e54cc89f84?gi=276d783d8996"><img width="90" src="assets/img/coinbase.png" alt="Apple"/></a>
-				                </div>
-				              </div>
-				            </li>
-				          </ul>
-			          </div>
-			        </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-color: #404040"></div>
-</section>
+	<!-- Slide 2 - Cross-Platform -->
+	<section data-title="Why" class="slide fade-7 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-14-12">
+						<ul class="flex verticalCenter" style="justify-content:space-between;">
+							<li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-1">
+								<img src="assets/svg/PlatformIcons.svg" width="100%" height="100%" class="ae-2"
+									style="position:absolute;left:0;" />
+								<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ekvarbug.json"
+									background="transparent" speed="1.01" loop autoplay
+									style="margin-bottom:-20%"></lottie-player>
+							</li>
+							<li class="col-6-12 col-tablet-1-2 col-phone-1-1 left">
+								<h2 class="ae-3 fromBottom Gilroy-700" style="color: #fff;">All Your Favorite Platforms
+								</h2>
+								<p class="ae-2 opacity-8 small weight-5 Gilroy-300 rainbow-gradient">With you across the
+									internet</p>
+								<p class="ae-3 opacity-6 small Gilroy-400">
+									Yup works everywhere. Get the best of Twitter, Farcaster, Lens, NFTs, and more in
+									one feed. Use our overlays on integrated platforms. </p>
+								<div class="left hideForPhablet">
+									<div class="fix-6-12 toLeft opacity-7">
+										<ul class="flex flex-68 tintLogos equal equalMobile margin-top-2">
+											<li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-1">
+												<div class="table equalElement ae-5">
+													<div class="cell Gilroy-500" style="text-align:start;"><a
+															href="#">Featured on:</a>
+													</div>
+												</div>
+											</li>
+											<li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
+												<div class="table wide equalElement ae-6">
+													<div class="cell"><a
+															href="https://techcrunch.com/2020/09/01/student-led-accelerator-envision-reaches-demo-week-for-class-one-looks-to-class-two/"><img
+																width="56" src="assets/img/techcrunch.png"
+																alt="techcrunch" /></a>
+													</div>
+												</div>
+											</li>
+											<li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
+												<div class="table wide equalElement ae-7">
+													<div class="cell"><a
+															href="https://www.forbes.com/sites/ginaclarke/2019/01/09/after-ethereum-classic-suffers-51-hack-experts-consider-will-bitcoin-be-next/#7839545aa56b"><img
+																width="88" src="assets/img/forbes.png"
+																alt="Google" /></a>
+													</div>
+												</div>
+											</li>
+											<li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-12">
+												<div class="table wide equalElement ae-8">
+													<div class="cell"><a
+															href="https://blog.coinbase.com/coinbase-reports-black-americans-crypto-97e54cc89f84?gi=276d783d8996"><img
+																width="90" src="assets/img/coinbase.png"
+																alt="Apple" /></a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background-color: #404040"></div>
+	</section>
 
-<!-- Slide 3 - FEEDS + LISTS -->
-<section data-title="Lists" class="slide fade-7 kenBurns autoHeight">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-				<div class="fix-14-12">
-          <ul class="flex verticalCenter" style="justify-content:space-between;">
-            <li class="col-5-12 col-tablet-5-12">
-              <h2 class="ae-3 left fromBottom Gilroy-700" style="color: #fff;">Custom Feeds</h2>
-							<h3 class="ae-2 opacity-8 weight-5 Gilroy-500 left rainbow-gradient">Your favorite content, how you like it</h3>
-							<p class="ae-3 opacity-6 small left Gilroy-400">
-								Feeds are a culmination of the internet's best content, curated by the Yup community. Find the smartest tweets, the best Farcaster casts, the greatest posts from Lens Protocol, and more - all in one place.							</p>
-            </li>
-						<li class="col-5-12 col-tablet-7-12 xzi ae-1 left hideforTablet hideForPhablet hideForPhone">
-							<ul class="flex verticalCenter fixedSpaces later equal fromCenter flex-71">
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity padding-1 js-tilt feed-card" style="overflow:hidden;">
-									<a style="position:relative;" href="https://app.yup.io/?feed=latenightcool" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/popularcover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1" style="overflow:hidden;position:relative;">
-									<a style="position:relative;" href="https://app.yup.io/?feed=dailyhits" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/dailyhitscover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1" style="position:relative;overflow:hidden;">
-									<a href="https://app.yup.io/?feed=nfts" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/nftcover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1" style="position:relative;">
-									<a href="https://app.yup.io/?feed=non-corona" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/safecover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity  js-tilt feed-card padding-1">
-									<a href="https://app.yup.io/?feed=crypto" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/cryptocover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-								<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1">
-									<a href="https://app.yup.io/?feed=brainfood" target="_blank">
-										<img class="rounded" data-tilt-max="-3" src="assets/img/smartcover.png" alt="Image Thumbnail">
-									</a>
-								</li>
-							</ul>
-            </li>
-          </ul>
-        </div>
-				<!--Lists -  HIDE FOR NOW
+	<!-- Slide 3 - FEEDS + LISTS -->
+	<section data-title="Lists" class="slide fade-7 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-14-12">
+						<ul class="flex verticalCenter" style="justify-content:space-between;">
+							<li class="col-5-12 col-tablet-5-12">
+								<h2 class="ae-3 left fromBottom Gilroy-700" style="color: #fff;">Custom Feeds</h2>
+								<h3 class="ae-2 opacity-8 weight-5 Gilroy-500 left rainbow-gradient">Your favorite
+									content, how you like it</h3>
+								<p class="ae-3 opacity-6 small left Gilroy-400">
+									Feeds are a culmination of the internet's best content, curated by the Yup
+									community. Find the smartest tweets, the best Farcaster casts, the greatest posts
+									from Lens Protocol, and more - all in one place. </p>
+							</li>
+							<li
+								class="col-5-12 col-tablet-7-12 xzi ae-1 left hideforTablet hideForPhablet hideForPhone">
+								<ul class="flex verticalCenter fixedSpaces later equal fromCenter flex-71">
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity padding-1 js-tilt feed-card"
+										style="overflow:hidden;">
+										<a style="position:relative;" href="https://app.yup.io/?feed=latenightcool"
+											target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/popularcover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
+										style="overflow:hidden;position:relative;">
+										<a style="position:relative;" href="https://app.yup.io/?feed=dailyhits"
+											target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/dailyhitscover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
+										style="position:relative;overflow:hidden;">
+										<a href="https://app.yup.io/?feed=nfts" target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/nftcover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
+										style="position:relative;">
+										<a href="https://app.yup.io/?feed=non-corona" target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/safecover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity  js-tilt feed-card padding-1">
+										<a href="https://app.yup.io/?feed=crypto" target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/cryptocover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1">
+										<a href="https://app.yup.io/?feed=brainfood" target="_blank">
+											<img class="rounded" data-tilt-max="-3" src="assets/img/smartcover.png"
+												alt="Image Thumbnail">
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!--Lists -  HIDE FOR NOW
         <div class="fix-14-12 padding-top-15">
           <ul class="flex verticalCenter" style="justify-content:space-between;">
             <li class="col-6-12 right col-tablet-1-2 col-phablet-1-1">
@@ -722,38 +759,43 @@
 		<div class="background" style="background-color: #404040"></div>
 	</section>
 
-<!-- Slide 4 - COLLECTIONS -->
-<section data-title="Why" class="slide fade-7 kenBurns autoHeight">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-12-12">
-          <ul class="flex verticalCenter" style="justify-content:space-between;">
-            <li class="col-6-12 col-tablet-1-2 col-phone-1-1 left">
-	              <h2 class="ae-3 fromBottom Gilroy-700" style="color: #fff;">Make Collections</h2>
-							<p class="ae-2 opacity-8 small weight-5 Gilroy-300 rainbow-gradient">
-								Curate everything
-							</p>
-							<p class="ae-3 opacity-6 small Gilroy-400">
-								Bookmarks are so Web2. Just right-click to curate anything across the web. Collections are the best way to curate and share whatever you're into, whether it's NFTs, think pieces, or 70s mob movies.
-							</p>
-            </li>
-            <li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-2">
-							<div>
-								<a href="https://app.yup.io/leaderboard?site=all&subject=collections&category=overall">
-									<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_uyr3awu6.json" background="transparent"  speed="1"  loop autoplay style="margin-bottom:-20%"></lottie-player>
-								</a>
-							</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-color: #404040"></div>
-</section>
+	<!-- Slide 4 - COLLECTIONS -->
+	<section data-title="Why" class="slide fade-7 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-12-12">
+						<ul class="flex verticalCenter" style="justify-content:space-between;">
+							<li class="col-6-12 col-tablet-1-2 col-phone-1-1 left">
+								<h2 class="ae-3 fromBottom Gilroy-700" style="color: #fff;">Make Collections</h2>
+								<p class="ae-2 opacity-8 small weight-5 Gilroy-300 rainbow-gradient">
+									Curate everything
+								</p>
+								<p class="ae-3 opacity-6 small Gilroy-400">
+									Bookmarks are so Web2. Just right-click to curate anything across the web.
+									Collections are the best way to curate and share whatever you're into, whether it's
+									NFTs, think pieces, or 70s mob movies.
+								</p>
+							</li>
+							<li class="col-6-12 col-tablet-1-2 col-phone-1-1 xzi ae-2">
+								<div>
+									<a
+										href="https://app.yup.io/leaderboard?site=all&subject=collections&category=overall">
+										<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_uyr3awu6.json"
+											background="transparent" speed="1" loop autoplay
+											style="margin-bottom:-20%"></lottie-player>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background-color: #404040"></div>
+	</section>
 
-<!-- Slide ? #61 >
+	<!-- Slide ? #61 >
 <section data-title="What"  class="slide kenBurns autoHeight">
   <div class="content">
     <div class="container">
@@ -778,7 +820,7 @@
 </section>
 -->
 
-<!-- Slide ? #61 
+	<!-- Slide ? #61 
 <section data-title="What"  class="slide fade-7 kenBurns autoHeight animated">
   <div class="content">
     <div class="container">
@@ -835,96 +877,119 @@
 </section>
 -->
 
-<!-- PARTNERSHIPS -->
-<section data-title="What"  class="slide fade-7 kenBurns autoHeight">
-  <div class="content">
-    <div class="container">
-      <div class="wrap padding-phablet-2">
-				<h2 class="left col-12-12 large ae-1 fromBottom margin-bottom-2 Gilroy-700 padding-0" style="color: #fff;border-style:solid">Beloved Friends</h2>
-				<div class="fix-12-12 rainbow-outline-card border-gradient-rainbow rounded ae-2">
-          <ul class="flex verticalCenter fixedSpaces later equal center fromCenter flex-71">
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="https://www.dapperlabs.com/"><img src="assets/logos/dapper.svg" alt="dapper"/></a>
+	<!-- PARTNERSHIPS -->
+	<section data-title="What" class="slide fade-7 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap padding-phablet-2">
+					<h2 class="left col-12-12 large ae-1 fromBottom margin-bottom-2 Gilroy-700 padding-0"
+						style="color: #fff;border-style:solid">Beloved Friends</h2>
+					<div class="fix-12-12 rainbow-outline-card border-gradient-rainbow rounded ae-2">
+						<ul class="flex verticalCenter fixedSpaces later equal center fromCenter flex-71">
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="https://www.dapperlabs.com/"><img
+												src="assets/logos/dapper.svg" alt="dapper" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="http://www.distributedglobal.com/"><img src="assets/logos/dg.svg" alt="dg"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="http://www.distributedglobal.com/"><img
+												src="assets/logos/dg.svg" alt="dg" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="https://www.seedclub.xyz/"><img src="assets/logos/seedclub.svg" alt="seedclub"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="https://www.seedclub.xyz/"><img
+												src="assets/logos/seedclub.svg" alt="seedclub" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-3 padding-right-7 padding-left-7 padding-top-2 padding-bottom-2 padding-tablet-2">
-								<div class="cell"><a href="https://kernel.community/"><img src="assets/logos/kernel.svg" alt="kernel"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-3 padding-right-7 padding-left-7 padding-top-2 padding-bottom-2 padding-tablet-2">
+									<div class="cell"><a href="https://kernel.community/"><img
+												src="assets/logos/kernel.svg" alt="kernel" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="https://www.launchhouse.co/"><img src="assets/logos/lh.svg" alt="lh"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-4 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="https://www.launchhouse.co/"><img
+												src="assets/logos/lh.svg" alt="lh" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-5 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="https://palmtreecrew.com/"><img src="assets/logos/palmtree.svg" alt="palm tree"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-5 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="https://palmtreecrew.com/"><img
+												src="assets/logos/palmtree.svg" alt="palm tree" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="col-3-12 col-phone-1-2">
-							<div class="table wide equalElement ae-5 padding-right-7 padding-left-7 padding-tablet-2">
-								<div class="cell"><a href="https://www.envisionaccelerator.com/"><img src="assets/logos/envision.svg" alt="envision"/></a>
+							</li>
+							<li class="col-3-12 col-phone-1-2">
+								<div
+									class="table wide equalElement ae-5 padding-right-7 padding-left-7 padding-tablet-2">
+									<div class="cell"><a href="https://www.envisionaccelerator.com/"><img
+												src="assets/logos/envision.svg" alt="envision" /></a>
+									</div>
 								</div>
-							</div>
-						</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-color: #404040"></div>
-</section>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background-color: #404040"></div>
+	</section>
 
-<!-- FINAL -->
-<section class="slide fade-4 kenBurns autoHeight">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-7-12 hideForTablet showForDesktop margin-top-2 margin-bottom-2">
-          <h1 class="ae-3 fromBottom margin-bottom-2 Gilroy-600">Start Today</h1>
-          <p class="medium light ae-2 margin-bottom-4 Gilroy-300"><span class="opacity-5 hideForTablet">Connect your wallet and begin yupping right away.</span></p>
-					<a href="https://app.yup.io/?signupOpen=true">
-						<button class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForTablet" style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
-						</button>
-					</a>
-          <div class="margin-top-3 toLeft">
-            <p class="small margin-top-3 ae-3 Gilroy-400"><span class="opacity-8"><a>Become a Yupster and get <b>free rewards</b> upon signup</a></span></p>
-          </div>
-        </div>
-				<div class="fix-7-12 left hideForDesktop">
-          <h1 class="ae-1 fromBottom margin-bottom-4 Gilroy-600" >Join the Overweb</h1>
-          <p class="larger light ae-2"><span class="opacity-8 hideForDesktop">Join with Twitter or apply with email to begin Yupping right away.</span></p>
-          <div class="margin-top-3 toLeft">
+	<!-- FINAL -->
+	<section class="slide fade-4 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-7-12 hideForTablet showForDesktop margin-top-2 margin-bottom-2">
+						<h1 class="ae-3 fromBottom margin-bottom-2 Gilroy-600">Start Today</h1>
+						<p class="medium light ae-2 margin-bottom-4 Gilroy-300"><span
+								class="opacity-5 hideForTablet">Connect your wallet and begin yupping right away.</span>
+						</p>
 						<a href="https://app.yup.io/?signupOpen=true">
-							<button class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForDesktop" style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
+							<button class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForTablet"
+								style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
 							</button>
 						</a>
-            <p class="small margin-top-3 ae-3"><span class="opacity-8"><a>Start now and get <b>free rewards</b> upon signup</a></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background:#404040"></div>
-</section>
+						<div class="margin-top-3 toLeft">
+							<p class="small margin-top-3 ae-3 Gilroy-400"><span class="opacity-8"><a>Become a Yupster
+										and get <b>free rewards</b> upon signup</a></span></p>
+						</div>
+					</div>
+					<div class="fix-7-12 left hideForDesktop">
+						<h1 class="ae-1 fromBottom margin-bottom-4 Gilroy-600">Join the Overweb</h1>
+						<p class="larger light ae-2"><span class="opacity-8 hideForDesktop">Join with Twitter or apply
+								with email to begin Yupping right away.</span></p>
+						<div class="margin-top-3 toLeft">
+							<a href="https://app.yup.io/?signupOpen=true">
+								<button
+									class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForDesktop"
+									style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
+								</button>
+							</a>
+							<p class="small margin-top-3 ae-3"><span class="opacity-8"><a>Start now and get <b>free
+											rewards</b> upon signup</a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background:#404040"></div>
+	</section>
 
 	<!-- Panel Bottom #09 -->
 	<nav class="panel bottom firstSlideOnly margin-bottom-3">
