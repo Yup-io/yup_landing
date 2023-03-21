@@ -170,6 +170,18 @@
 		.title.mobile {
 			font-size: 1rem;
 		}
+		@keyframes upDown {
+				0%, 100% {
+						transform: translateY(0);
+				}
+				50% {
+						transform: translateY(-20px);
+				}
+		}
+
+		.up-down-animation {
+				animation: upDown 3s ease-in-out infinite;
+		}
 	</style>
 </head>
 
@@ -368,17 +380,26 @@
 	<!-- Panel Top #library/panel/panel-top-07.html -->
 	<nav class="panel top topBar">
 		<div class="sections desktop top">
+			<!-- Banner for Announcements -->
+			  <div class="center firstSlide rounded padding-1" style="background-color: #424145;">
+			<a href="https://yupio.typeform.com/to/lXQyUc5e" target="_blank">
+				  <ul class="menu weight-2 Gilroy-400">
+					  <li class="firstSlideOnly">🎉 We just announced our mobile app! Read more here.</li>
+				  </ul>
+		  </a>
+			</div>
+		</div>
+		<div class="sections desktop top">
 			<div class="left"><a href="/" style="display:flex" title="Yup"><img class="logo"
 						src="assets/svg/TextLogoWhite.svg" /></a></div>
 			<div class="center firstSlide">
 				<ul class="menu hideForTablet firstSlideOnly weight-2 Gilroy-400">
-					<li class="firstSlideOnly"><a style="color: #00e08e !important;"
+					<li class="firstSlideOnly"><a
+							href="https://yupio.typeform.com/to/lXQyUc5e"
+							target="_blank">Mobile</a></li>
+					<li class="firstSlideOnly"><a
 							href="https://matcha.xyz/markets/1/0x69bbc3f8787d573f1bbdd0a5f40c7ba0aee9bcc9/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
 							target="_blank">YUP Token</a></li>
-					<li class="firstSlideOnly"><a
-							href="https://chrome.google.com/webstore/detail/yup/nhmeoaahigiljjdkoagafdccikgojjoi"
-							target="_blank">Extension</a></li>
-					<li class="firstSlideOnly"><a href="https://yupprotocol.org" target="_blank">Protocol</a></li>
 					<li class="firstSlideOnly"><a href="https://angel.co/company/yupteam/jobs" target="_blank">Join
 							Team</a></li>
 				</ul>
@@ -402,13 +423,16 @@
 			</li>
 			</ul>
 		</div>
-		</div>
 	</nav>
 
 	<!-- Sidebar -->
 	<nav class="sidebar" data-sidebar-id="1">
 		<div class="content">
 			<ul class="mainMenu margin-top-3 Gilroy-500">
+				<li class="js-tilt"><a href="https://mobile.yup.io">Mobile</a></li>
+				<li class="js-tilt"><a href="https://app.yup.io">App</a></li>
+				<li class="js-tilt"><a href="https://yupprotocol.org">Protocol</a></li>
+				<li class="js-tilt"><a href="https://angel.co/company/yupteam/jobs">Join the Team</a></li>
 				<li class="js-tilt">
 					<a class="showForDesktop hideForPhablet inline"
 						href="https://chrome.google.com/webstore/detail/yup-opinions-social-capit/nhmeoaahigiljjdkoagafdccikgojjoi">
@@ -419,10 +443,6 @@
 						<i class="fab fa-firefox-browser opacity-3"></i>
 					</a>
 				</li>
-				<li class="js-tilt"><a href="https://app.yup.io">App</a></li>
-				<li class="js-tilt"><a href="https://yupprotocol.org">Protocol</a></li>
-				<li class="js-tilt"><a href="https://angel.co/company/yupteam/jobs">Join the Team</a></li>
-				<li class="js-tilt"><a href="https://yup.live">Explorer</a></li>
 				<li class="js-tilt"><a href="https://forum.yup.io/">Community</a></li>
 				<li class="js-tilt"><a href="https://forum.yup.io/">Forum</a></li>
 				<li class="js-tilt"><a href="https://docs.yup.io">Docs</a></li>
@@ -524,7 +544,7 @@
 									<p class="big hideForMobile margin-top-2 margin-bottom-2 ae-2 Gilroy-400">Content
 										from your favorite platforms in one feed <br> Earn money and clout for curating
 									</p>
-									<a href="https://app.yup.io/?signupOpen=true">
+									<a href="https://yupio.typeform.com/to/lXQyUc5e">
 										<button
 											class="button rounded-square small gradient ae-3 main margin-bottom-2 showForTablet hideForMobile"
 											style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
@@ -553,7 +573,7 @@
 								style="font-size: 16px;margin-top:-5rem;">Content from your favorite platforms in one
 								feed<br>
 								Earn money and clout for for curating</label>
-							<a href="https://app.yup.io/?signupOpen=true">
+							<a href="https://mobile.yup.io/">
 								<button
 									class="button rounded-square small gradient ae-5 main margin-top-2 hideForDesktop hideForTablet showForMobile"
 									style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;font-weight:500 !important;width:98%;font-size:20px;">Start
@@ -662,6 +682,36 @@
 		<div class="background" style="background-color: #404040"></div>
 	</section>
 
+	<!-- Slide 3 - MOBILE -->
+	<section data-title="Lists" class="slide fade-7 kenBurns autoHeight">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-14-12">
+						<ul class="flex verticalCenter" style="justify-content:space-between;">
+							<li class="col-6-12 col-tablet-5-12">
+								<h2 class="ae-3 left fromBottom Gilroy-700" style="color: #fff;">Yup Mobile</h2>
+								<h3 class="ae-2 opacity-8 weight-5 Gilroy-500 left rainbow-gradient">Web3 social in your pocket</h3>
+								<p class="ae-3 opacity-6 small left Gilroy-400">
+									Get the best of web3 social. On your phone. In one feed. No more multitasking across apps and tabs. No more shills, bots, and trolls getting in the way. Scroll smarter, not harder.  </p>
+							</li>
+							<li
+								class="col-6-12 col-tablet-7-12 xzi ae-1 left">
+								<ul class="flex verticalCenter fixedSpaces later equal fromCenter flex-71">
+										<a href="https://mobile.yup.io/" target="_blank">
+											<img class="rounded up-down-animation" data-tilt-max="-3" src="assets/img/mobilegraphic.png"
+												alt="Image Thumbnail">
+										</a>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background-color: #404040"></div>
+	</section>
+
 	<!-- Slide 3 - FEEDS + LISTS -->
 	<section data-title="Lists" class="slide fade-7 kenBurns autoHeight">
 		<div class="content">
@@ -669,7 +719,16 @@
 				<div class="wrap">
 					<div class="fix-14-12">
 						<ul class="flex verticalCenter" style="justify-content:space-between;">
-							<li class="col-5-12 col-tablet-5-12">
+							<li
+								class="col-6-12 col-tablet-7-12 xzi ae-1 left hideforTablet hideForPhablet hideForPhone">
+								<ul class="flex verticalCenter fixedSpaces later equal fromCenter flex-71">
+										<a href="https://mobile.yup.io/" target="_blank">
+											<img class="rounded up-down-animation" data-tilt-max="-3" src="assets/img/mobilefeeds.png"
+												alt="Image Thumbnail">
+										</a>
+								</ul>
+							</li>
+							<li class="col-6-12 col-tablet-5-12">
 								<h2 class="ae-3 left fromBottom Gilroy-700" style="color: #fff;">Custom Feeds</h2>
 								<h3 class="ae-2 opacity-8 weight-5 Gilroy-500 left rainbow-gradient">Your favorite
 									content, how you like it</h3>
@@ -678,81 +737,8 @@
 									community. Find the smartest tweets, the best Farcaster casts, the greatest posts
 									from Lens Protocol, and more - all in one place. </p>
 							</li>
-							<li
-								class="col-5-12 col-tablet-7-12 xzi ae-1 left hideforTablet hideForPhablet hideForPhone">
-								<ul class="flex verticalCenter fixedSpaces later equal fromCenter flex-71">
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity padding-1 js-tilt feed-card"
-										style="overflow:hidden;">
-										<a style="position:relative;" href="https://app.yup.io/?feed=latenightcool"
-											target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/popularcover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
-										style="overflow:hidden;position:relative;">
-										<a style="position:relative;" href="https://app.yup.io/?feed=dailyhits"
-											target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/dailyhitscover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
-										style="position:relative;overflow:hidden;">
-										<a href="https://app.yup.io/?feed=nfts" target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/nftcover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1"
-										style="position:relative;">
-										<a href="https://app.yup.io/?feed=non-corona" target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/safecover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity  js-tilt feed-card padding-1">
-										<a href="https://app.yup.io/?feed=crypto" target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/cryptocover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-									<li class="fromTop fix-2-12 col-3-12 hover-opacity js-tilt feed-card padding-1">
-										<a href="https://app.yup.io/?feed=brainfood" target="_blank">
-											<img class="rounded" data-tilt-max="-3" src="assets/img/smartcover.png"
-												alt="Image Thumbnail">
-										</a>
-									</li>
-								</ul>
-							</li>
 						</ul>
 					</div>
-					<!--Lists -  HIDE FOR NOW
-        <div class="fix-14-12 padding-top-15">
-          <ul class="flex verticalCenter" style="justify-content:space-between;">
-            <li class="col-6-12 right col-tablet-1-2 col-phablet-1-1">
-              <h2 class="ae-3 col-tablet-1-2 left fromBottom Gilroy-700" style="color: #fff;">
-								Ranked Lists
-							</h2>
-							<h3 class="ae-2 opacity-8 weight-5 Gilroy left rainbow-gradient">A List for Everything</h3>
-							<p class="ae-3 opacity-6 small left Gilroy-400">
-								Yup Lists aggregate the community’s opinions to help you find the best of what’s been rated on Yup. Find the smartest people on Twitter, the funniest reddit posts, the most interesting YouTube videos, and much more.
-							</p>
-							<video class="rounded demodemo2 fromTop ae-1 fix-8-12 showForMobile hideForPhablet hideForTablet hideForDesktop margin-top-1 margin-bottom-4" autoplay loop muted playsinline>
-								<source src="https://yup-website.s3.us-east-2.amazonaws.com/yuplists.mov" type="video/mp4">
-							</video>
-							<h3 class="ae-2 opacity-8 weight-5 Gilroy left rainbow-gradient">Change, Filter, Mix & Match</h3>
-							<p class="ae-3 opacity-6 small left Gilroy-400">
-								Lists are open to anyone - you don’t need a Yup account to use it! Filter by site, subject, and category to find what you’re looking for. <a href='https://app.yup.io/lists' class='underline'>Check it out</a>
-							</p>
-            </li>
-            <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 xzi ae-1 righ hideForPhablet">
-								<video class="rounded fromTop fix-6-12 js-tilt" data-tilt-max="-3" autoplay loop muted playsinline>
-									<source src="https://yup-website.s3.us-east-2.amazonaws.com/yuplists.mov" type="video/mp4">
-								</video>
-            </li>
-          </ul>
-        </div> -->
 				</div>
 			</div>
 		</div>
@@ -958,9 +944,9 @@
 					<div class="fix-7-12 hideForTablet showForDesktop margin-top-2 margin-bottom-2">
 						<h1 class="ae-3 fromBottom margin-bottom-2 Gilroy-600">Start Today</h1>
 						<p class="medium light ae-2 margin-bottom-4 Gilroy-300"><span
-								class="opacity-5 hideForTablet">Connect your wallet and begin yupping right away.</span>
+								class="opacity-5 hideForTablet">Connect your wallet and begin yupping today.</span>
 						</p>
-						<a href="https://app.yup.io/?signupOpen=true">
+						<a href="https://yupio.typeform.com/to/lXQyUc5e">
 							<button class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForTablet"
 								style="box-shadow: 0px 0px 9px #606060;background:#00e08e;color:#0a0a0a;font-family:Gilroy;width: 15rem; font-weight:500 !important;max-width:40vw;max-height:10vh;">Start
 							</button>
