@@ -14,7 +14,7 @@
 	<meta property="og:image" content="https://yup.io/assets/thumbnail.png">
 	<meta property="og:site_name" content="Yup">
 	<meta name="Description"
-		CONTENT="Web3 Social All-in-One. Get the best of Twitter, Farcaster, Lens, Mirror, NFTs, and more in one feed. Earn money and clout for curating.">
+		CONTENT="Web3 Social All-in-One. Get the best of Twitter, Farcaster, Lens, Mirror, NFTs, and more in one feed.">
 	<meta name="twitter:site" content="@yup_io">
 
 	<!-- Twitter -->
@@ -181,6 +181,13 @@
 
 		.up-down-animation {
 				animation: upDown 3s ease-in-out infinite;
+		}
+		#swappable-word {
+			opacity: 1;
+			transition: opacity 0.3s ease-in-out;
+		}
+		.fade-out {
+			opacity: 0;
 		}
 	</style>
 </head>
@@ -378,13 +385,13 @@
 </nav>-->
 
 	<!-- Panel Top #library/panel/panel-top-07.html -->
-	<nav class="panel top topBar">
+	<nav class="panel top topBar col-12-12">
 		<div class="sections desktop top">
 			<!-- Banner for Announcements -->
 			  <div class="center firstSlide rounded padding-1" style="background-color: #424145;">
 			<a href="https://yupio.typeform.com/to/lXQyUc5e" target="_blank">
-				  <ul class="menu weight-2 Gilroy-400">
-					  <li class="firstSlideOnly">🎉 We just announced our mobile app! Read more here.</li>
+				  <ul class="menu weight-2 Gilroy-400 wrap">
+					  <li class="firstSlideOnly">🎉 We just announced our mobile app! <br class="hideForDesktop"> Read more here.</li>
 				  </ul>
 		  </a>
 			</div>
@@ -541,8 +548,8 @@
 											<mark style="padding-right: 1%;">Web3 Social <br>All-In-One.</mark>
 										</div>
 									</h1>
-									<p class="big hideForMobile margin-top-2 margin-bottom-2 ae-2 Gilroy-400">Content
-										from your favorite platforms in one feed <br> Earn money and clout for curating
+									<p class="big hideForMobile margin-top-2 margin-bottom-2 ae-2 Gilroy-400">
+										The best of <span id="swappable-word">web3</span><br> in one personalized feed
 									</p>
 									<a href="https://yupio.typeform.com/to/lXQyUc5e">
 										<button
@@ -570,9 +577,7 @@
 							</div>
 							<label
 								class="ae-4 crop main showForPhoneInline hideForDesktop hideForTablet Gilroy-400 center"
-								style="font-size: 16px;margin-top:-5rem;">Content from your favorite platforms in one
-								feed<br>
-								Earn money and clout for for curating</label>
+								style="font-size: 16px;margin-top:-5rem;">The best of <span id="swappable-word">NFTs</span><br> in one personalized feed<br>
 							<a href="https://mobile.yup.io/">
 								<button
 									class="button rounded-square small gradient ae-5 main margin-top-2 hideForDesktop hideForTablet showForMobile"
@@ -1013,6 +1018,22 @@
 	<script type="text/javascript">
 		mixpanel.track_links("a", "Link Click");
 		mixpanel.track("Site Visit");
+	</script>
+
+	<!-- Word Animation -->
+	<script>
+		const words = ["NFTs", "Farcaster", "Lens", "Mirror", "Twitter", "POAPs"];
+		let currentIndex = 0;
+		const swappableWordElement = document.getElementById("swappable-word");
+
+		setInterval(() => {
+			swappableWordElement.classList.add("fade-out");
+			setTimeout(() => {
+				currentIndex = (currentIndex + 1) % words.length;
+				swappableWordElement.textContent = words[currentIndex];
+				swappableWordElement.classList.remove("fade-out");
+			}, 300);
+		}, 1500);
 	</script>
 
 	<script src="tilt.jquery.js"></script>
