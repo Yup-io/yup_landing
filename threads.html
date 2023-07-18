@@ -20,7 +20,10 @@
       property="og:image"
       content="https://yup.io/assets/thumbnailthreads.png"
     />
-    <meta property="og:site_name" content="Threads + Twitter in 1 App | Yup" />
+    <meta
+      property="og:site_name"
+      content="Threads + Twitter in One App | Yup"
+    />
     <meta
       name="Description"
       content="Crosspost to both platforms with one click. Threads and Tweets in one feed, plus so much more."
@@ -227,6 +230,19 @@
       }
       .fade-out {
         opacity: 0;
+      }
+      .mobileAnimation {
+        border-radius: 5rem;
+      }
+      @media screen and (max-width: 600px) {
+        .mobileAnimation {
+          border-radius: 4.2rem !important;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .mobileAnimation {
+          border-radius: 8rem;
+        }
       }
     </style>
   </head>
@@ -477,7 +493,7 @@
                     </div>
                   </div>
                   <h1 class="margin-top-1 margin-bottom-2 ae-1 fromLeft">
-                    Threads + Twitter <br />in 1 App
+                    Threads + Twitter <br />in One App
                   </h1>
                   <p class="ae-2 fromLeft hideForPhablet">
                     <span class="opacity-6"
@@ -493,7 +509,7 @@
                       Threads and Tweets in one feed, plus so much more.</span
                     >
                   </p>
-                  <a href="https://yupio.typeform.com/to/lXQyUc5e">
+                  <a href="https://yupio.typeform.com/to/b3dFP7cJ">
                     <button
                       class="button rounded-square small gradient ae-3 main margin-bottom-2 hideForPhablet"
                       style="
@@ -513,22 +529,46 @@
                 <li class="col-1-12"></li>
                 <li class="col-6-12" style="align-items: center">
                   <div
-                    class="ae-4 fromCenter"
+                    class="ae-4 fromCenter mobileAnimation"
                     style="
-                      border-radius: 4.2rem;
                       overflow: hidden;
                       border: 6px solid #e7e8ea;
-                      display: inline-block;
+                      display: inline-block !important;
                       margin-bottom: -110%;
                       max-width: 80vw;
                     "
                   >
                     <img
-                      src="assets/testgif.gif"
+                      src="assets/threadspost.gif"
                       data-action="zoom"
                       alt="iPhone App"
+                      style="
+                        border: 6px solid #e7e8ea;
+                        box-shadow: inset 10px 10px 52px 52px #e7e8ea;
+                      "
                     />
                   </div>
+                  <!-- <div
+                    class="ae-4 fromCenter hideForDesktop hideForTablet showForMobile hideForPhablet"
+                    style="
+                      border-radius: 4em;
+                      overflow: hidden;
+                      border: 6px solid #e7e8ea;
+                      display: inline-block !important;
+                      margin-bottom: -110%;
+                      max-width: 80vw;
+                    "
+                  >
+                    <img
+                      src="assets/threadspost.gif"
+                      data-action="zoom"
+                      alt="iPhone App"
+                      style="
+                        border: 6px solid #e7e8ea;
+                        box-shadow: inset 10px 10px 52px 52px #e7e8ea;
+                      "
+                    />
+                  </div> -->
                 </li>
               </ul>
             </div>
